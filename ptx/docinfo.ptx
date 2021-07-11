@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<docinfo>
+  <macros>
+  </macros>
+
+  <latex-image-preamble>
+    <![CDATA[
+    \usepackage{pgfplots}
+    \pgfplotsset{every axis/.append style={
+          axis x line=middle,    % put the x axis in the middle
+          axis y line=middle,    % put the y axis in the middle
+          axis line style={<->}, % arrows on the axis
+          tick label style={/pgf/number format/fixed},
+          xlabel={$x$},          % default put x on x-axis
+          ylabel={$y$},          % default put y on y-axis
+          xmin = -6,xmax = 6,    % most graphs have this window
+          ymin = -6,ymax = 6,    % most graphs have this window
+          domain = -7:7,
+          xtick = {-6,-4,...,6}, % label these ticks
+          ytick = {-6,-4,...,6}, % label these ticks
+          yticklabel style={inner sep=0.333ex},
+          tick label style={font=\footnotesize},
+          grid = both
+    }}
+    ]]>
+  </latex-image-preamble>
+</docinfo>

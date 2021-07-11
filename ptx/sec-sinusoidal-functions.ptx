@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-sinusoidal-functions">
+	<title>Sinusoidal Functions</title>
+	<subsection>
+		<title>Graphing Sinusoidal Functions: Phase Shift vs. Horizontal Shift</title>
+		<p>
+			Let’s consider the function <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m>.  Using what we study in MTH 111 about graph transformations, it should be apparent that the graph of <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m> can be obtained by transforming the graph of <m>g(x)=\sin(x)</m>. (To confirm this, notice that <m>g(x)</m> can be expressed in terms of <m>f(x)=\sin(x),</m> as <m>g(x)=f \left( 2x-\frac{2\pi}{3} \right) </m>.)  Since the constants “<m>2</m>” and “<m>\frac{2\pi}{3}</m>” are multiplied by and subtracted from the input variable, <m>x</m>, what we study in MTH 111 tells us that these constants represent a horizontal stretch/compression and a horizontal shift, respectively.
+		</p>
+		<p>
+			It is often recommended in MTH 111 that we factor-out the horizontal stretching/compressing factor before transforming the graph, i.e., it’s often recommended that we first re-write <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m>  as <m>g(x)=\sin \left( 2 \left( x-\frac{\pi}{3} \right) \right) </m>.
+		</p>
+		<p>
+			After writing <m>g</m> in this format, we can draw its graph by performing the following sequence of transformations of the “base function” <m>f(x)=\sin(x)</m>:
+		</p>
+		<ol>
+			<li>
+				Compress horizontally by a factor of <m>\frac{1}{2}</m>.
+			</li>
+			<li>
+				Shift <m>\frac{\pi}{3}</m> units to the right.
+			</li>
+		</ol>
+		<p>
+			The advantage of this method is that the <m>y</m>-intercept of <m>f(x)=\sin(x)</m>, <m> \left( 0,0 \right) </m>, ends-up exactly where the horizontal shift suggests: when we compress the graph by a factor of <m>\frac{1}{2}</m>, the the <m>y</m>-interceot of the graph doesn’t move since <m>\frac{1}{2} \cdot 0 = 0</m>; then, when we shift the graph <m>\frac{\pi}{3}</m> units to the right, the point  <m>\left( 0,0\right) </m>  ends up at <m>\left( \frac{\pi}{3},0\right) </m>; so the <m>y</m>-intercept ends up moving <m>\frac{\pi}{3}</m> units to the right, exactly how far we shifted.
+		</p>
+		<p>
+			Compare this with the alternative method: we can leave <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m> as-is and skip factoring-out the horizontal stretching/compressing factor, but then we need the following sequence to transform <m>f(x)=\sin(x)</m> into the graph of <m>g</m>:
+		</p>
+		<ol>
+			<li>
+				Shift <m>\frac{2\pi}{3}</m> units to the right.
+			</li>
+			<li>
+				Compress horizontally by a factor of <m>\frac{1}{2}</m>.
+			</li>
+		</ol>
+		<p>
+			The disadvantage of this method is that the <m>y</m>-intercept of <m>f(x)=\sin(x)</m> doesn’t end-up where the horizontal shift suggests: when we shift the graph of <m>f(x)=\sin(x)</m> to the right by <m>\frac{2\pi}{3}</m> units, the <m>y</m>-intercept moves from <m> \left( 0,0 \right) </m> to <m>\left( \frac{2\pi}{3},0\right) </m>; then, when we compress the graph by a factor of <m>\frac{1}{2}</m>, it moves to <m>\left( \frac{\pi}{3},0\right) </m>, so the <m>y</m>-intercept doesn’t end up shifted <m>\frac{2\pi}{3}</m> units to the right.
+		</p>
+		<p>
+			 <xref ref="figure-shifts"/> shows the graphs of <m>y=f(x)</m> and <m>y=g(x)</m>. Notice that the behavior of <m>y=g(x)</m> at <m>x=\frac{\pi}{3}</m> is like the behavior of <m>y=f(x)</m> at <m>x=0</m>, i.e., <m>y=g(x)</m> appears to have been shifted <m>\frac{\pi}{3}</m> units to the right. For this reason, <m>\frac{\pi}{3}</m> is called the horzontal shift of <m>g(x)=\sin ( \, 2x-\frac{2\pi}{3} ) \,=\sin ( \, 2( \,x-\frac{\pi}{3} ) \, ) \,</m>.
+			</p>
+			<figure xml:id="figure-shifts">
+				<caption><m>y=g(x)</m> with <m>f(x)=\sin(x)</m></caption>
+				<image width="100%">
+					<description>This is a graph showing both f(x) and g(x) where the function g(x) is a horizontal shift of f(x).</description>
+					<latex-image>
+						\begin{tikzpicture}
+				\begin{axis}[
+				    Axis Style,
+						xmin=-3, xmax=8.37758040957,
+            ymin=-1.6, ymax=1.6,
+				    xtick={−2.09439510239, −1.0471975512, 1.0471975512, 2.0943951, 3.1415926, 4.18879020479, 5.23598775598, 6.28318, 7.33038285838},
+				    xticklabels={$-\frac{2\pi}{3}$, $-\frac{\pi}{3}$, $\frac{\pi}{3}$, $\frac{2\pi}{3}$, $\pi$, $\frac{4\pi}{3}$, $\frac{5\pi}{3}$, $2\pi$, $\frac{7\pi}{3}$},
+						minor xtick = {−1.57079632679, −0.523598775598, 0.523598775598, 1.57079632679, 2.61799387799, 3.66519142919, 4.71238898038, 5.75958653158, 6.80678408278},
+						ytick={-1,1},
+						yticklabels={-1,1},
+						minor ytick={-1.5,-0.5,0.5,1.5},
+						axis equal image,
+								]
+				\addplot [mark=none, semi thick, black, domain=-3:8.2, samples=200] {sin(deg(x))};
+				\addplot [mark=none, semi thick, blue, domain=-3:8.2, samples=200] {sin(deg(2*x-2.09439510239))};
+				\end{axis}
+				\end{tikzpicture}
+					</latex-image>
+				</image>
+			</figure>
+		<p>
+			The constant <m>\frac{2\pi}{3}</m> is given a different name, phase shift, since it can be used to determine how far “out-of-phase” a sinusoidal function is in comparison with <m>y=\sin(x)</m> or <m>y=\cos(x)</m>. To determine how far out-of-phase a sinusoidal function is, we can determine the ratio of the phase shift and <m>2\pi</m>. (We use <m>2\pi</m> because it’s the period of <m>y=\sin(x)</m> and <m>y=\cos(x)</m>.)  Since <m>\frac{2\pi}{3}</m> is the phase shift for <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right)</m>, the graph of <m>y=g(x)</m> is out-of-phase <m>\frac{2\pi/3}{2\pi}=\frac{1}{3}</m> of a period. (Since this number is positive, it represents a horizontal shift to the right <m>\frac{1}{3}</m> of a period.)
+		</p>
+
+		<definition>
+			<statement>
+				<p>
+					Given a sinusoidal function of the form <m>y=A\sin(wx-C)+k</m> or <m>y=A\cos(wx-C)+k</m>, the <term>phase shift</term> is <m>C</m> and <m>\frac{|C|}{2\pi}</m> represents the fraction of a period that the graph has been shifted (shift to the right if <m>C</m> is positive or to the left if <m>C</m> is negative).
+				</p>
+			</statement>
+		</definition>
+		<definition>
+			<statement>
+				<p>
+					If we re-write the function as <m>y=A\sin \left( w \left( x-\frac{C}{w}\right) \right)+k</m> or <m>y=A\cos \left( w \left( x-\frac{C}{w}\right) \right)+k</m>, we can see that the <term>horizontal shift</term> is <m>\frac{C}{w}</m> units (shift to the right if <m>\frac{C}{w}</m> is positive or to the left if <m>\frac{C}{w}</m> is negative).
+				</p>
+			</statement>
+		</definition>
+		<example>
+	    <statement>
+	      <p>
+	        Identify the phase shift and horizontal shift of <m>g(x)=\cos \left( 3x-\frac{\pi}{4} \right) </m>.
+	      </p>
+	    </statement>
+	    <solution>
+				<p>
+					The phase shift of <m>g(x)=\cos \left( 3x-\frac{\pi}{4} \right)</m> is <m>\frac{\pi}{4}</m>. This tells us that the graph of <m>y=g(x)</m> is out of phase <m>\frac{|\pi/4|}{2\pi}=\frac{1}{8}</m> of a period, i.e., compared with <m>y=\cos(x)</m>, the graph of <m>g(x)=\cos(3x-\frac{\pi}{4})</m> has been shifted one-eighth of a period to the right.
+				</p>
+				<p>
+					To find the horizontal shift, we need to factor-out <m>3</m> from <m>3x-\frac{\pi}{4}</m>.
+						<md>
+							<mrow>g(x) \amp=\cos\left( 3x-\frac{\pi}{4}\right)</mrow>
+							<mrow> \amp=\cos\left(3\left(x-\frac{\pi}{3 \cdot 4}\right) \right)</mrow>
+							<mrow> \amp=\cos\left(3\left(x-\frac{\pi}{12}\right)\right)</mrow>
+						</md>
+				</p>
+				<p>
+					So the horizontal shift is <m>\frac{\pi}{12}</m>. This tells us, that compared with <m>y=\cos(x)</m>, the graph of <m>g(x)=\cos(3x-\frac{\pi}{4})</m> has been shifted <m>\frac{\pi}{12}</m> to the right.
+				</p>
+				<p>
+					Notice that the period of <m>g(x)=\cos(3x-\frac{\pi}{4})</m> is <m>2\pi \cdot \frac{1}{3}=\frac{2\pi}{3}</m>, and one-eighth of <m>\frac{2\pi}{3}</m> is <m>\frac{2\pi}{3} \cdot \frac{1}{8}=\frac{\pi}{12}</m>, so a shift of one-eighth of a period is the same as a shift of <m>\frac{\pi}{12}</m> units!
+				</p>
+	    </solution>
+	  </example>
+		<example>
+	    <statement>
+	      <p>
+	        Draw a graph <m>q(t)=2\sin(4t+\pi)+1</m>. First, find it's amplitude, period, midline, phase shift, and horiontal shift.
+	      </p>
+	    </statement>
+	    <solution>
+				<p>
+					Amplitude: <m>|A|=|2|=2</m>
+				</p>
+				<p>
+					Period: <m>P=2\pi \cdot \frac{1}{|w|}=\frac{2\pi}{4}=\frac{\pi}{2}</m>
+				</p>
+				<p>
+					Midline: <m>y=1</m>
+				</p>
+				<p>
+					Phase shift: <m>-\pi</m> (this tells is that the graph is out-of-phase <m>\frac{|-\pi|}{2\pi}=\frac{1}{2}</m> of a period)
+				</p>
+				<p>
+					Horizontal shift: <m>\frac{\pi}{4}</m> units to the left since:
+						<md>
+							<mrow>q(t) \amp=2\sin\left( 4t+\pi right)+1</mrow>
+							<mrow> \amp=2\sin \left(4 \left(t+\frac{\pi}{4} \right) \right)+1</mrow>
+							<mrow> \amp=2\sin\left( 4 \left(t- \left( -\frac{\pi}{4}\right)\right)\right) +1</mrow>
+						</md>
+				</p>
+				<p>
+					Now we can draw a graph of <m>q(t)=2\sin(4t+\pi)+1</m> by drawing a sinusoidal function with the necessary features; see <xref ref="figure-sinusoidal"/>.
+				</p>
+				<figure xml:id="figure-sinusoidal">
+					<caption><m>y=q(t)</m></caption>
+					<image width="75%">
+						<description>Graph of q(t) = 2sin(4t+pi)+1.</description>
+						<latex-image>
+							\begin{tikzpicture}
+					\begin{axis}[
+							Axis Style,
+							xmin=-1.1780972451, xmax=3.53429173529,
+							xlabel={$t$},
+							ymin=-2.5, ymax=4.5,
+							xtick={−0.785398163397, 0.785398163397, 1.57079632679, 2.35619449019, 3.1415926},
+							xticklabels={$-\frac{\pi}{4}$, $\frac{\pi}{4}$, $\frac{\pi}{2}$, $\frac{3\pi}{4}$, $\pi$},
+							minor xtick = {−0.392699081699, 0.392699081699, 1.1780972451, 1.96349540849, 2.74889357189},
+							ytick={-1,1,2,3,4},
+							yticklabels={-1,1,2,3,4},
+							minor ytick={-2},
+							axis equal image,
+									]
+					\addplot [mark=none, semi thick, black, domain=-1.1:3.5, samples=200] {2*sin(deg(4*x+3.1415926))+1};
+					\end{axis}
+					\end{tikzpicture}
+						</latex-image>
+					</image>
+				</figure>
+	    </solution>
+	  </example>
+	</subsection>
+	<exercises xml:id="exercises-sinusoidal-functions">
+			<exercisegroup cols="2">
+	  			<introduction>
+	      			<p>Draw a graph of each of the following functions. List the amplitude, midline, period, phase shift, and horizontal shift.</p>
+	    		</introduction>
+		  		<exercise>
+		  				<statement>
+		          		<p><m>f(x)=3\sin \left( 3x-\frac{\pi}{2} \right)</m></p>
+		  				</statement>
+		          <answer>
+		             <p>
+								 		<ul>
+											 	<li>
+											 		Amplitude: 3 units
+											 	</li>
+											 	<li>
+											 		Period: <m>\frac{2\pi}{3} </m> units
+											 	</li>
+												<li>
+											 		Midline: <m>y=0</m>
+											 	</li>
+												<li>
+											 		Phase shift: <m>\frac{\pi}{2}</m>
+											 	</li>
+												<li>
+											 		Horizontal Shift: <m>\frac{\pi}{6}</m> units to the right
+											 	</li>
+										</ul>
+								 </p>
+								 <figure xml:id="figure-graph-exercise-3sin3xpi2">
+								 	<caption>A graph of <m>f(x)=3\sin\left(3x-\frac{pi}{2}\right)</m></caption>
+								 	<image width="75%">
+								 		<description>The graph of f(x)=3sin(3x-pi/2).</description>
+								 		<latex-image>
+								 			\begin{tikzpicture}
+								 				\begin{axis}[
+								 					Axis Style,
+								 					xmin=-1.57079632679, xmax=3.66519142919,
+								 			xlabel={$x$},
+								 			ymin=-4, ymax=4,
+								 			xtick={−1.0471975512, -0.523598775598, 0.523598775598, 1.0471975512, 1.57079632679, 2.09439510239, 2.61799387799, 3.14159265359},
+								 			xticklabels={$-\frac{\pi}{3}$, $-\frac{\pi}{6}$, $\frac{\pi}{6}$, $\frac{\pi}{3}$, $\frac{\pi}{2}$, $\frac{2\pi}{3}$, $\frac{5\pi}{6}$, $\pi$},
+											ytick={-3,-2,-1,0,1,2,3},
+								 			yticklabels={-3,-2,-1,0,1,2,3},
+								 			axis equal image,
+								 					]
+								 	\addplot [mark=none, semi thick, black, domain=-1.4:3.5, samples=200] {3*sin(deg(3*x-1.57079632679))};
+								 	\end{axis}
+								 	\end{tikzpicture}
+								 		</latex-image>
+								 	</image>
+								 </figure>
+		          </answer>
+		      </exercise>
+					<exercise>
+		      		<statement>
+		          		<p><m>g(t)=\cos(4t+\pi)+3</m></p>
+		          </statement>
+							<answer>
+		             <p>
+								 		<ul>
+											 	<li>
+											 		Amplitude: 1 unit
+											 	</li>
+											 	<li>
+											 		Period: <m>\frac{\pi}{2} </m> units
+											 	</li>
+												<li>
+											 		Midline: <m>y=3</m>
+											 	</li>
+												<li>
+											 		Phase shift: <m>-\pi</m>
+											 	</li>
+												<li>
+											 		Horizontal Shift: <m>\frac{\pi}{4}</m> units to the left
+											 	</li>
+										</ul>
+								 </p>
+								 <figure xml:id="figure-graph-exercise-cos4tpi3">
+								  <caption>A graph of <m>g(t)=\cos\left(4t+\pi\right)+3</m></caption>
+								  <image width="75%">
+								 	 <description>The graph of g(t)=cos(4t+pi)+3.</description>
+								 	 <latex-image>
+								 		 \begin{tikzpicture}
+								 			 \begin{axis}[
+								 					Axis Style,
+								 				 	xmin=-1.96349540849, xmax=4.31968989869,
+								 		 		 	xlabel={$t$},
+								 		 		 	ymin=-1.2, ymax=4.5,
+								 		 			xtick={−1.57079632679, -0.785398163397, 0.785398163397, 1.57079632679, 2.35619449019, 3.14159265359, 3.92699081699},
+								 		 			xticklabels={$-\frac{\pi}{2}$, $-\frac{\pi}{4}$, $\frac{\pi}{4}$, $\frac{\pi}{2}$, $\frac{3\pi}{4}$, $\pi$, $\frac{5\pi}{4}$},
+													ytick={-1,0,1,2,3,4},
+										 			yticklabels={-1,0,1,2,3,4},
+								 		 			axis equal image,
+								 				 ]
+								  \addplot [mark=none, semi thick, black, domain=-1.8:4, samples=200] {cos(deg(4*x+3.1415926))+3};
+								  \end{axis}
+								  \end{tikzpicture}
+								 	 </latex-image>
+								  </image>
+								 </figure>
+		          </answer>
+		      </exercise>
+					<exercise>
+		      		<statement>
+		          		<p><m>m(\theta)=2 \cos \left( 2\pi \theta - \pi \right)+4</m></p>
+		          </statement>
+							<answer>
+		             <p>
+								 		<ul>
+											 	<li>
+											 		Amplitude: 2 units
+											 	</li>
+											 	<li>
+											 		Period: <m>1 </m> unit
+											 	</li>
+												<li>
+											 		Midline: <m>y=4</m>
+											 	</li>
+												<li>
+											 		Phase shift: <m>\pi</m>
+											 	</li>
+												<li>
+											 		Horizontal Shift: <m>\frac{1}{2}</m> of a unit to the right
+											 	</li>
+										</ul>
+								 </p>
+								 <figure xml:id="figure-graph-exercise-2cos2pithetapi4">
+								  <caption>A graph of <m>m(\theta)=2\cos\left(2\pi \theta-\pi\right)+4</m></caption>
+								  <image width="75%">
+								 	<description>The graph of m(theta)=2cos(2 pi theta - pi) + 4.</description>
+								 	<latex-image>
+								 		\begin{tikzpicture}
+								 			\begin{axis}[
+								 				 Axis Style,
+								 				 xmin=-1.25, xmax=2.25,
+								 				 xlabel={$\theta$},
+								 				 ymin=-3, ymax=7,
+								 				 xtick={-1,1,2},
+								 				 xticklabels={-1,1,2},
+												 minor xtick = {-0.75, -0.5,-0.25, 0.25, 0.5, 0.75, 1.25, 1.5 , 1.75},
+								 				 ytick={-2,2,4,6},
+								 				 yticklabels={-2,2,4,6},
+												 minor ytick = {-1,1,3,5},
+								 				 axis equal image,
+								 				]
+								  \addplot [mark=none, semi thick, black, domain=-1.2:2.2, samples=200] {2*cos(deg(2*3.1415926*x-3.1415926))+4};
+								  \end{axis}
+								  \end{tikzpicture}
+								 	</latex-image>
+								  </image>
+								 </figure>
+		          </answer>
+		      </exercise>
+					<exercise>
+		      		<statement>
+		          		<p><m>n(x)=-4\sin \left( \pi x+\frac{\pi}{4} \right)-2</m></p>
+		          </statement>
+							<answer>
+		             <p>
+								 		<ul>
+											 	<li>
+											 		Amplitude: 4 units
+											 	</li>
+											 	<li>
+											 		Period: <m>2 </m> units
+											 	</li>
+												<li>
+											 		Midline: <m>y=-2</m>
+											 	</li>
+												<li>
+											 		Phase shift: <m>-\frac{\pi}{4}</m>
+											 	</li>
+												<li>
+											 		Horizontal Shift: <m>\frac{1}{4}</m> of a unit to the left
+											 	</li>
+										</ul>
+								 </p>
+								 <figure xml:id="figure-graph-exercise-negative4sinpixpi4minus2">
+								  <caption>A graph of <m>n(\theta)=-4\sin\left(\pi x + \frac{\pi}{4}\right)-2</m></caption>
+								  <image width="75%">
+								  <description>The graph of n(x)=-4sin(pi x + pi/4)-2.</description>
+								  <latex-image>
+								 	 \begin{tikzpicture}
+								 		 \begin{axis}[
+								 				Axis Style,
+								 				xmin=-1.25, xmax=3.75,
+								 				xlabel={$x$},
+								 				ymin=-8, ymax=4,
+								 				xtick={-1,1,2,3},
+								 				xticklabels={-1,1,2,3},
+								 				minor xtick = {-0.75, -0.5,-0.25, 0.25, 0.5, 0.75, 1.25, 1.5 , 1.75, 2.25, 2.5, 2.75},
+								 				ytick={-6,-4,-2,2},
+								 				yticklabels={-6,-4,-2,2},
+								 				minor ytick = {-7,-5,-3,-1,1,3},
+								 				axis equal image,
+								 			 ]
+								  \addplot [mark=none, semi thick, black, domain=-1.2:3.7, samples=200] {-4*sin(deg(3.1415926*x+0.785398163397))-2};
+								  \end{axis}
+								  \end{tikzpicture}
+								  </latex-image>
+								  </image>
+								 </figure>
+		          </answer>
+		      </exercise>
+			</exercisegroup>
+			<exercisegroup cols="2">
+	  			<introduction>
+	      			<p>Find two algebraic rules (one involving sine and one involving cosine) for each of the functions graphed below.</p>
+	    		</introduction>
+		  		<exercise>
+		  				<statement>
+								<figure xml:id="figure-graph-exercise-4sin2xminuespi2minus2">
+								 <caption>A graph of <m>y=p(t)</m></caption>
+								 <image width="75%">
+									<description>Graph of y=p(t). The highest points are at 2 and the lowest are at -6. On the y-axis the intercept is (0, -6). The period is pi.</description>
+									<latex-image>
+										\begin{tikzpicture}
+											\begin{axis}[
+												 Axis Style,
+												 xmin=-2.35619449019, xmax=4.71238898038,
+												 xlabel={$t$},
+												 ymin=-6.25, ymax=2.25,
+												 xtick={−1.57079632679, -0.785398163397, 0.785398163397, 1.57079632679, 2.35619449019, 3.14159265359, 3.92699081699},
+												 xticklabels={$-\frac{\pi}{2}$, $-\frac{\pi}{4}$, $\frac{\pi}{4}$, $\frac{\pi}{2}$, $\frac{3\pi}{4}$, $\pi$, $\frac{5\pi}{4}$},
+												 ytick={-6,-4,-2,2},
+												 yticklabels={6,-4,-2,2},
+												 axis equal image,
+												]
+								 \addplot [mark=none, semi thick, black, domain=-2.3:4.6, samples=200] {4*sin(deg(2*x-1.57079632679))-2};
+								 \end{axis}
+								 \end{tikzpicture}
+									</latex-image>
+								 </image>
+								</figure>
+		  				</statement>
+		          <answer>
+								<p>
+									<m> p(x)=4 \sin \left( 2 \left( x-\frac{\pi}{4} \right) \right)-2 </m>; <m> p(x)=4 \cos \left( 2 \left( x-\frac{\pi}{2} \right) \right)-2 </m>
+								</p>
+		          </answer>
+		      </exercise>
+					<exercise>
+		  				<statement>
+								<figure xml:id="figure-graph-exercise-3sinpi2xpluspi4minus1">
+								<caption>A graph of <m>y=q(x)</m></caption>
+								<image width="75%">
+								<description>Graph of y=q(t). The highest points are at 2 and the lowest are at -4. On the y-axis the intercept is (0, 1) and it has points at (-0.5, -1), (1.5, -1), and (3.5, -1). The period is 4.</description>
+								<latex-image>
+								 \begin{tikzpicture}
+									 \begin{axis}[
+											Axis Style,
+											xmin=-2.5, xmax=5.5,
+											xlabel={$x$},
+											ymin=-5, ymax=3,
+											xtick={-2,-1,1,2,3,4,5},
+											xticklabels={-2,-1,1,2,3,4,5},
+											minor xtick = {-1.5, -0.5, 0.5, 1.5, 2.5, 3.5, 4.5},
+											ytick={-4, -3, -2, -1, 1, 2},
+											yticklabels={-4, -3, -2, -1, 1, 2},
+											axis equal image,
+										 ]
+								\addplot [mark=none, semi thick, black, domain=-2.4:5.4, samples=200] {3*sin(deg(1.57079632679*x+0.785398163397))-1};
+								\end{axis}
+								\end{tikzpicture}
+								</latex-image>
+								</image>
+							 </figure>
+		  				</statement>
+							<answer>
+								<p>
+									<m> q(x)=3 \sin \left( \frac{\pi}{2} \left( x+\frac{1}{2} \right) \right)-1 </m>; <m> q(x)=3 \cos \left( \frac{\pi}{2} \left( x-\frac{1}{2} \right) \right)-1 </m>
+								</p>
+		          </answer>
+		      </exercise>
+			</exercisegroup>
+	</exercises>
+</section>

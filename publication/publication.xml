@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<publication>
+
+    <!-- HTML-Specific Options -->
+    <html>
+        <calculator model="geogebra-graphing"/>
+        <index-page ref="supplement111-112"/>
+        <knowl example="no"/>
+    </html>
+    <!-- PDF-Specific Options -->
+    <latex print="no" sides="one">
+    </latex>
+</publication>
