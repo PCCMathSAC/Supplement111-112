@@ -5,10 +5,10 @@
 		<example>
 			<statement>
 				<p>
-					The table below defines the functions <m>f</m>, <m>g</m>, and <m>h</m>. Express <m>g(x)</m> and <m>h(x)</m> in terms of <m>f</m>.
+					<xref ref="table-fgh"/> defines the functions <m>f</m>, <m>g</m>, and <m>h</m>. Express <m>g(x)</m> and <m>h(x)</m> in terms of <m>f</m>.
 				</p>
 <!-- table for OG version example 1 -->
-<table>
+<table xml:id="table-fgh">
   <tabular halign="center" top="medium">
     <row bottom="medium">
       <cell left="medium" right="medium">
@@ -148,9 +148,9 @@
 				<exercisegroup cols="1">
 		  			<introduction>
 		      			<p>
-									The table below defines the functions <m>f</m>, <m>g</m>, <m>h</m>, <m>k</m>, and <m>l</m>.
+								  <xref ref="table-fghkl"/> defines the functions <m>f</m>, <m>g</m>, <m>h</m>, <m>k</m>, and <m>l</m>.
 								</p>
-								<table>
+		<table xml:id="table-fghkl">
 		  <tabular top="medium">
 		    <title>Table of values for determining transformation relationships</title>
 		    <row bottom="medium">
@@ -333,10 +333,10 @@
 				<exercise>
 					<statement>
 						<p>
-							The second row in the table below gives values for the function, <m>f</m>. Complete the rest of the table. If you don't have sufficient information to fill-in some of the cells, leave those cells blank.
+							The second row in <xref ref="table-transformations-of-f"/> below gives values for the function, <m>f</m>. Complete the rest of the table. If you don't have sufficient information to fill-in some of the cells, leave those cells blank.
 						</p>
 
-							<table>
+<table xml:id="table-transformations-of-f">
   <tabular halign="center" top="medium">
     <title>Table of values for determining transformation relationships</title>
     <row bottom="medium">

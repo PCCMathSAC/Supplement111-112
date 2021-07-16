@@ -6,7 +6,7 @@
 		<p>
 			Recall that a complex number has the form <m>a+bi</m> where <m>a,b \in \mathbb{R}</m> and <m>i=\sqrt{-1}</m>. Complex numbers have two parts: a real part and an imaginary part. For the number <m>a+bi</m>, the real part is <m>a</m> and the imaginary part is <m>b</m>. Because they have two parts, we can use the two dimensional rectangular coordinate plane to represent complex numbers. We use the horizontal axis to represent the real part and the vertical axis to represent the complex part. Thus, the complex number <m>a+bi</m> can be represented by the point <m> \left( a,b \right) </m> on the rectangular coordinate plane; see <xref ref="figure-complex-number-rect-form"/>.
 		</p>
-		<figure xml:id="figure-complex-number-rect-form">
+			<figure xml:id="figure-complex-number-rect-form">
 			<caption></caption>
 			<image width="50%">
 				<description>Graph showing the point a+bi.</description>
@@ -135,7 +135,7 @@
 			</statement>
 			<solution>
 				<p>
-					We can associate the complex number <m>z=3-3 \cdot i</m> with the rectangular ordered pair <m>(3,-3)</m>, and then translate this ordered pair into polar coordinates <m>(r,\theta)</m>, and finally use the polar ordered pair to obtain the polar form <m>z=re^{i\theta}</m>. First, let's find <m>r</m>:
+					We can associate the complex number <m>z=3-3i</m> with the rectangular ordered pair <m>(3,-3)</m>, and then translate this ordered pair into polar coordinates <m>(r,\theta)</m>, and finally use the polar ordered pair to obtain the polar form <m>z=re^{i\theta}</m>. First, let's find <m>r</m>:
 						<md>
 							<mrow>r \amp= \sqrt{(3)^2+(-3)^2} </mrow>
 							<mrow> \amp= \sqrt{9+9} </mrow>
@@ -206,7 +206,7 @@
 					</md>
 				</p>
 				<p>
-					So both <m>\frac{\sqrt{2}}{2}+\frac{\sqrt{6}}{2}i</m> and <m>-\frac{\sqrt{2}}{2}-\frac{\sqrt{6}}{2}i</m> are square roots of <m>-1+\sqrt{3}i</m>. But just as <m>2</m>, not <m>-2</m>, is called the principal square root of <m>4</m>, only one of thes two square roots that we found is the principal square root of <m>-1+\sqrt{3}i</m>. The principal square root of a complex number, is the one found by using an angle in the interval <m>(-\pi,\pi]</m> to represent the complex number in polar form, so the first root we found (i.e., the one we found using <m>\theta=\frac{2\pi}{3}</m>) is the principal square root of <m>-1+\sqrt{3}i</m> The princial square root is the one represented by the radical symbol, so we can write
+					So both <m>\frac{\sqrt{2}}{2}+\frac{\sqrt{6}}{2}i</m> and <m>-\frac{\sqrt{2}}{2}-\frac{\sqrt{6}}{2}i</m> are square roots of <m>-1+\sqrt{3}i</m>. But just as <m>2</m>, not <m>-2</m>, is called the principal square root of <m>4</m>, only one of thes two square roots that we found is the principal square root of <m>-1+\sqrt{3}i</m>. The principal square root of a complex number, is the one found by using an angle in the interval <m>(-\pi,\pi]</m> to represent the complex number in polar form, so the first root we found (i.e., the one we found using <m>\theta=\frac{2\pi}{3}</m>) is the principal square root of <m>-1+\sqrt{3}i</m>. The princial square root is the one represented by the radical symbol, so we can write
 					<me>
 						\sqrt{-1+\sqrt{3}i}=\frac{\sqrt{2}}{2}+\frac{\sqrt{6}}{2}i.
 					</me>
@@ -233,7 +233,7 @@
 					Now, let's find <m>\theta</m>:
 					<md>
 						<mrow>\tan(\theta) \amp= \frac{4\sqrt{2}}{-4\sqrt{2}} </mrow>
-						<mrow> \implies \theta \amp= \tan^{-1}(-1)+\pi </mrow>
+						<mrow> \implies \theta \amp= \tan^{-1}(-1)+\pi \amp\amp \text{(we add } \pi \text{ since} \left( -4\sqrt{2},4\sqrt{2} \right) \text{is in Quadrant 2, outside the range of arctangent)}</mrow>
 						<mrow> \implies \theta \amp= -\frac{\pi}{4}+\pi </mrow>
 						<mrow> \implies \theta \amp= \frac{3\pi}{4} </mrow>
 					</md>
@@ -335,7 +335,7 @@
 							</statement>
 							<answer>
 								<p>
-									<m>z=-\frac{5}{2}-\frac{5\sqrt{3}{2} \cdot i</m>
+									<m>z=-\frac{5}{2}-\frac{5\sqrt{3}}{2} \cdot i</m>
 								</p>
 							</answer>
 					</exercise>
@@ -344,7 +344,7 @@
 			<exercisegroup cols="1">
 					<introduction>
 							<p>
-								Find the following principal roots by first convertin to the polar form of each complex number.
+								Find the following principal roots by first converting to the polar form of each complex number.
 							</p>
 					</introduction>
 					<exercise>
@@ -379,7 +379,7 @@
 							</statement>
 							<answer>
 								<p>
-									<m>\sqrt{-i} = \frac{2}{2}-\frac{2}{2}i</m>
+									<m>\sqrt{-i} = \frac{\sqrt{2}}{2}-\frac{\sqrt{2}}{2}i</m>
 								</p>
 							</answer>
 					</exercise>
@@ -405,7 +405,7 @@
 					</statement>
 					<answer>
 						<p>
-							The three cube roots of <m>27i</m> are <m>\frac{3\sqrt{3}}{2}-\frac{3}{2}i</m>, <m>-3i</m> and <m>-\frac{3\sqrt{3}}{2}+\frac{3}{2}i</m>.
+							The three cube roots of <m>27i</m> are <m>\frac{3\sqrt{3}}{2}+\frac{3}{2}i</m>, <m>-3i</m> and <m>-\frac{3\sqrt{3}}{2}+\frac{3}{2}i</m>.
 						</p>
 					</answer>
 			</exercise>
@@ -431,7 +431,7 @@
 					</statement>
 					<answer>
 						<p>
-							The solution set for the equation <m>z^3+1=0</m> is \left{ -1, \frac{1}{2}+\frac{\sqrt{3}}{2}i, \frac{1}{2}-\frac{\sqrt{3}}{2}i \right}.
+							The solution set for the equation <m>z^3+1=0</m> is <m>\Big\{ -1, \frac{1}{2}+\frac{\sqrt{3}}{2}i, \frac{1}{2}-\frac{\sqrt{3}}{2}i \Big\} </m>.
 						</p>
 					</answer>
 			</exercise>

@@ -35,7 +35,7 @@
 			</li>
 		</ol>
 		<p>
-			The disadvantage of this method is that the <m>y</m>-intercept of <m>f(x)=\sin(x)</m> doesn’t end-up where the horizontal shift suggests: when we shift the graph of <m>f(x)=\sin(x)</m> to the right by <m>\frac{2\pi}{3}</m> units, the <m>y</m>-intercept moves from <m> \left( 0,0 \right) </m> to <m>\left( \frac{2\pi}{3},0\right) </m>; then, when we compress the graph by a factor of <m>\frac{1}{2}</m>, it moves to <m>\left( \frac{\pi}{3},0\right) </m>, so the <m>y</m>-intercept doesn’t end up shifted <m>\frac{2\pi}{3}</m> units to the right.
+			The disadvantage of this method is that the <m>y</m>-intercept of <m>f(x)=\sin(x)</m> <em>doesn’t</em> end-up where the horizontal shift suggests: when we shift the graph of <m>f(x)=\sin(x)</m> to the right by <m>\frac{2\pi}{3}</m> units, the <m>y</m>-intercept moves from <m> \left( 0,0 \right) </m> to <m>\left( \frac{2\pi}{3},0\right) </m>; then, when we compress the graph by a factor of <m>\frac{1}{2}</m>, it moves to <m>\left( \frac{\pi}{3},0\right) </m>, so the <m>y</m>-intercept <em>doesn’t</em> end up shifted <m>\frac{2\pi}{3}</m> units to the right.
 		</p>
 		<p>
 			 <xref ref="figure-shifts"/> shows the graphs of <m>y=f(x)</m> and <m>y=g(x)</m>. Notice that the behavior of <m>y=g(x)</m> at <m>x=\frac{\pi}{3}</m> is like the behavior of <m>y=f(x)</m> at <m>x=0</m>, i.e., <m>y=g(x)</m> appears to have been shifted <m>\frac{\pi}{3}</m> units to the right. For this reason, <m>\frac{\pi}{3}</m> is called the horzontal shift of <m>g(x)=\sin ( \, 2x-\frac{2\pi}{3} ) \,=\sin ( \, 2( \,x-\frac{\pi}{3} ) \, ) \,</m>.

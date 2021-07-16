@@ -7,8 +7,8 @@
 					<exercise>
 							<statement>
 									<p>
-										The table below defines the function <m>m</m>. Is <m>m</m> an invertible function? Why or why not? If your answer is yes, construct a table-of-values for <m>m^{-1}</m>.
-										<table>
+										<xref ref="table-inverse-m"/> defines the function <m>m</m>. Is <m>m</m> an invertible function? Why or why not? If your answer is yes, construct a table-of-values for <m>m^{-1}</m>.
+	<table xml:id="table-inverse-m">
 	  <tabular halign="center" top="medium">
 	    <row bottom="medium">
 	      <cell left="medium" right="medium">
@@ -56,8 +56,8 @@
 							</statement>
 							<solution>
 								<p>
-									<m>m</m> is an invertible function since it is one-to-one, i.e., each output corresponds to exactly one input. Below is a table-of-values for <m>m^{-1}</m>.
-									<table>
+									<m>m</m> is an invertible function since it is one-to-one, i.e., each output corresponds to exactly one input. <xref ref="table-minverse"/> is a table-of-values for <m>m^{-1}</m>.
+<table xml:id="table-minverse">
 	<tabular halign="center" top="medium">
 		<row bottom="medium">
 			<cell left="medium" right="medium">
@@ -108,8 +108,8 @@
 					<exercise>
 							<statement>
 									<p>
-										The table below defines the function <m>p</m>. Is <m>p</m> an invertible function? Why or why not? If your answer is yes, construct a table-of-values for <m>p^{-1}</m>.
-										<table>
+										<xref ref="table-inverse-p"/> defines the function <m>p</m>. Is <m>p</m> an invertible function? Why or why not? If your answer is yes, construct a table-of-values for <m>p^{-1}</m>.
+	<table xml:id="table-inverse-p">
 	  <tabular halign="center" top="medium">
 	    <row bottom="medium">
 	      <cell left="medium" right="medium">

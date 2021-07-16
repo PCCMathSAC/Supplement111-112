@@ -2,7 +2,7 @@
 <section xml:id="sec-angles">
 	<title>Angles</title>
 	<subsection>
-		<title>Coterminal Angles</title>
+    <title>Coterminal Angles</title>
 		<definition>
 			<statement>
 				<p>
@@ -234,8 +234,15 @@
 							<description>Graph showing the angle 7.5 radians which has a reference angle of 1.2 radians.</description>
 							<latex-image>
 								\begin{tikzpicture}
-									\begin{axis}[grid=none, ticks=none, trig format plots=rad, axis equal] % pgfplots options
-										\addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (2.079,5.628)};
+									\begin{axis}[
+									grid=none,
+									ticks=none,
+									trig format plots=rad,
+									axis equal,
+									xmin=-7, xmax=7,
+			            ymin=-7, ymax=7
+									] % pgfplots options
+										\addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (2.495,6.754)};
 										\addplot [->, domain=0:7.5, samples=100, black] ({0.7*ln(x+10)*sin(x+1.57079632679)}, {0.7*ln(x+10)*cos(x-1.57079632679)});
 										  \node at (axis cs:2,-2) {$7.5$};
 										\addplot [domain=0:1.216, samples=50, black] ({3.5*cos(x)}, {3.5*sin(x)});
@@ -323,7 +330,7 @@
 	          		<p><m>400^{\circ}</m></p>
 	          </statement>
 	          		<answer>
-	              		<p>m>40^{\circ}</m></p>
+	              		<p><m>40^{\circ}</m></p>
 	             	</answer>
 	      </exercise>
 				<exercise>
@@ -355,7 +362,7 @@
 	          		<p><m>2000^{\circ}</m></p>
 	          </statement>
 	          <answer>
-	          		<p>m>20^{\circ}</m></p>
+	          		<p><m>20^{\circ}</m></p>
 	          </answer>
 	      </exercise>
 				<exercise>
@@ -371,7 +378,7 @@
 	          		<p><m>-100^{\circ}</m></p>
 	          </statement>
 	          <answer>
-	          		<p>m>80^{\circ}</m></p>
+	          		<p><m>80^{\circ}</m></p>
 	          </answer>
 	      </exercise>
 		</exercisegroup>
