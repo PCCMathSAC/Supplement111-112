@@ -8,7 +8,7 @@
           The table below defines the functions <m>f</m>, <m>g</m>, and <m>h</m>. Express <m>g(x)</m> and <m>h(x)</m> in terms of <m>f</m>.
         </p>
         <!-- table for OG version example 1 -->
-        <tabular halign="right" top="medium" bottom="medium" left="medium" right="medium">
+        <tabular halign="right" top="major" bottom="minor">
           <col halign="center"/>
           <col/>
           <col/>
@@ -94,7 +94,7 @@
               <m>2</m>
             </cell>
           </row>
-          <row>
+          <row bottom="major">
             <cell>
               <m>h(x)</m>
             </cell>
@@ -155,7 +155,7 @@
           <p>
             The table below defines the functions <m>f</m>, <m>g</m>, <m>h</m>, <m>k</m>, and <m>l</m>.
           </p>
-          <tabular halign="right" top="medium" bottom="medium" left="medium" right="medium">
+          <tabular halign="right" top="major" bottom="minor">
             <col halign="center"/>
             <col/>
             <col/>
@@ -262,7 +262,7 @@
                 <m>10</m>
               </cell>
             </row>
-            <row>
+            <row bottom="major">
               <cell>
                 <m>l(x)</m>
               </cell>
@@ -344,8 +344,8 @@
             The second row in the table below gives values for the function, <m>f</m>.
             Complete the rest of the table. If you don't have sufficient information to fill-in some of the cells, leave those cells blank.
           </p>
-          <tabular halign="right" top="medium" bottom="medium" left="medium" right="medium">
-            <col halign="center"/>
+            <tabular halign="right" top="major" bottom="minor" left="major" right="minor">
+            <col halign="center" right="medium"/>
             <col/>
             <col/>
             <col/>
@@ -354,7 +354,7 @@
             <col/>
             <col/>
             <col/>
-            <col/>
+            <col right="major"/>
             <row>
               <cell>
                 <m>x</m>
@@ -557,34 +557,43 @@
               <cell>
               </cell>
             </row>
-            <row>
+            <row bottom="major">
               <cell>
                 <m>f(x-3)</m>
               </cell>
               <cell>
+                <m>\phantom{-0}</m>
               </cell>
               <cell>
+                <m>\phantom{-0}</m>
               </cell>
               <cell>
+                <m>\phantom{-0}</m>
               </cell>
               <cell>
+                <m>\phantom{-0}</m>
               </cell>
               <cell>
+                <m>\phantom{-0}</m>
               </cell>
               <cell>
+                <m>\phantom{-0}</m>
               </cell>
               <cell>
+                <m>\phantom{-0}</m>
               </cell>
               <cell>
+                <m>\phantom{-0}</m>
               </cell>
               <cell>
+                <m>\phantom{-0}</m>
               </cell>
             </row>
           </tabular>
         </statement>
         <answer>
-          <tabular halign="right" top="medium" bottom="medium" left="medium" right="medium">
-            <col halign="center"/>
+            <tabular halign="right" top="major" bottom="minor" left="major" right="minor">
+            <col halign="center" right="medium"/>
             <col/>
             <col/>
             <col/>
@@ -593,7 +602,7 @@
             <col/>
             <col/>
             <col/>
-            <col/>
+            <col right="major"/>
             <row>
               <cell>
                 <m>x</m>
@@ -840,7 +849,7 @@
               <cell>
               </cell>
             </row>
-            <row>
+            <row bottom="major">
               <cell>
                 <m>f(x-3)</m>
               </cell>

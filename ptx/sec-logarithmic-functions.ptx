@@ -92,13 +92,13 @@
           </introduction>
             <exercise>
               <statement>
-        <tabular halign="right" top="medium" bottom="medium" left="medium" right="medium">
-          <col halign="center"/>
+        <tabular halign="right" top="major" bottom="minor" left="major" right="minor">
+          <col halign="center" right="medium"/>
           <col/>
           <col/>
           <col/>
           <col/>
-          <col/>
+          <col right="major"/>
           <row>
             <cell>
               <m>x</m>
@@ -119,7 +119,7 @@
               <m>400</m>
             </cell>
           </row>
-          <row>
+          <row bottom="major">
             <cell>
               <m>f(x)</m>
             </cell>
@@ -149,13 +149,13 @@
             </exercise>
             <exercise>
               <statement>
-        <tabular halign="right" top="medium" bottom="medium" left="medium" right="medium">
-          <col halign="center"/>
+        <tabular halign="right" top="major" bottom="minor" left="major" right="minor">
+          <col halign="center" right="medium"/>
           <col/>
           <col/>
           <col/>
           <col/>
-          <col/>
+          <col right="major"/>
           <row>
             <cell>
               <m>x</m>
@@ -176,7 +176,7 @@
               <m>243</m>
             </cell>
           </row>
-          <row>
+          <row bottom="major">
             <cell>
               <m>f(x)</m>
             </cell>
