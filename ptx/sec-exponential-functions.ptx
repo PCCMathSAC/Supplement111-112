@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-exponential-functions">
   <title>Exponential Functions</title>
+  <p>
+    These exercises find the formula for an exponential funciton given a pair of input-output coordinates.
+  </p>
   <exercises>
 <!-- exercise 1 in OG Exp Functions -->
-    <exercisegroup cols="1">
+    <exercisegroup>
       <introduction>
         <p>
           Find an algebraic rule for an exponential function <m>f</m> that passes through the given two points.
@@ -16,7 +19,9 @@
             </p>
           </statement>
           <answer>
-            <m>f(x)=50 \cdot 2^x</m>
+            <p>
+              <m>f(x)=50 \cdot 2^x</m>
+            </p>
           </answer>
         </exercise>
         <exercise>
@@ -26,7 +31,9 @@
             </p>
           </statement>
           <answer>
-            <m>f(x)=4 \cdot \left( \frac{1}{2} \right)^x</m>
+            <p>
+              <m>f(x)=4 \cdot \left( \frac{1}{2} \right)^x</m>
+            </p>
           </answer>
         </exercise>
         <exercise>
@@ -36,7 +43,9 @@
             </p>
           </statement>
           <answer>
-            <m>f(x)=2 \cdot 3^x</m>
+            <p>
+              <m>f(x)=2 \cdot 3^x</m>
+            </p>
           </answer>
         </exercise>
         <exercise>
@@ -46,7 +55,9 @@
             </p>
           </statement>
           <answer>
-            <m>f(x)=10 \cdot \left( \frac{4}{5} \right)^x</m>
+            <p>
+              <m>f(x)=10 \cdot \left( \frac{4}{5} \right)^x</m>
+            </p>
           </answer>
         </exercise>
         <exercise>
@@ -56,7 +67,9 @@
             </p>
           </statement>
           <answer>
-            <m>f(x)=5 \cdot \left( \frac{1}{5} \right)^x</m>
+            <p>
+              <m>f(x)=5 \cdot \left( \frac{1}{5} \right)^x</m>
+            </p>
           </answer>
         </exercise>
         <exercise>
@@ -66,7 +79,9 @@
             </p>
           </statement>
           <answer>
-            <m>f(x)=\frac{1}{2} \cdot \left( \frac{2}{3} \right)^x</m>
+            <p>
+              <m>f(x)=\frac{1}{2} \cdot \left( \frac{2}{3} \right)^x</m>
+            </p>
           </answer>
         </exercise>
     </exercisegroup>

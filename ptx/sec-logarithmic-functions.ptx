@@ -51,9 +51,8 @@
         <exercise>
           <statement>
             <p>
-              The graph of <m>f(x)=\log_a(x)</m> is given in <xref ref="figure-exercise-log"/>. Find the value of <m>a</m>. Note, the points <m>\left( 1,0 \right)</m> and <m>\left( 25,4 \right)</m> are on the graph of <m>f</m>.
-              <figure xml:id="figure-exercise-log">
-                <caption><m>f(x)=\log_a(x)</m></caption>
+              The graph of <m>f(x)=\log_a(x)</m> is given below. Find the value of <m>a</m>. Note, the points <m>\left( 1,0 \right)</m> and <m>\left( 25,4 \right)</m> are on the graph of <m>f</m>.
+            </p>
                 <image width="75%">
                   <description>This is a picture of a logarithmic function. The two points shown are (1, 0) and (25, 4).</description>
                   <latex-image>
@@ -78,8 +77,6 @@
                     \end{tikzpicture}
                   </latex-image>
                 </image>
-              </figure>
-            </p>
           </statement>
           <answer>
             <p>
@@ -87,7 +84,7 @@
             </p>
           </answer>
         </exercise>
-        <exercisegroup cols="1">
+        <exercisegroup>
           <introduction>
             <p>
               Each table represents a table-of-values for a function <m>f(x)=\log_a(x)</m>. Find the value of <m>a</m>.
@@ -95,108 +92,116 @@
           </introduction>
             <exercise>
               <statement>
-                <p>
-                  <table>
-  <tabular halign="center" top="medium">
-    <row bottom="medium">
-      <cell left="medium" right="medium">
-        <m>x</m>
-      </cell>
-      <cell right="medium">
-        <m>0.000125</m>
-      </cell>
-      <cell right="medium">
-        <m>0.5</m>
-      </cell>
-      <cell right="medium">
-        <m>1</m>
-      </cell>
-      <cell right="medium">
-        <m>2\sqrt{5}</m>
-      </cell>
-      <cell right="medium">
-        <m>400</m>
-      </cell>
-    </row>
-    <row bottom="medium">
-      <cell left="medium" right="medium">
-        <m>f(x)</m>
-      </cell>
-      <cell right="medium">
-        <m>-3</m>
-      </cell>
-      <cell right="medium">
-        <m>-1</m>
-      </cell>
-      <cell right="medium">
-        <m>0</m>
-      </cell>
-      <cell right="medium">
-        <m>0.5</m>
-      </cell>
-      <cell right="medium">
-        <m>2</m>
-      </cell>
-    </row>
-  </tabular>
-</table>
-                </p>
+        <tabular halign="right" top="medium" bottom="medium" left="medium" right="medium">
+          <col halign="center"/>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+          <row>
+            <cell>
+              <m>x</m>
+            </cell>
+            <cell>
+              <m>0.000125</m>
+            </cell>
+            <cell>
+              <m>0.5</m>
+            </cell>
+            <cell>
+              <m>1</m>
+            </cell>
+            <cell>
+              <m>2\sqrt{5}</m>
+            </cell>
+            <cell>
+              <m>400</m>
+            </cell>
+          </row>
+          <row>
+            <cell>
+              <m>f(x)</m>
+            </cell>
+            <cell>
+              <m>-3</m>
+            </cell>
+            <cell>
+              <m>-1</m>
+            </cell>
+            <cell>
+              <m>0</m>
+            </cell>
+            <cell>
+              <m>0.5</m>
+            </cell>
+            <cell>
+              <m>2</m>
+            </cell>
+          </row>
+        </tabular>
               </statement>
               <answer>
-                <m>a=20</m>
+                <p>
+                  <m>a=20</m>
+                </p>
               </answer>
             </exercise>
             <exercise>
               <statement>
-                <p>
-                  <table>
-  <tabular halign="center" top="medium">
-    <row bottom="medium">
-      <cell left="medium" right="medium">
-        <m>x</m>
-      </cell>
-      <cell right="medium">
-        <m>\frac{1}{9}</m>
-      </cell>
-      <cell right="medium">
-        <m>1</m>
-      </cell>
-      <cell right="medium">
-        <m>3</m>
-      </cell>
-      <cell right="medium">
-        <m>81</m>
-      </cell>
-      <cell right="medium">
-        <m>243</m>
-      </cell>
-    </row>
-    <row bottom="medium">
-      <cell left="medium" right="medium">
-        <m>f(x)</m>
-      </cell>
-      <cell right="medium">
-        <m>-4</m>
-      </cell>
-      <cell right="medium">
-        <m>0</m>
-      </cell>
-      <cell right="medium">
-        <m>2</m>
-      </cell>
-      <cell right="medium">
-        <m>8</m>
-      </cell>
-      <cell right="medium">
-        <m>10</m>
-      </cell>
-    </row>
-  </tabular>
-</table>
-                </p>
+        <tabular halign="right" top="medium" bottom="medium" left="medium" right="medium">
+          <col halign="center"/>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+          <row>
+            <cell>
+              <m>x</m>
+            </cell>
+            <cell>
+              <m>\frac{1}{9}</m>
+            </cell>
+            <cell>
+              <m>1</m>
+            </cell>
+            <cell>
+              <m>3</m>
+            </cell>
+            <cell>
+              <m>81</m>
+            </cell>
+            <cell>
+              <m>243</m>
+            </cell>
+          </row>
+          <row>
+            <cell>
+              <m>f(x)</m>
+            </cell>
+            <cell>
+              <m>-4</m>
+            </cell>
+            <cell>
+              <m>0</m>
+            </cell>
+            <cell>
+              <m>2</m>
+            </cell>
+            <cell>
+              <m>8</m>
+            </cell>
+            <cell>
+              <m>10</m>
+            </cell>
+          </row>
+        </tabular>
               </statement>
               <answer>
-                <m>a=\sqrt{3}</m>
+                <p>
+                  <m>a=\sqrt{3}</m>
+                </p>
               </answer>
             </exercise>
         </exercisegroup>

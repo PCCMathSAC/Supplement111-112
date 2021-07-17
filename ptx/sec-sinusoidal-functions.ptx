@@ -11,29 +11,29 @@
     </p>
     <p>
       After writing <m>g</m> in this format, we can draw its graph by performing the following sequence of transformations of the “base function” <m>f(x)=\sin(x)</m>:
+      <ol>
+        <li>
+          Compress horizontally by a factor of <m>\frac{1}{2}</m>.
+        </li>
+        <li>
+          Shift <m>\frac{\pi}{3}</m> units to the right.
+        </li>
+      </ol>
     </p>
-    <ol>
-      <li>
-        Compress horizontally by a factor of <m>\frac{1}{2}</m>.
-      </li>
-      <li>
-        Shift <m>\frac{\pi}{3}</m> units to the right.
-      </li>
-    </ol>
     <p>
       The advantage of this method is that the <m>y</m>-intercept of <m>f(x)=\sin(x)</m>, <m> \left( 0,0 \right) </m>, ends-up exactly where the horizontal shift suggests: when we compress the graph by a factor of <m>\frac{1}{2}</m>, the the <m>y</m>-interceot of the graph doesn’t move since <m>\frac{1}{2} \cdot 0 = 0</m>; then, when we shift the graph <m>\frac{\pi}{3}</m> units to the right, the point  <m>\left( 0,0\right) </m>  ends up at <m>\left( \frac{\pi}{3},0\right) </m>; so the <m>y</m>-intercept ends up moving <m>\frac{\pi}{3}</m> units to the right, exactly how far we shifted.
     </p>
     <p>
       Compare this with the alternative method: we can leave <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m> as-is and skip factoring-out the horizontal stretching/compressing factor, but then we need the following sequence to transform <m>f(x)=\sin(x)</m> into the graph of <m>g</m>:
+      <ol>
+        <li>
+          Shift <m>\frac{2\pi}{3}</m> units to the right.
+        </li>
+        <li>
+          Compress horizontally by a factor of <m>\frac{1}{2}</m>.
+        </li>
+      </ol>
     </p>
-    <ol>
-      <li>
-        Shift <m>\frac{2\pi}{3}</m> units to the right.
-      </li>
-      <li>
-        Compress horizontally by a factor of <m>\frac{1}{2}</m>.
-      </li>
-    </ol>
     <p>
       The disadvantage of this method is that the <m>y</m>-intercept of <m>f(x)=\sin(x)</m> <em>doesn’t</em> end-up where the horizontal shift suggests: when we shift the graph of <m>f(x)=\sin(x)</m> to the right by <m>\frac{2\pi}{3}</m> units, the <m>y</m>-intercept moves from <m> \left( 0,0 \right) </m> to <m>\left( \frac{2\pi}{3},0\right) </m>; then, when we compress the graph by a factor of <m>\frac{1}{2}</m>, it moves to <m>\left( \frac{\pi}{3},0\right) </m>, so the <m>y</m>-intercept <em>doesn’t</em> end up shifted <m>\frac{2\pi}{3}</m> units to the right.
     </p>
