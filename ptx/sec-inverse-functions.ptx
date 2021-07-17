@@ -1,163 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-inverse-functions">
-	<title>Inverse Functions</title>
-	<!-- Exercises for Inverse Functions -->
-				<exercises>
-	<!-- Exercise 1 in OG Invere Functions -->
-					<exercise>
-							<statement>
-									<p>
-										<xref ref="table-inverse-m"/> defines the function <m>m</m>. Is <m>m</m> an invertible function? Why or why not? If your answer is yes, construct a table-of-values for <m>m^{-1}</m>.
-	<table xml:id="table-inverse-m">
-	  <tabular halign="center" top="medium">
-	    <row bottom="medium">
-	      <cell left="medium" right="medium">
-	        <m>x</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>1</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>2</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>3</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>4</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>5</m>
-	      </cell>
-	    </row>
-	    <row bottom="medium">
-	      <cell left="medium" right="medium">
-	        <m>m(x)</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>0</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>5</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>10</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>15</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>20</m>
-	      </cell>
-	    </row>
-	  </tabular>
-	</table>
-									</p>
-							</statement>
-							<solution>
-								<p>
-									<m>m</m> is an invertible function since it is one-to-one, i.e., each output corresponds to exactly one input. <xref ref="table-minverse"/> is a table-of-values for <m>m^{-1}</m>.
+  <title>Inverse Functions</title>
+  <!-- Exercises for Inverse Functions -->
+        <exercises>
+  <!-- Exercise 1 in OG Invere Functions -->
+          <exercise>
+              <statement>
+                  <p>
+                    <xref ref="table-inverse-m"/> defines the function <m>m</m>. Is <m>m</m> an invertible function? Why or why not? If your answer is yes, construct a table-of-values for <m>m^{-1}</m>.
+  <table xml:id="table-inverse-m">
+    <tabular halign="center" top="medium">
+      <row bottom="medium">
+        <cell left="medium" right="medium">
+          <m>x</m>
+        </cell>
+        <cell right="medium">
+          <m>1</m>
+        </cell>
+        <cell right="medium">
+          <m>2</m>
+        </cell>
+        <cell right="medium">
+          <m>3</m>
+        </cell>
+        <cell right="medium">
+          <m>4</m>
+        </cell>
+        <cell right="medium">
+          <m>5</m>
+        </cell>
+      </row>
+      <row bottom="medium">
+        <cell left="medium" right="medium">
+          <m>m(x)</m>
+        </cell>
+        <cell right="medium">
+          <m>0</m>
+        </cell>
+        <cell right="medium">
+          <m>5</m>
+        </cell>
+        <cell right="medium">
+          <m>10</m>
+        </cell>
+        <cell right="medium">
+          <m>15</m>
+        </cell>
+        <cell right="medium">
+          <m>20</m>
+        </cell>
+      </row>
+    </tabular>
+  </table>
+                  </p>
+              </statement>
+              <solution>
+                <p>
+                  <m>m</m> is an invertible function since it is one-to-one, i.e., each output corresponds to exactly one input. <xref ref="table-minverse"/> is a table-of-values for <m>m^{-1}</m>.
 <table xml:id="table-minverse">
-	<tabular halign="center" top="medium">
-		<row bottom="medium">
-			<cell left="medium" right="medium">
-				<m>x</m>
-			</cell>
-			<cell right="medium">
-				<m>0</m>
-			</cell>
-			<cell right="medium">
-				<m>5</m>
-			</cell>
-			<cell right="medium">
-				<m>10</m>
-			</cell>
-			<cell right="medium">
-				<m>15</m>
-			</cell>
-			<cell right="medium">
-				<m>20</m>
-			</cell>
-		</row>
-		<row bottom="medium">
-			<cell left="medium" right="medium">
-				<m>m^{-1}(x)</m>
-			</cell>
-			<cell right="medium">
-				<m>1</m>
-			</cell>
-			<cell right="medium">
-				<m>2</m>
-			</cell>
-			<cell right="medium">
-				<m>3</m>
-			</cell>
-			<cell right="medium">
-				<m>4</m>
-			</cell>
-			<cell right="medium">
-				<m>5</m>
-			</cell>
-		</row>
-	</tabular>
-	</table>
-								</p>
-							</solution>
-					</exercise>
-	<!-- Exercise 2 in OG Invere Functions -->
-					<exercise>
-							<statement>
-									<p>
-										<xref ref="table-inverse-p"/> defines the function <m>p</m>. Is <m>p</m> an invertible function? Why or why not? If your answer is yes, construct a table-of-values for <m>p^{-1}</m>.
-	<table xml:id="table-inverse-p">
-	  <tabular halign="center" top="medium">
-	    <row bottom="medium">
-	      <cell left="medium" right="medium">
-	        <m>x</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>1</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>2</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>3</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>4</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>5</m>
-	      </cell>
-	    </row>
-	    <row bottom="medium">
-	      <cell left="medium" right="medium">
-	        <m>p(x)</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>4</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>0</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>-2</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>0</m>
-	      </cell>
-	      <cell right="medium">
-	        <m>2</m>
-	      </cell>
-	    </row>
-	  </tabular>
-	</table>
-									</p>
-							</statement>
-							<solution>
-								<m>p</m> isn't an invertible function since it isn't one-to-one. Notice how the output <m>0</m> corresponds to two distinct output values.
-							</solution>
-					</exercise>
-				</exercises>
+  <tabular halign="center" top="medium">
+    <row bottom="medium">
+      <cell left="medium" right="medium">
+        <m>x</m>
+      </cell>
+      <cell right="medium">
+        <m>0</m>
+      </cell>
+      <cell right="medium">
+        <m>5</m>
+      </cell>
+      <cell right="medium">
+        <m>10</m>
+      </cell>
+      <cell right="medium">
+        <m>15</m>
+      </cell>
+      <cell right="medium">
+        <m>20</m>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell left="medium" right="medium">
+        <m>m^{-1}(x)</m>
+      </cell>
+      <cell right="medium">
+        <m>1</m>
+      </cell>
+      <cell right="medium">
+        <m>2</m>
+      </cell>
+      <cell right="medium">
+        <m>3</m>
+      </cell>
+      <cell right="medium">
+        <m>4</m>
+      </cell>
+      <cell right="medium">
+        <m>5</m>
+      </cell>
+    </row>
+  </tabular>
+  </table>
+                </p>
+              </solution>
+          </exercise>
+  <!-- Exercise 2 in OG Invere Functions -->
+          <exercise>
+              <statement>
+                  <p>
+                    <xref ref="table-inverse-p"/> defines the function <m>p</m>. Is <m>p</m> an invertible function? Why or why not? If your answer is yes, construct a table-of-values for <m>p^{-1}</m>.
+  <table xml:id="table-inverse-p">
+    <tabular halign="center" top="medium">
+      <row bottom="medium">
+        <cell left="medium" right="medium">
+          <m>x</m>
+        </cell>
+        <cell right="medium">
+          <m>1</m>
+        </cell>
+        <cell right="medium">
+          <m>2</m>
+        </cell>
+        <cell right="medium">
+          <m>3</m>
+        </cell>
+        <cell right="medium">
+          <m>4</m>
+        </cell>
+        <cell right="medium">
+          <m>5</m>
+        </cell>
+      </row>
+      <row bottom="medium">
+        <cell left="medium" right="medium">
+          <m>p(x)</m>
+        </cell>
+        <cell right="medium">
+          <m>4</m>
+        </cell>
+        <cell right="medium">
+          <m>0</m>
+        </cell>
+        <cell right="medium">
+          <m>-2</m>
+        </cell>
+        <cell right="medium">
+          <m>0</m>
+        </cell>
+        <cell right="medium">
+          <m>2</m>
+        </cell>
+      </row>
+    </tabular>
+  </table>
+                  </p>
+              </statement>
+              <solution>
+                <m>p</m> isn't an invertible function since it isn't one-to-one. Notice how the output <m>0</m> corresponds to two distinct output values.
+              </solution>
+          </exercise>
+        </exercises>
 </section>
