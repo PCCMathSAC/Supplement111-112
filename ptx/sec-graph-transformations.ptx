@@ -131,22 +131,30 @@
     </example>
     <!-- OG version example 2 -->
     <example>
-      <statement>
-        <p>
-          <ol>
-            <li> If <m>f(x)=x^2</m> and <m>g(x)=2x^2+5</m>, express <m>g(x)</m> in terms of <m>f</m>.</li>
-            <li> If <m>f(x)=x^2</m> and <m>h(x)=(x+5)^2-3</m>, express <m>h(x)</m> in terms of <m>f</m>.</li>
-          </ol>
-        </p>
-      </statement>
-      <answer>
-        <p>
-          <ol>
-            <li><m>g(x)=2f(x)+5</m>.</li>
-            <li><m>h(x)=f(x+5)-3</m>.</li>
-          </ol>
-        </p>
-      </answer>
+      <task>
+        <statement>
+          <p>
+            If <m>f(x)=x^2</m> and <m>g(x)=2x^2+5</m>, express <m>g(x)</m> in terms of <m>f</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>g(x)=2f(x)+5</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            If <m>f(x)=x^2</m> and <m>h(x)=(x+5)^2-3</m>, express <m>h(x)</m> in terms of <m>f</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>h(x)=f(x+5)-3</m>
+          </p>
+        </answer>
+      </task>
     </example>
     <!-- start of exercises for Graph Transformations -->
     <exercises xml:id="exercises-graph-transformations">
@@ -343,7 +351,7 @@
         <statement>
           <p>
             The second row in the table below gives values for the function, <m>f</m>.
-            Complete the rest of the table. If you don't have sufficient information to fill-in some of the cells, leave those cells blank.
+            Complete the rest of the table. If you don't have sufficient information to fill in some of the cells, leave those cells blank.
           </p>
             <tabular halign="right" top="major" bottom="minor" left="major" right="minor">
             <col halign="center" right="medium"/>
@@ -893,10 +901,7 @@
         <exercise>
           <statement>
             <p>
-              <m>f(x)=\sqrt{x}</m>
-            </p>
-            <p>
-              <m>g(x)=\frac{\sqrt{x-7}}{4}</m>
+              <m>\begin{aligned}[t]f(x)\amp=\sqrt{x}\amp g(x)\amp=\frac{\sqrt{x-7}}{4}\end{aligned}</m>
             </p>
           </statement>
           <solution>
@@ -916,10 +921,7 @@
         <exercise>
           <statement>
             <p>
-              <m>f(x)=\frac{1}{x}</m>
-            </p>
-            <p>
-              <m>g(x)=\frac{2}{x}+3</m>
+              <m>\begin{aligned}[t]f(x)\amp=\frac{1}{x}\amp g(x)\amp=\frac{2}{x}+3\end{aligned}</m>
             </p>
           </statement>
           <solution>
@@ -939,10 +941,7 @@
         <exercise>
           <statement>
             <p>
-              <m>f(x)=x^2</m>
-            </p>
-            <p>
-              <m>g(x)=-4\left( \frac{1}{2}x-5 \right)^2+3</m>
+              <m>\begin{aligned}[t]f(x)\amp=x^2\amp g(x)\amp=-4\left( \frac{1}{2}x-5 \right)^2+3\end{aligned}</m>
             </p>
           </statement>
           <solution>
@@ -962,10 +961,7 @@
         <exercise>
           <statement>
             <p>
-              <m>f(x)=\sqrt[3]{x}</m>
-            </p>
-            <p>
-              <m>g(x)=\frac{1}{2}\sqrt[3]{10x+30}-6</m>
+              <m>\begin{aligned}[t]f(x)\amp=\sqrt[3]{x}\amp g(x)\amp=\frac{1}{2}\sqrt[3]{10x+30}-6\end{aligned}</m>
             </p>
           </statement>
           <solution>
@@ -1014,30 +1010,27 @@
                     <m>k_1(x)=f(2x)</m>
                   </p>
               </statement>
-              <solution>
-                <figure xml:id="figure-exercise-GT-k1">
-                  <caption><m>k_1(x)=f\left( 2x \right)</m></caption>
-                  <image>
-                    <description>The graph has the points (-2,4), (-1, 0), (0, 4), (1, 4), (2, -4) all connected.</description>
-                    <latex-image>
-                      \begin{tikzpicture}
-                      \begin{axis}[
-                          xmin=-9, xmax=9,
-                          ymin=-11, ymax=11,
-                          xtick={-8,-6,...,8},
-                          minor xtick={-7,-5,...,7},
-                          ytick={-10,-8,...,10},
-                          minor ytick={-9,-7,...,9},
-                        ]
-                        \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
-                        \addplot[function] coordinates {(-2,4) (-1,0) (0,4) (1,4) (2,-4)};
-                        \addplot[soliddot] coordinates {(-2,4) (2,-4)};
-                      \end{axis}
-                      \end{tikzpicture}
-                    </latex-image>
-                  </image>
-                </figure>
-              </solution>
+              <answer>
+                <image>
+                  <description>The graph has the points (-2,4), (-1, 0), (0, 4), (1, 4), (2, -4) all connected.</description>
+                  <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                        xmin=-9, xmax=9,
+                        ymin=-11, ymax=11,
+                        xtick={-8,-6,...,8},
+                        minor xtick={-7,-5,...,7},
+                        ytick={-10,-8,...,10},
+                        minor ytick={-9,-7,...,9},
+                      ]
+                      \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
+                      \addplot[function] coordinates {(-2,4) (-1,0) (0,4) (1,4) (2,-4)};
+                      \addplot[soliddot] coordinates {(-2,4) (2,-4)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+              </answer>
           </exercise>
 <!--exercises 8 in OG graph transformations -->
           <exercise>
@@ -1046,30 +1039,27 @@
                     <m>k_2(x)=2f(-2x)-1</m>
                   </p>
               </statement>
-              <solution>
-                <figure xml:id="figure-exercise-GT-k2">
-                  <caption><m>k_2(x)=2f(-2x)-1</m></caption>
-                  <image>
-                    <description>The graph has the points (-2, -9), (-1, 7), (0, 7), (1, -1), and (2, 7) connected.</description>
-                    <latex-image>
-                      \begin{tikzpicture}
-                      \begin{axis}[
-                          xmin=-9, xmax=9,
-                          ymin=-11, ymax=11,
-                          xtick={-8,-6,...,8},
-                          minor xtick={-7,-5,...,7},
-                          ytick={-10,-8,...,10},
-                          minor ytick={-9,-7,...,9},
-                        ]
-                        \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
-                        \addplot[function] coordinates {(2,7) (1,-1) (0,7) (-1,7) (-2,-9)};
-                        \addplot[soliddot] coordinates {(2,7) (-2,-9)};
-                      \end{axis}
-                      \end{tikzpicture}
-                    </latex-image>
-                  </image>
-                </figure>
-              </solution>
+              <answer>
+                <image>
+                  <description>The graph has the points (-2, -9), (-1, 7), (0, 7), (1, -1), and (2, 7) connected.</description>
+                  <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                        xmin=-9, xmax=9,
+                        ymin=-11, ymax=11,
+                        xtick={-8,-6,...,8},
+                        minor xtick={-7,-5,...,7},
+                        ytick={-10,-8,...,10},
+                        minor ytick={-9,-7,...,9},
+                      ]
+                      \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
+                      \addplot[function] coordinates {(2,7) (1,-1) (0,7) (-1,7) (-2,-9)};
+                      \addplot[soliddot] coordinates {(2,7) (-2,-9)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+              </answer>
           </exercise>
 <!--exercises 9 in OG graph transformations -->
           <exercise>
@@ -1078,30 +1068,27 @@
                     <m>k_3(x)=-2f(2x+4)</m>
                   </p>
               </statement>
-              <solution>
-                <figure xml:id="figure-exercise-GT-k3">
-                  <caption><m>k_3(x)=-2f(2x+4)</m></caption>
-                  <image>
-                    <description>This graph has the points (-4, -8), (-3, 0), (-2, -8), (-1, -8), and (0, 8) all connected.</description>
-                    <latex-image>
-                      \begin{tikzpicture}
-                      \begin{axis}[
-                          xmin=-9, xmax=9,
-                          ymin=-11, ymax=11,
-                          xtick={-8,-6,...,8},
-                          minor xtick={-7,-5,...,7},
-                          ytick={-10,-8,...,10},
-                          minor ytick={-9,-7,...,9},
-                        ]
-                        \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
-                        \addplot[function] coordinates {(-4,-8) (-3,0) (-2,-8) (-1,-8) (0,8)};
-                        \addplot[soliddot] coordinates {(-4,-8) (0,8)};
-                      \end{axis}
-                      \end{tikzpicture}
-                    </latex-image>
-                  </image>
-                </figure>
-              </solution>
+              <answer>
+                <image>
+                  <description>This graph has the points (-4, -8), (-3, 0), (-2, -8), (-1, -8), and (0, 8) all connected.</description>
+                  <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                        xmin=-9, xmax=9,
+                        ymin=-11, ymax=11,
+                        xtick={-8,-6,...,8},
+                        minor xtick={-7,-5,...,7},
+                        ytick={-10,-8,...,10},
+                        minor ytick={-9,-7,...,9},
+                      ]
+                      \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
+                      \addplot[function] coordinates {(-4,-8) (-3,0) (-2,-8) (-1,-8) (0,8)};
+                      \addplot[soliddot] coordinates {(-4,-8) (0,8)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+              </answer>
           </exercise>
 <!--exercises 10 in OG graph transformations -->
           <exercise>
@@ -1110,9 +1097,7 @@
                     <m>k_4(x)=f\left(\frac{1}{2}x\right) +2</m>
                   </p>
               </statement>
-              <solution>
-                <figure xml:id="figure-exercise-GT-k4">
-                  <caption><m>k_4(x)=f\left(\frac{1}{2}x\right) +2</m></caption>
+              <answer>
                   <image>
                     <description>This graph has the points (-8, 6), (-4, 2), (0, 6), (4, 6), and (8, -2) are all connected.</description>
                     <latex-image>
@@ -1132,8 +1117,7 @@
                       \end{tikzpicture}
                     </latex-image>
                   </image>
-                </figure>
-              </solution>
+              </answer>
           </exercise>
         </exercisegroup>
     </exercises>

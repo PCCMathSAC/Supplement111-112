@@ -30,7 +30,7 @@
       </figure>
 
     <p>
-      As we’ve studied in this course, the rectangular ordered pair <m>\left( a,b\right) </m> can be represented in polar coordinates <m>\left( r,\theta \right) </m> where <m>r</m> represents the distance the point is from the origin and <m>\theta</m> represents the angle between the positive <m>x</m>-axis and the segment connecting the origin and the point; see <xref ref="figure-complex-number-polar-form"/>.
+      As we've studied in this course, the rectangular ordered pair <m>\left( a,b\right) </m> can be represented in polar coordinates <m>\left( r,\theta \right) </m> where <m>r</m> represents the distance the point is from the origin and <m>\theta</m> represents the angle between the positive <m>x</m>-axis and the segment connecting the origin and the point; see <xref ref="figure-complex-number-polar-form"/>.
     </p>
 
     <figure xml:id="figure-complex-number-polar-form">
@@ -66,7 +66,7 @@
       i.e., we can express a complex number using the "polar information" <m>r</m> and <m>\theta</m>.
     </p>
     <p>
-      The expression “<m>r \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right)</m>” is what a textbook might decribe as the “polar form of a complex number.”  But a more appropriate expression to label as “the polar form of a complex number” involves Euler’s Formula. Euler’s Formula is an identity that establishes a surprising connection between the exponential function <m>e^x</m> and complex numbers.
+      The expression <q><m>r \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right)</m></q> is what a textbook might decribe as the <q>polar form of a complex number.</q>  But a more appropriate expression to label as <q>the polar form of a complex number</q> involves Euler's Formula. Euler's Formula is an identity that establishes a surprising connection between the exponential function <m>e^x</m> and complex numbers.
     </p>
     <p>
       This is Euler's Formula. For reference purposes, we state this in a theorem.
@@ -82,7 +82,7 @@
         </statement>
     </theorem>
     <p>
-      Notice that if we multiply both sides of Euler’s formula by <m>r</m>, we obtain a formula that allows us to write any complex number in polar form:
+      Notice that if we multiply both sides of Euler's formula by <m>r</m>, we obtain a formula that allows us to write any complex number in polar form:
       <md>
         <mrow>e^{i\theta} \amp=\cos(\theta)+i \cdot \sin(\theta)</mrow>
         <mrow>\implies r \cdot e^{i\theta} \amp= r \cdot \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right)</mrow>
@@ -97,7 +97,7 @@
       </statement>
     </definition>
     <p>
-      Let’s review what we’ve established: First, we observed that we can write a complex number of the form “<m>a+bi</m>” in the form “<m>r \cdot \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right)</m>”. Then we noticed that we can write an expression of the form “<m>r \cdot \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right)</m>” in the form “<m>re^{i\theta}</m>”. Finally, we realized that we can write a complex number “<m>a+bi</m>” in the form “<m>re^{i\theta}</m>” so we defined “<m>re^{i\theta}</m>” as being the polar form of the complex number <m>a+bi</m>.
+      Let's review what we've established: First, we observed that we can write a complex number of the form <q><m>a+bi</m></q> in the form <q><m>r \cdot \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right)</m></q>. Then we noticed that we can write an expression of the form <q><m>r \cdot \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right)</m></q> in the form <q><m>re^{i\theta}</m></q>. Finally, we realized that we can write a complex number <q><m>a+bi</m></q> in the form <q><m>re^{i\theta}</m></q> so we defined <q><m>re^{i\theta}</m></q> as being the polar form of the complex number <m>a+bi</m>.
     </p>
     <example>
       <statement>

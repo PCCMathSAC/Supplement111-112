@@ -11,7 +11,7 @@
       </statement>
     </definition>
     <p>
-      Since <m>360^{\circ}</m> represents a complete revolution, if we add integer-multiples of <m>360^{\circ}</m> to an angle measured in degrees, we’ll obtain a coterminal angle. Similarly, since <m>2\pi</m> represents a complete revolution in radians, if we add integer-multiples of <m>2\pi</m> to an angle measured in radians, we'll obtain a coterminal angle. We can summarize this information as follows
+      Since <m>360^{\circ}</m> represents a complete revolution, if we add integer-multiples of <m>360^{\circ}</m> to an angle measured in degrees, we'll obtain a coterminal angle. Similarly, since <m>2\pi</m> represents a complete revolution in radians, if we add integer-multiples of <m>2\pi</m> to an angle measured in radians, we'll obtain a coterminal angle. We can summarize this information as follows
     </p>
     <p>
       If <m>\theta</m> is measured in degrees, <m>\theta</m> and <m>\theta + 360^{\circ} \cdot k</m>, where <m>k\in\mathbb{Z}</m>, are coterminal.
@@ -61,7 +61,7 @@
       </statement>
     </definition>
     <p>
-      Depending on the location of the angle’s terminal side, we’ll have to use a different calculation to determine the angle’s reference angle.
+      Depending on the location of the angle's terminal side, we'll have to use a different calculation to determine the angle's reference angle.
     </p>
     <example>
       <p>

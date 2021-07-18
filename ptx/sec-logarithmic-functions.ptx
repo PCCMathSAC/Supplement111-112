@@ -4,10 +4,8 @@
       <example>
         <statement>
           <p>
-            The graph of <m>f(x)=\log_a(x)</m> is given in <xref ref="figure-example-log"/>. Find the value of <m>a</m>. Note, the points <m>\left( 1,0 \right)</m> and <m>\left( 9,2 \right)</m> are on the graph of <m>f</m>.
+            The graph of <m>f(x)=\log_a(x)</m> is given in the graph below. Find the value of <m>a</m>. Note, the points <m>\left( 1,0 \right)</m> and <m>\left( 9,2 \right)</m> are on the graph of <m>f</m>.
           </p>
-          <figure xml:id="figure-example-log">
-            <caption><m>f(x)=\log_a(x)</m></caption>
             <image width="75%">
               <description>This is a picture of a logarithmic function. The two points shown are (1, 0) and (9, 2).</description>
               <latex-image>
@@ -24,7 +22,6 @@
                 \end{tikzpicture}
               </latex-image>
             </image>
-          </figure>
         </statement>
         <solution>
           <p>

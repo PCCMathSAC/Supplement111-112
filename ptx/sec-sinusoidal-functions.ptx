@@ -4,13 +4,13 @@
   <subsection>
     <title>Graphing Sinusoidal Functions: Phase Shift vs. Horizontal Shift</title>
     <p>
-      Let’s consider the function <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m>.  Using what we study in MTH 111 about graph transformations, it should be apparent that the graph of <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m> can be obtained by transforming the graph of <m>g(x)=\sin(x)</m>. (To confirm this, notice that <m>g(x)</m> can be expressed in terms of <m>f(x)=\sin(x),</m> as <m>g(x)=f \left( 2x-\frac{2\pi}{3} \right) </m>.)  Since the constants “<m>2</m>” and “<m>\frac{2\pi}{3}</m>” are multiplied by and subtracted from the input variable, <m>x</m>, what we study in MTH 111 tells us that these constants represent a horizontal stretch/compression and a horizontal shift, respectively.
+      Let's consider the function <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m>.  Using what we study in MTH 111 about graph transformations, it should be apparent that the graph of <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m> can be obtained by transforming the graph of <m>g(x)=\sin(x)</m>. (To confirm this, notice that <m>g(x)</m> can be expressed in terms of <m>f(x)=\sin(x),</m> as <m>g(x)=f \left( 2x-\frac{2\pi}{3} \right) </m>.)  Since the constants <q><m>2</m></q> and <q><m>\frac{2\pi}{3}</m></q> are multiplied by and subtracted from the input variable, <m>x</m>, what we study in MTH 111 tells us that these constants represent a horizontal stretch/compression and a horizontal shift, respectively.
     </p>
     <p>
-      It is often recommended in MTH 111 that we factor-out the horizontal stretching/compressing factor before transforming the graph, i.e., it’s often recommended that we first re-write <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m>  as <m>g(x)=\sin \left( 2 \left( x-\frac{\pi}{3} \right) \right) </m>.
+      It is often recommended in MTH 111 that we factor-out the horizontal stretching/compressing factor before transforming the graph, i.e., it's often recommended that we first re-write <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m>  as <m>g(x)=\sin \left( 2 \left( x-\frac{\pi}{3} \right) \right) </m>.
     </p>
     <p>
-      After writing <m>g</m> in this format, we can draw its graph by performing the following sequence of transformations of the “base function” <m>f(x)=\sin(x)</m>:
+      After writing <m>g</m> in this format, we can draw its graph by performing the following sequence of transformations of the <q>base function</q> <m>f(x)=\sin(x)</m>:
       <ol>
         <li>
           Compress horizontally by a factor of <m>\frac{1}{2}</m>.
@@ -21,7 +21,7 @@
       </ol>
     </p>
     <p>
-      The advantage of this method is that the <m>y</m>-intercept of <m>f(x)=\sin(x)</m>, <m> \left( 0,0 \right) </m>, ends-up exactly where the horizontal shift suggests: when we compress the graph by a factor of <m>\frac{1}{2}</m>, the the <m>y</m>-interceot of the graph doesn’t move since <m>\frac{1}{2} \cdot 0 = 0</m>; then, when we shift the graph <m>\frac{\pi}{3}</m> units to the right, the point  <m>\left( 0,0\right) </m>  ends up at <m>\left( \frac{\pi}{3},0\right) </m>; so the <m>y</m>-intercept ends up moving <m>\frac{\pi}{3}</m> units to the right, exactly how far we shifted.
+      The advantage of this method is that the <m>y</m>-intercept of <m>f(x)=\sin(x)</m>, <m> \left( 0,0 \right) </m>, ends-up exactly where the horizontal shift suggests: when we compress the graph by a factor of <m>\frac{1}{2}</m>, the the <m>y</m>-interceot of the graph doesn't move since <m>\frac{1}{2} \cdot 0 = 0</m>; then, when we shift the graph <m>\frac{\pi}{3}</m> units to the right, the point  <m>\left( 0,0\right) </m>  ends up at <m>\left( \frac{\pi}{3},0\right) </m>; so the <m>y</m>-intercept ends up moving <m>\frac{\pi}{3}</m> units to the right, exactly how far we shifted.
     </p>
     <p>
       Compare this with the alternative method: we can leave <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right) </m> as-is and skip factoring-out the horizontal stretching/compressing factor, but then we need the following sequence to transform <m>f(x)=\sin(x)</m> into the graph of <m>g</m>:
@@ -35,7 +35,7 @@
       </ol>
     </p>
     <p>
-      The disadvantage of this method is that the <m>y</m>-intercept of <m>f(x)=\sin(x)</m> <em>doesn’t</em> end-up where the horizontal shift suggests: when we shift the graph of <m>f(x)=\sin(x)</m> to the right by <m>\frac{2\pi}{3}</m> units, the <m>y</m>-intercept moves from <m> \left( 0,0 \right) </m> to <m>\left( \frac{2\pi}{3},0\right) </m>; then, when we compress the graph by a factor of <m>\frac{1}{2}</m>, it moves to <m>\left( \frac{\pi}{3},0\right) </m>, so the <m>y</m>-intercept <em>doesn’t</em> end up shifted <m>\frac{2\pi}{3}</m> units to the right.
+      The disadvantage of this method is that the <m>y</m>-intercept of <m>f(x)=\sin(x)</m> <em>doesn't</em> end-up where the horizontal shift suggests: when we shift the graph of <m>f(x)=\sin(x)</m> to the right by <m>\frac{2\pi}{3}</m> units, the <m>y</m>-intercept moves from <m> \left( 0,0 \right) </m> to <m>\left( \frac{2\pi}{3},0\right) </m>; then, when we compress the graph by a factor of <m>\frac{1}{2}</m>, it moves to <m>\left( \frac{\pi}{3},0\right) </m>, so the <m>y</m>-intercept <em>doesn't</em> end up shifted <m>\frac{2\pi}{3}</m> units to the right.
     </p>
     <p>
        <xref ref="figure-shifts"/> shows the graphs of <m>y=f(x)</m> and <m>y=g(x)</m>. Notice that the behavior of <m>y=g(x)</m> at <m>x=\frac{\pi}{3}</m> is like the behavior of <m>y=f(x)</m> at <m>x=0</m>, i.e., <m>y=g(x)</m> appears to have been shifted <m>\frac{\pi}{3}</m> units to the right. For this reason, <m>\frac{\pi}{3}</m> is called the horzontal shift of <m>g(x)=\sin ( \, 2x-\frac{2\pi}{3} ) \,=\sin ( \, 2( \,x-\frac{\pi}{3} ) \, ) \,</m>.
@@ -65,7 +65,7 @@
         </image>
       </figure>
     <p>
-      The constant <m>\frac{2\pi}{3}</m> is given a different name, phase shift, since it can be used to determine how far “out-of-phase” a sinusoidal function is in comparison with <m>y=\sin(x)</m> or <m>y=\cos(x)</m>. To determine how far out-of-phase a sinusoidal function is, we can determine the ratio of the phase shift and <m>2\pi</m>. (We use <m>2\pi</m> because it’s the period of <m>y=\sin(x)</m> and <m>y=\cos(x)</m>.)  Since <m>\frac{2\pi}{3}</m> is the phase shift for <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right)</m>, the graph of <m>y=g(x)</m> is out-of-phase <m>\frac{2\pi/3}{2\pi}=\frac{1}{3}</m> of a period. (Since this number is positive, it represents a horizontal shift to the right <m>\frac{1}{3}</m> of a period.)
+      The constant <m>\frac{2\pi}{3}</m> is given a different name, phase shift, since it can be used to determine how far <q>out-of-phase</q> a sinusoidal function is in comparison with <m>y=\sin(x)</m> or <m>y=\cos(x)</m>. To determine how far out-of-phase a sinusoidal function is, we can determine the ratio of the phase shift and <m>2\pi</m>. (We use <m>2\pi</m> because it's the period of <m>y=\sin(x)</m> and <m>y=\cos(x)</m>.)  Since <m>\frac{2\pi}{3}</m> is the phase shift for <m>g(x)=\sin \left( 2x-\frac{2\pi}{3} \right)</m>, the graph of <m>y=g(x)</m> is out-of-phase <m>\frac{2\pi/3}{2\pi}=\frac{1}{3}</m> of a period. (Since this number is positive, it represents a horizontal shift to the right <m>\frac{1}{3}</m> of a period.)
     </p>
 
     <definition>

@@ -6,7 +6,7 @@
   </p>
   <exercises>
 <!-- exercise 1 in OG Exp Functions -->
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           Find an algebraic rule for an exponential function <m>f</m> that passes through the given two points.
