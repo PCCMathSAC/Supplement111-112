@@ -1,204 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-logarithmic-functions">
-	<title>Logarithmic Functions</title>
-			<example>
-				<statement>
-					<p>
-						The graph of <m>f(x)=\log_a(x)</m> is given in <xref ref="figure-example-log"/>. Find the value of <m>a</m>. Note, the points <m>\left( 1,0 \right)</m> and <m>\left( 9,2 \right)</m> are on the graph of <m>f</m>.
-					</p>
-					<figure xml:id="figure-example-log">
-						<caption><m>f(x)=\log_a(x)</m></caption>
-						<image width="75%">
-							<description>This is a picture of a logarithmic function. The two points shown are (1, 0) and (9, 2).</description>
-							<latex-image>
-								\begin{tikzpicture}
-								\begin{axis}[
-									Axis Style,
-									xmin=-2, xmax=14,
-									xlabel={$x$},
-									ymin=-4, ymax=4,
-									xtick={-1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13},
-									xticklabels={-1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13},
-									ytick={-3, -2, -1, 1, 2, 3},
-									yticklabels={-3, -2, -1, 1, 2, 3},
-									axis equal image,
-										]
-									\addplot [->, mark=none, semi thick, black, domain=0.2:12.9, samples=100] {ln(x)/ln(3)};
-									\addplot[mark=*] coordinates{(1,0)};
-									\addplot[mark=*] coordinates{(9,2)};
-								\end{axis}
-								\end{tikzpicture}
-							</latex-image>
-						</image>
-					</figure>
-				</statement>
-				<solution>
-					<p>
-						Since the function has the form <m>f(x)=\log_a(x)</m> and <m>\left( 9,2 \right)</m> is on the graph, we know that <m>f(9)=2</m>. Thus,
-						<md>
-							<mrow>f(9)=2 \amp \implies \log_a(9)=2 \amp\amp \text{(since } f(9)=\log_a(9) \text{)}</mrow>
-							<mrow> \amp \implies a^2=9 \amp\amp \text{(translate the logarithmic statement into an exponential one)}</mrow>
-							<mrow> \amp \implies a=3 \amp\amp \text{(take the positive square root of } 9 \text{ because bases of logs are positive)}</mrow>
-						</md>
-					</p>
-					<p>
-						Notice that we didn't attempt to use <m>\left( 1,0 \right)</m>, the other obvious point on the graph of <m>f(x)=\log_a(x)</m>, to find the value of <m>a</m>. Why not? The point <m>\left( 1,0 \right)</m> is on the graph of all functions of the form <m>f(x)=\log_a(x)</m>, so it doesn't provide information that will help us find the paerticular function graphed here.
-					</p>
-				</solution>
-			</example>
-			<exercises>
-		<!-- exercise 1 in OG Log Functions -->
-				<exercise>
-					<statement>
-						<p>
-							The graph of <m>f(x)=\log_a(x)</m> is given in <xref ref="figure-exercise-log"/>. Find the value of <m>a</m>. Note, the points <m>\left( 1,0 \right)</m> and <m>\left( 25,4 \right)</m> are on the graph of <m>f</m>.
-							<figure xml:id="figure-exercise-log">
-								<caption><m>f(x)=\log_a(x)</m></caption>
-								<image width="75%">
-									<description>This is a picture of a logarithmic function. The two points shown are (1, 0) and (25, 4).</description>
-									<latex-image>
-										\begin{tikzpicture}
-										\begin{axis}[
-											Axis Style,
-											xmin=-3, xmax=30,
-											xlabel={$x$},
-											ymin=-6, ymax=6,
-											xtick={5, 10, 15, 20, 25},
-											xticklabels={5, 10, 15, 20, 25},
-											minor xtick = {-3,-2,...,29},
-											ytick={-4, -2, 2, 4},
-											yticklabels={-4,-2,2,4},
-											minor ytick = {-5,-4,...,5},
-											axis equal image,
-												]
-											\addplot [->, mark=none, semi thick, black, domain=0.2:29, samples=100] {ln(x)/ln(5^(1/2))};
-											\addplot[mark=*] coordinates{(1,0)};
-											\addplot[mark=*] coordinates{(25,4)};
-										\end{axis}
-										\end{tikzpicture}
-									</latex-image>
-								</image>
-							</figure>
-						</p>
-					</statement>
-					<answer>
-						<p>
-							<m>a=\sqrt{5}</m>
-						</p>
-					</answer>
-				</exercise>
-				<exercisegroup cols="1">
-					<introduction>
-						<p>
-							Each table represents a table-of-values for a function <m>f(x)=\log_a(x)</m>. Find the value of <m>a</m>.
-						</p>
-					</introduction>
-						<exercise>
-							<statement>
-								<p>
-									<table>
-	<tabular halign="center" top="medium">
-		<row bottom="medium">
-			<cell left="medium" right="medium">
-				<m>x</m>
-			</cell>
-			<cell right="medium">
-				<m>0.000125</m>
-			</cell>
-			<cell right="medium">
-				<m>0.5</m>
-			</cell>
-			<cell right="medium">
-				<m>1</m>
-			</cell>
-			<cell right="medium">
-				<m>2\sqrt{5}</m>
-			</cell>
-			<cell right="medium">
-				<m>400</m>
-			</cell>
-		</row>
-		<row bottom="medium">
-			<cell left="medium" right="medium">
-				<m>f(x)</m>
-			</cell>
-			<cell right="medium">
-				<m>-3</m>
-			</cell>
-			<cell right="medium">
-				<m>-1</m>
-			</cell>
-			<cell right="medium">
-				<m>0</m>
-			</cell>
-			<cell right="medium">
-				<m>0.5</m>
-			</cell>
-			<cell right="medium">
-				<m>2</m>
-			</cell>
-		</row>
-	</tabular>
-</table>
-								</p>
-							</statement>
-							<answer>
-								<m>a=20</m>
-							</answer>
-						</exercise>
-						<exercise>
-							<statement>
-								<p>
-									<table>
-	<tabular halign="center" top="medium">
-		<row bottom="medium">
-			<cell left="medium" right="medium">
-				<m>x</m>
-			</cell>
-			<cell right="medium">
-				<m>\frac{1}{9}</m>
-			</cell>
-			<cell right="medium">
-				<m>1</m>
-			</cell>
-			<cell right="medium">
-				<m>3</m>
-			</cell>
-			<cell right="medium">
-				<m>81</m>
-			</cell>
-			<cell right="medium">
-				<m>243</m>
-			</cell>
-		</row>
-		<row bottom="medium">
-			<cell left="medium" right="medium">
-				<m>f(x)</m>
-			</cell>
-			<cell right="medium">
-				<m>-4</m>
-			</cell>
-			<cell right="medium">
-				<m>0</m>
-			</cell>
-			<cell right="medium">
-				<m>2</m>
-			</cell>
-			<cell right="medium">
-				<m>8</m>
-			</cell>
-			<cell right="medium">
-				<m>10</m>
-			</cell>
-		</row>
-	</tabular>
-</table>
-								</p>
-							</statement>
-							<answer>
-								<m>a=\sqrt{3}</m>
-							</answer>
-						</exercise>
-				</exercisegroup>
-			</exercises>
+  <title>Logarithmic Functions</title>
+      <example>
+        <statement>
+          <p>
+            The graph of <m>f(x)=\log_a(x)</m> is given in the graph below. Find the value of <m>a</m>. Note, the points <m>\left( 1,0 \right)</m> and <m>\left( 9,2 \right)</m> are on the graph of <m>f</m>.
+          </p>
+            <image width="60%">
+              <description>This is a picture of a logarithmic function. The two points shown are (1, 0) and (9, 2).</description>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-2, xmax=14,
+                      ymin=-4, ymax=4,
+                      xtick={-1,0,...,13},
+                      ytick={-3,-2,...,3},
+                    ]
+                    \addplot[function, {Kite}-{Kite}, domain=-3:2.3] ({3^x},{x});
+                    \addplot[soliddot] coordinates{(1,0) (9,2)};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+        </statement>
+        <solution>
+          <p>
+            Since the function has the form <m>f(x)=\log_a(x)</m> and <m>\left( 9,2 \right)</m> is on the graph, we know that <m>f(9)=2</m>. Thus,
+            <md>
+              <mrow>f(9)=2 \amp \implies \log_a(9)=2 \amp\amp \text{(since } f(9)=\log_a(9) \text{)}</mrow>
+              <mrow> \amp \implies a^2=9 \amp\amp \text{(translate the logarithmic statement into an exponential one)}</mrow>
+              <mrow> \amp \implies a=3 \amp\amp \text{(take the positive square root of } 9 \text{ because bases of logs are positive)}</mrow>
+            </md>
+          </p>
+          <p>
+            Notice that we didn't attempt to use <m>\left( 1,0 \right)</m>, the other obvious point on the graph of <m>f(x)=\log_a(x)</m>, to find the value of <m>a</m>. Why not? The point <m>\left( 1,0 \right)</m> is on the graph of all functions of the form <m>f(x)=\log_a(x)</m>, so it doesn't provide information that will help us find the paerticular function graphed here.
+          </p>
+        </solution>
+      </example>
+      <exercises>
+    <!-- exercise 1 in OG Log Functions -->
+        <exercise>
+          <statement>
+            <p>
+              The graph of <m>f(x)=\log_a(x)</m> is given below. Find the value of <m>a</m>. Note, the points <m>\left( 1,0 \right)</m> and <m>\left( 25,4 \right)</m> are on the graph of <m>f</m>.
+            </p>
+                <image width="60%">
+                  <description>This is a picture of a logarithmic function. The two points shown are (1, 0) and (25, 4).</description>
+                  <latex-image>
+                    \begin{tikzpicture}
+                      \begin{axis}[
+                          xmin=-3, xmax=30,
+                          ymin=-6, ymax=6,
+                          xtick={5,10,...,25},
+                          minor xtick={-3,-2,...,30},
+                          ytick={-4,-2,...,4},
+                          minor ytick={-5,-4,...,5},
+                          grid=major,
+                        ]
+                        \addplot[function, {Kite}-{Kite}, domain=-5:4.18] ({5^(x/2)},{x});
+                        \addplot[soliddot] coordinates{(1,0) (25,4)};
+                      \end{axis}
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+          </statement>
+          <answer>
+            <p>
+              <m>a=\sqrt{5}</m>
+            </p>
+          </answer>
+        </exercise>
+        <exercisegroup>
+          <introduction>
+            <p>
+              Each table represents a table-of-values for a function <m>f(x)=\log_a(x)</m>. Find the value of <m>a</m>.
+            </p>
+          </introduction>
+            <exercise>
+              <statement>
+        <tabular halign="right" top="major" bottom="minor" left="major" right="minor">
+          <col halign="center" right="medium"/>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+          <col right="major"/>
+          <row>
+            <cell>
+              <m>x</m>
+            </cell>
+            <cell>
+              <m>0.000125</m>
+            </cell>
+            <cell>
+              <m>0.5</m>
+            </cell>
+            <cell>
+              <m>1</m>
+            </cell>
+            <cell>
+              <m>2\sqrt{5}</m>
+            </cell>
+            <cell>
+              <m>400</m>
+            </cell>
+          </row>
+          <row bottom="major">
+            <cell>
+              <m>f(x)</m>
+            </cell>
+            <cell>
+              <m>-3</m>
+            </cell>
+            <cell>
+              <m>-1</m>
+            </cell>
+            <cell>
+              <m>0</m>
+            </cell>
+            <cell>
+              <m>0.5</m>
+            </cell>
+            <cell>
+              <m>2</m>
+            </cell>
+          </row>
+        </tabular>
+              </statement>
+              <answer>
+                <p>
+                  <m>a=20</m>
+                </p>
+              </answer>
+            </exercise>
+            <exercise>
+              <statement>
+        <tabular halign="right" top="major" bottom="minor" left="major" right="minor">
+          <col halign="center" right="medium"/>
+          <col/>
+          <col/>
+          <col/>
+          <col/>
+          <col right="major"/>
+          <row>
+            <cell>
+              <m>x</m>
+            </cell>
+            <cell>
+              <m>\frac{1}{9}</m>
+            </cell>
+            <cell>
+              <m>1</m>
+            </cell>
+            <cell>
+              <m>3</m>
+            </cell>
+            <cell>
+              <m>81</m>
+            </cell>
+            <cell>
+              <m>243</m>
+            </cell>
+          </row>
+          <row bottom="major">
+            <cell>
+              <m>f(x)</m>
+            </cell>
+            <cell>
+              <m>-4</m>
+            </cell>
+            <cell>
+              <m>0</m>
+            </cell>
+            <cell>
+              <m>2</m>
+            </cell>
+            <cell>
+              <m>8</m>
+            </cell>
+            <cell>
+              <m>10</m>
+            </cell>
+          </row>
+        </tabular>
+              </statement>
+              <answer>
+                <p>
+                  <m>a=\sqrt{3}</m>
+                </p>
+              </answer>
+            </exercise>
+        </exercisegroup>
+      </exercises>
 </section>
