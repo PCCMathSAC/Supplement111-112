@@ -29,14 +29,21 @@
           <description>This is a graph showing coterminal angles of 45 degrees, 405 degrees, and -315 degrees which all have the same terminal side.</description>
           <latex-image>
             \begin{tikzpicture}
-              \begin{axis}[grid=none, ticks=none, trig format plots=rad, axis equal] % pgfplots options
-                \addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (5.5,5.5)};
-                \addplot [->, domain=0:pi/4, samples=50, black] ({3.5*cos(x)}, {3.5*sin(x)});
-                  \node at (axis cs:4,1.75) {$45^{\circ}$};
-                \addplot [->, domain=0:9*pi/4, samples=200, black] ({2*log10(x+10)*sin(x+1.57079632679)}, {2*log10(x+10)*cos(x-1.57079632679)});
-                  \node at (axis cs:-4.2,4.2) {$-315^{\circ}$};
-                \addplot [->, domain=0:7*pi/4, samples=200, black] ({5*sin(x+1.57079632679)}, {5*cos(x+1.57079632679)});
-                  \node at (axis cs:-2.5,-2) {$405^{\circ}$};
+              \begin{axis}[
+                  width=12cm,
+                  grid=none,
+                  ticks=none,
+                  trig format plots=rad,
+                  axis equal,
+                  xmin=,
+                  xmax=,
+                  ymin=,
+                  ymax=,
+                ]
+                \addplot[ray] coordinates {(0,0) (11,11)};
+                \addplot[angle, domain=0:pi/4] ({7*cos(x)}, {7*sin(x)}) node[pos=0.5, above right] {$45^{\circ}$};
+                \addplot[angle, domain=0:-7*pi/4, samples=50] ({10*cos(x)}, {10*sin(x)}) node[pos=0.67, above left] {$405^{\circ}$};
+                \addplot[angle, domain=0:9*pi/4, samples=50] ({4*log10(x+10)*cos(x)}, {4*log10(x+10)*sin(x)}) node[pos=0.5, below left] {$-315^{\circ}$};
               \end{axis}
             \end{tikzpicture}
           </latex-image>
@@ -60,17 +67,22 @@
       <p>
         The angles <m>\frac{\pi}{3}</m> and <m>30^{\circ}</m> are their own reference angles since they are acute angles; seen in <xref ref="figure-example-ref-pi3"/> and <xref ref="figure-example-ref-30"/>.
       </p>
-      <sidebyside>
+      <sidebyside widths="37.5% 37.5%">
         <figure xml:id="figure-example-ref-pi3">
           <caption></caption>
-          <image width="75%">
+          <image>
             <description>Graph showing the angle pi/3 radians.</description>
             <latex-image>
               \begin{tikzpicture}
-                \begin{axis}[grid=none, ticks=none, trig format plots=rad, axis equal] % pgfplots options
-                  \addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (3,5.196)};
-                  \addplot [->, domain=0:pi/3, samples=50, black] ({3.5*cos(x)}, {3.5*sin(x)});
-                    \node at (axis cs:3.5,2) {$\frac{\pi}{3}$};
+                \begin{axis}[
+                    width=6cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                  ]
+                  \addplot[ray] coordinates {(0,0) (3,5.196)};
+                  \addplot[angle, domain=0:pi/3] ({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.5, right] {$\frac{\pi}{3}$};
                 \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -79,14 +91,19 @@
 
         <figure xml:id="figure-example-ref-30">
           <caption></caption>
-          <image width="75%">
+          <image>
             <description>Graph showing the angle 30 degrees.</description>
             <latex-image>
               \begin{tikzpicture}
-                \begin{axis}[grid=none, ticks=none, trig format plots=rad, axis equal] % pgfplots options
-                  \addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (5.196,3)};
-                  \addplot [->, domain=0:pi/6, samples=50, black] ({3.5*cos(x)}, {3.5*sin(x)});
-                    \node at (axis cs:4.25,0.5) {$30^{\circ}$};
+                \begin{axis}[
+                    width=6cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                  ]
+                  \addplot[ray] coordinates {(0,0) (5.196,3)};
+                  \addplot[angle, domain=0:pi/6] ({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.5, right] {$30^{\circ}$};
                 \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -98,19 +115,23 @@
       <p>
         The reference angle for <m>\frac{2\pi}{3}</m> is <m>\pi-\frac{2\pi}{3}=\frac{\pi}{3}</m> (see <xref ref="figure-example-ref-2pi3"/>), while the reference angle for <m>150^{\circ}</m> is <m>180^{\circ}-150^{\circ}=30^{\circ}</m> (see <xref ref="figure-example-ref-150"/>).
       </p>
-      <sidebyside>
+      <sidebyside widths="37.5% 37.5%">
         <figure xml:id="figure-example-ref-2pi3">
           <caption></caption>
-          <image width="75%">
+          <image>
             <description>Graph showing the angle (2pi)/3 radians which has a reference angle of pi/3 radians.</description>
             <latex-image>
               \begin{tikzpicture}
-                \begin{axis}[grid=none, ticks=none, trig format plots=rad, axis equal] % pgfplots options
-                  \addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (-3,5.196)};
-                  \addplot [->, domain=0:2*pi/3, samples=100, black] ({3.5*cos(x)}, {3.5*sin(x)});
-                    \node at (axis cs:3.5,2) {$\frac{2\pi}{3}$};
-                  \addplot [domain=2*pi/3:pi, samples=100, black] ({2.5*cos(x)}, {2.5*sin(x)});
-                     \node at (axis cs:-2.5,1.5) {$\frac{\pi}{3}$};
+                \begin{axis}[
+                    width=6cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                  ]
+                  \addplot[ray] coordinates {(0,0) (-3,5.196)};
+                  \addplot[angle, domain=0:2*pi/3] ({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.5, above right] {$\frac{2\pi}{3}$};
+                  \addplot[angle, domain=pi:2*pi/3]({2.5*cos(x)}, {2.5*sin(x)}) node[pos=0.5, left] {$\frac{\pi}{3}$};
                 \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -119,16 +140,20 @@
 
         <figure xml:id="figure-example-ref-150">
           <caption></caption>
-          <image width="75%">
+          <image>
             <description>Graph showing the angle 150 degrees which has a reference angle of 30 degrees.</description>
             <latex-image>
               \begin{tikzpicture}
-                \begin{axis}[grid=none, ticks=none, trig format plots=rad, axis equal] % pgfplots options
-                  \addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (-5.196,3)};
-                  \addplot [->, domain=0:5*pi/6, samples=100, black] ({3.5*cos(x)}, {3.5*sin(x)});
-                    \node at (axis cs:3,3) {$150^{\circ}$};
-                  \addplot [domain=5*pi/6:pi, samples=50, black] ({2.5*cos(x)}, {2.5*sin(x)});
-                     \node at (axis cs:-3,1) {$30^{\circ}$};
+                \begin{axis}[
+                    width=6cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                  ]
+                  \addplot[ray] coordinates {(0,0) (-5.196,3)};
+                  \addplot[angle, domain=0:5*pi/6] ({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.5, above right] {$150^{\circ}$};
+                  \addplot[angle, domain=pi:5*pi/6]({2.5*cos(x)}, {2.5*sin(x)}) node[pos=0.5, left] {$30^{\circ}$};
                 \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -141,19 +166,23 @@
       <p>
         The reference angle for <m>\frac{4\pi}{3}</m> is <m>\frac{4\pi}{3}-\pi=\frac{\pi}{3}</m> (see <xref ref="figure-example-ref-4pi3"/>), while the reference angle for <m>210^{\circ}</m> is <m>210^{\circ}-180^{\circ}=30^{\circ}</m> (see <xref ref="figure-example-ref-210"/>).
       </p>
-      <sidebyside>
+      <sidebyside widths="37.5% 37.5%">
         <figure xml:id="figure-example-ref-4pi3">
           <caption></caption>
-          <image width="75%">
+          <image>
             <description>Graph showing the angle (4pi)/3 radians which has a reference angle of pi/3 radians.</description>
             <latex-image>
               \begin{tikzpicture}
-                \begin{axis}[grid=none, ticks=none, trig format plots=rad, axis equal] % pgfplots options
-                  \addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (-3,-5.196)};
-                  \addplot [->, domain=0:4*pi/3, samples=100, black] ({2.5*cos(x)}, {2.5*sin(x)});
-                    \node at (axis cs:-3,1.75) {$\frac{4\pi}{3}$};
-                  \addplot [domain=pi:4*pi/3, samples=100, black] ({3.5*cos(x)}, {3.5*sin(x)});
-                     \node at (axis cs:-3.5,-1.5) {$\frac{\pi}{3}$};
+                \begin{axis}[
+                    width=6cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                  ]
+                  \addplot[ray] coordinates {(0,0) (-3,-5.196)};
+                  \addplot[angle, domain=0:4*pi/3] ({2.5*cos(x)}, {2.5*sin(x)}) node[pos=0.5, above left] {$\frac{4\pi}{3}$};
+                  \addplot[angle, domain=pi:4*pi/3]({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.5, left] {$\frac{\pi}{3}$};
                 \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -162,16 +191,20 @@
 
         <figure xml:id="figure-example-ref-210">
           <caption></caption>
-          <image width="75%">
+          <image>
             <description>Graph showing the angle 210 degrees which has a reference angle of 30 degrees.</description>
             <latex-image>
               \begin{tikzpicture}
-                \begin{axis}[grid=none, ticks=none, trig format plots=rad, axis equal] % pgfplots options
-                  \addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (-5.196,-3)};
-                  \addplot [->, domain=0:7*pi/6, samples=100, black] ({2.5*cos(x)}, {2.5*sin(x)});
-                    \node at (axis cs:-2.5,2.5) {$210^{\circ}$};
-                  \addplot [domain=pi:7*pi/6, samples=50, black] ({3.5*cos(x)}, {3.5*sin(x)});
-                     \node at (axis cs:-4,-1.5) {$30^{\circ}$};
+                \begin{axis}[
+                    width=6cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                  ]
+                  \addplot[ray] coordinates {(0,0) (-5.196,-3)};
+                  \addplot[angle, domain=0:7*pi/6] ({2.5*cos(x)}, {2.5*sin(x)}) node[pos=0.5, above left] {$210^{\circ}$};
+                  \addplot[angle, domain=pi:7*pi/6]({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.5, left] {$30^{\circ}$};
                 \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -184,19 +217,23 @@
       <p>
         The reference angle for <m>\frac{5\pi}{3}</m> is <m>2\pi-\frac{5\pi}{3}=\frac{\pi}{3}</m> (see <xref ref="figure-example-ref-5pi3"/>), while the reference angle for <m>330^{\circ}</m> is <m>360^{\circ}-330^{\circ}=30^{\circ}</m> (see <xref ref="figure-example-ref-330"/>).
       </p>
-      <sidebyside>
+      <sidebyside widths="37.5% 37.5%">
         <figure xml:id="figure-example-ref-5pi3">
           <caption></caption>
-          <image width="75%">
+          <image>
             <description>Graph showing the angle (5pi)/3 radians which has a reference angle of pi/3 radians.</description>
             <latex-image>
               \begin{tikzpicture}
-                \begin{axis}[grid=none, ticks=none, trig format plots=rad, axis equal] % pgfplots options
-                  \addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (3,-5.196)};
-                  \addplot [->, domain=0:5*pi/3, samples=100, black] ({2.5*cos(x)}, {2.5*sin(x)});
-                    \node at (axis cs:-3,-1.75) {$\frac{5\pi}{3}$};
-                  \addplot [domain=0:pi/3, samples=50, black] ({3.5*cos(x)}, {-3.5*sin(x)});
-                     \node at (axis cs:3.75,-1.75) {$\frac{\pi}{3}$};
+                \begin{axis}[
+                    width=6cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                  ]
+                  \addplot[ray] coordinates {(0,0) (3,-5.196)};
+                  \addplot[angle, domain=0:5*pi/3] ({2.5*cos(x)}, {2.5*sin(x)}) node[pos=0.5, above left] {$\frac{5\pi}{3}$};
+                  \addplot[angle, domain=0:-pi/3]({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.5, right] {$\frac{\pi}{3}$};
                 \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -205,16 +242,20 @@
 
         <figure xml:id="figure-example-ref-330">
           <caption></caption>
-          <image width="75%">
+          <image>
             <description>Graph showing the angle 330 degrees which has a reference angle of 30 degrees.</description>
             <latex-image>
               \begin{tikzpicture}
-                \begin{axis}[grid=none, ticks=none, trig format plots=rad, axis equal] % pgfplots options
-                  \addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (5.196,-3)};
-                  \addplot [->, domain=0:11*pi/6, samples=100, black] ({2.5*cos(x)}, {2.5*sin(x)});
-                    \node at (axis cs:-2.75,-2.75) {$330^{\circ}$};
-                  \addplot [domain=0:pi/6, samples=50, black] ({3.5*cos(x)}, {-3.5*sin(x)});
-                     \node at (axis cs:4.25,-1.25) {$30^{\circ}$};
+                \begin{axis}[
+                    width=6cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                  ]
+                  \addplot[ray] coordinates {(0,0) (5.196,-3)};
+                  \addplot[angle, domain=0:11*pi/6] ({2.5*cos(x)}, {2.5*sin(x)}) node[pos=0.5, above left] {$330^{\circ}$};
+                  \addplot[angle, domain=0:-pi/6]({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.5, right] {$30^{\circ}$};
                 \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -224,53 +265,53 @@
     </example>
 
     <example>
-        <p>
-          The reference angle for <m>7.5</m> radians is <m>7.5-2\pi\approx 1.2</m> radians (see <xref ref="figure-example-ref-7point5"/>), and the reference angle for <m>-137^{\circ}</m> is <m>180^{\circ}+( \, 137^{\circ} ) \,=43^{\circ}</m> (see <xref ref="figure-example-ref-negative137"/>).
-        </p>
-        <sidebyside>
-          <figure xml:id="figure-example-ref-7point5">
-            <caption></caption>
-            <image width="75%">
-              <description>Graph showing the angle 7.5 radians which has a reference angle of 1.2 radians.</description>
-              <latex-image>
-                \begin{tikzpicture}
-                  \begin{axis}[
-                  grid=none,
-                  ticks=none,
-                  trig format plots=rad,
-                  axis equal,
-                  xmin=-7, xmax=7,
-                  ymin=-7, ymax=7
-                  ] % pgfplots options
-                    \addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (2.495,6.754)};
-                    \addplot [->, domain=0:7.5, samples=100, black] ({0.7*ln(x+10)*sin(x+1.57079632679)}, {0.7*ln(x+10)*cos(x-1.57079632679)});
-                      \node at (axis cs:2,-2) {$7.5$};
-                    \addplot [domain=0:1.216, samples=50, black] ({3.5*cos(x)}, {3.5*sin(x)});
-                      \node at (axis cs:5,3) {$7.5-2\pi \approx 1.2$};
-                  \end{axis}
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </figure>
+      <p>
+        The reference angle for <m>7.5</m> radians is <m>7.5-2\pi\approx 1.2</m> radians (see <xref ref="figure-example-ref-7point5"/>), and the reference angle for <m>-137^{\circ}</m> is <m>180^{\circ}+( \, 137^{\circ} ) \,=43^{\circ}</m> (see <xref ref="figure-example-ref-negative137"/>).
+      </p>
+      <sidebyside widths="37.5% 37.5%">
+        <figure xml:id="figure-example-ref-7point5">
+          <caption></caption>
+          <image>
+            <description>Graph showing the angle 7.5 radians which has a reference angle of 1.2 radians.</description>
+            <latex-image>
+              \begin{tikzpicture}
+                \begin{axis}[
+                    width=6cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                  ]
+                  \addplot[ray] coordinates {(0,0) (2.216,6)};
+                  \addplot[angle, domain=0:7.5, samples=50] ({0.7*ln(x+10)*cos(x)}, {0.7*ln(x+10)*sin(x)}) node[pos=0.5, below left] {$7.5$};
+                  \addplot[angle, domain=0:7.5-2*pi]({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.9, right] {$\begin{aligned}\amp7.5-2\pi \\\amp \approx 1.2\end{aligned}$};
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
 
-          <figure xml:id="figure-example-ref-negative137">
-            <caption></caption>
-            <image width="75%">
-              <description>Graph showing the angle -137 degrees which has a reference angle of 43 degrees.</description>
-              <latex-image>
-                \begin{tikzpicture}
-                  \begin{axis}[grid=none, ticks=none, trig format plots=rad, axis equal] % pgfplots options
-                    \addplot[color=blue, thick, -{stealth}] coordinates {(0,0) (-4.388,-4.092)};
-                    \addplot [->, domain=0:137*pi/180, samples=100, black] ({3.5*cos(x)}, {-3.5*sin(x)});
-                      \node at (axis cs:4.55,-1.5) {$-137^{\circ}$};
-                    \addplot [domain=pi:pi+43*pi/180, samples=50, black] ({2.5*cos(x)}, {2.5*sin(x)});
-                       \node at (axis cs:-2.75,-1.5) {$43^{\circ}$};
-                  \end{axis}
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </figure>
-        </sidebyside>
+        <figure xml:id="figure-example-ref-negative137">
+          <caption></caption>
+          <image>
+            <description>Graph showing the angle -137 degrees which has a reference angle of 43 degrees.</description>
+            <latex-image>
+              \begin{tikzpicture}
+                \begin{axis}[
+                    width=6cm,
+                    grid=none,
+                    ticks=none,
+                    axis equal,
+                  ]
+                  \addplot[ray] coordinates {(0,0) (-4.388,-4.092)};
+                  \addplot[angle, domain=0:-137] ({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.67, below right] {$-137^{\circ}$};
+                  \addplot[angle, domain=180:223]({2.5*cos(x)}, {2.5*sin(x)}) node[pos=0.5, left] {$43^{\circ}$};
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+      </sidebyside>
     </example>
 
   </subsection>

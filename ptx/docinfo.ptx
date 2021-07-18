@@ -7,6 +7,7 @@
   <latex-image-preamble>
     <![CDATA[
     \usepackage{pgfplots}
+    \usetikzlibrary{arrows.meta}
     \pgfplotsset{every axis/.append style={
           axis x line=middle,    % put the x axis in the middle
           axis y line=middle,    % put the y axis in the middle
@@ -23,6 +24,12 @@
           tick label style={font=\footnotesize},
           grid = both
     }}
+    \pgfplotsset{function/.style  = {color=blue, mark=none, line width=1pt, -, solid}}
+    \pgfplotsset{ghost/.style     = {color=gray, mark=none, line width=1pt, -, dotted}}
+    \pgfplotsset{soliddot/.style  = {color=blue, mark=*,    only marks}}
+    \pgfplotsset{hollowdot/.style = {color=blue, mark=*,    only marks, fill=white}}
+    \pgfplotsset{ray/.style       = {color=blue, thick, -{stealth}}}
+    \pgfplotsset{angle/.style     = {->, black}}
     ]]>
   </latex-image-preamble>
 </docinfo>

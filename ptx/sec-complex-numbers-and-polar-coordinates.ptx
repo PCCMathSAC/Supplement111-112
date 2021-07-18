@@ -3,34 +3,31 @@
   <title>Complex Numbers and Polar Coordinates</title>
     <subsection>
       <title>Complex Number Forms</title>
-    <p>
-      Recall that a complex number has the form <m>a+bi</m> where <m>a,b \in \mathbb{R}</m> and <m>i=\sqrt{-1}</m>. Complex numbers have two parts: a real part and an imaginary part. For the number <m>a+bi</m>, the real part is <m>a</m> and the imaginary part is <m>b</m>. Because they have two parts, we can use the two dimensional rectangular coordinate plane to represent complex numbers. We use the horizontal axis to represent the real part and the vertical axis to represent the complex part. Thus, the complex number <m>a+bi</m> can be represented by the point <m> \left( a,b \right) </m> on the rectangular coordinate plane; see <xref ref="figure-complex-number-rect-form"/>.
-    </p>
+      <p>
+        Recall that a complex number has the form <m>a+bi</m> where <m>a,b \in \mathbb{R}</m> and <m>i=\sqrt{-1}</m>. Complex numbers have two parts: a real part and an imaginary part. For the number <m>a+bi</m>, the real part is <m>a</m> and the imaginary part is <m>b</m>. Because they have two parts, we can use the two dimensional rectangular coordinate plane to represent complex numbers. We use the horizontal axis to represent the real part and the vertical axis to represent the complex part. Thus, the complex number <m>a+bi</m> can be represented by the point <m> \left( a,b \right) </m> on the rectangular coordinate plane; see <xref ref="figure-complex-number-rect-form"/>.
+      </p>
       <figure xml:id="figure-complex-number-rect-form">
       <caption></caption>
-      <image width="50%">
-        <description>Graph showing the point a+bi.</description>
-        <latex-image>
-          \begin{tikzpicture}
-      \begin{axis}[
-          Axis Style,
-          grid=none,
-          xmin=-1, xmax=5,
-          xlabel={$x$},
-          ymin=-1, ymax=5,
-          xtick={3},
-          xticklabels={$a$},
-          ytick={2},
-          yticklabels={$b$},
-          axis equal image,
-              ]
-      \addplot[mark=*] coordinates {(3,2)};
-        \node at (axis cs:3.75,2.25) {$a+bi$};
-      \end{axis}
-      \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
+        <image width="50%">
+          <description>Graph showing the point a+bi.</description>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                  grid=none,
+                  xmin=-1, xmax=5,
+                  ymin=-1, ymax=5,
+                  xtick={3},
+                  xticklabels={$a$},
+                  ytick={2},
+                  yticklabels={$b$},
+                  axis equal image,
+                ]
+                \addplot[soliddot] coordinates {(3,2)} node[above right] {$a+bi$};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
 
     <p>
       As we’ve studied in this course, the rectangular ordered pair <m>\left( a,b\right) </m> can be represented in polar coordinates <m>\left( r,\theta \right) </m> where <m>r</m> represents the distance the point is from the origin and <m>\theta</m> represents the angle between the positive <m>x</m>-axis and the segment connecting the origin and the point; see <xref ref="figure-complex-number-polar-form"/>.
@@ -40,31 +37,26 @@
       <caption></caption>
       <image width="50%">
         <description>Graph showing a + bi with r and theta as its polar coordinates labeled.</description>
-        <latex-image>
-          \begin{tikzpicture}
-      \begin{axis}[
-          Axis Style,
-          grid=none,
-          xmin=-1, xmax=5,
-          xlabel={$x$},
-          ymin=-1, ymax=5,
-          xtick={3},
-          xticklabels={$a$},
-          ytick={2},
-          yticklabels={$b$},
-          axis equal image,
-              ]
-      \addplot[mark=*] coordinates {(3,2)};
-        \node at (axis cs:3.75,2.25) {$a+bi$};
-      \addplot [mark=none, semi thick, black, domain=0:3, samples=10] {2*x/3};
-        \node at (axis cs:1,1) {$r$};
-      \addplot [domain=0:180*0.588/pi, samples=50, black] ({0.5*cos(x)}, {0.5*sin(x)});
-        \node at (axis cs:0.75,0.25) {$\theta$};
-      \end{axis}
-      \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                  grid=none,
+                  xmin=-1, xmax=5,
+                  ymin=-1, ymax=5,
+                  xtick={3},
+                  xticklabels={$a$},
+                  ytick={2},
+                  yticklabels={$b$},
+                  axis equal image,
+                ]
+                \addplot[soliddot] coordinates {(3,2)} node[above right] {$a+bi$};
+                \addplot[ray, black] coordinates {(0,0) (3,2)} node[pos=0.5, above left] {$r$};
+                \addplot[angle, domain=0:180*0.588/pi] ({0.5*cos(x)}, {0.5*sin(x)}) node[pos=0.67, right] {$\theta$};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
     <p>
       We know that if the rectangular pair <m>\left( a,b\right) </m> represents the same point as the polar pair <m> \left( r,\theta \right) </m>, then <m>a=r\cos(\theta)</m> and <m>b=r\sin(\theta)</m>.  Thus,
       <md>
