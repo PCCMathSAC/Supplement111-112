@@ -92,7 +92,7 @@ pdf:
 	install -d $(IMGSRC)
 	cp -a $(IMGSRC) $(PRINTOUT) || :
 	cd $(PRINTOUT); \
-	xsltproc -xinclude --stringparam publisher $(PUBFILE) --stringparam latex.print 'yes' $(PTXXSL)/pretext-latex.xsl $(MAINFILE) > supplement111-112.tex; \
+	xsltproc -xinclude --stringparam publisher $(PUBFILE) --stringparam exercise.divisional.answer no --stringparam exercise.divisional.solution no $(PTXXSL)/pretext-latex.xsl $(MAINFILE) > supplement111-112.tex; \
 	xelatex supplement111-112.tex; \
 	xelatex supplement111-112.tex; \
 
