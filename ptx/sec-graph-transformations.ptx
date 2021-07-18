@@ -891,7 +891,7 @@
         </answer>
       </exercise>
       <!--exercises 3 - 6 in OG graph transformations -->
-      <exercisegroup cols="2">
+      <exercisegroup>
         <introduction>
           <p>
             First write <m>g(x)</m> in terms of <m>f</m>. Then compose a sequence of transformations that will transform the graph of <m>y=f(x)</m> into the graph of <m>y=g(x)</m>.
@@ -984,7 +984,7 @@
           <p>
             Use the graph of <m>y=f(x)</m> that is provided to sketch a graph of each given function.
           </p>
-          <image width="60%">
+          <image width="70%">
             <description>The graph of f of x which is shown has the points (-4,4), (-2, 0), (0, 4), (2, 4), (4, -4) all connected.</description>
             <latex-image>
               \begin{tikzpicture}

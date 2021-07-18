@@ -8,11 +8,12 @@
       </p>
       <figure xml:id="figure-complex-number-rect-form">
       <caption></caption>
-        <image width="50%">
+        <image width="40%">
           <description>Graph showing the point a+bi.</description>
           <latex-image>
             \begin{tikzpicture}
               \begin{axis}[
+                  width=6cm,
                   grid=none,
                   xmin=-1, xmax=5,
                   ymin=-1, ymax=5,
@@ -35,11 +36,12 @@
 
     <figure xml:id="figure-complex-number-polar-form">
       <caption></caption>
-      <image width="50%">
+      <image width="40%">
         <description>Graph showing a + bi with r and theta as its polar coordinates labeled.</description>
           <latex-image>
             \begin{tikzpicture}
               \begin{axis}[
+                  width=6cm,
                   grid=none,
                   xmin=-1, xmax=5,
                   ymin=-1, ymax=5,
@@ -51,7 +53,7 @@
                 ]
                 \addplot[soliddot] coordinates {(3,2)} node[above right] {$a+bi$};
                 \addplot[ray, black] coordinates {(0,0) (3,2)} node[pos=0.5, above left] {$r$};
-                \addplot[angle, domain=0:180*0.588/pi] ({0.5*cos(x)}, {0.5*sin(x)}) node[pos=0.67, right] {$\theta$};
+                \addplot[angle, domain=0:180*0.588/pi] ({cos(x)}, {sin(x)}) node[pos=0.67, right] {$\theta$};
               \end{axis}
             \end{tikzpicture}
           </latex-image>
@@ -397,7 +399,7 @@
           </statement>
           <answer>
             <p>
-              The three cube roots of <m>27i</m> are <m>\frac{3\sqrt{3}}{2}+\frac{3}{2}i</m>, <m>-3i</m> and <m>-\frac{3\sqrt{3}}{2}+\frac{3}{2}i</m>.
+              <m>\frac{3\sqrt{3}}{2}+\frac{3}{2}i</m>, <m>-3i</m>, and <m>-\frac{3\sqrt{3}}{2}+\frac{3}{2}i</m>
             </p>
           </answer>
       </exercise>
@@ -410,7 +412,7 @@
           </statement>
           <answer>
             <p>
-              The two square roots of <m> -\frac{1}{2}+\frac{\sqrt{3}}{2}i </m> are <m>\frac{1}{2}+\frac{\sqrt{3}}{2}i </m> and <m> -\frac{1}{2}-\frac{\sqrt{3}}{2}i </m>.
+              <m>\frac{1}{2}+\frac{\sqrt{3}}{2}i </m> and <m> -\frac{1}{2}-\frac{\sqrt{3}}{2}i </m>
             </p>
           </answer>
       </exercise>
@@ -423,7 +425,7 @@
           </statement>
           <answer>
             <p>
-              The solution set for the equation <m>z^3+1=0</m> is <m>\Big\{ -1, \frac{1}{2}+\frac{\sqrt{3}}{2}i, \frac{1}{2}-\frac{\sqrt{3}}{2}i \Big\} </m>.
+              <m>\left\{ -1, \frac{1}{2}+\frac{\sqrt{3}}{2}i, \frac{1}{2}-\frac{\sqrt{3}}{2}i \right\} </m>
             </p>
           </answer>
       </exercise>

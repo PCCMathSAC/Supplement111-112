@@ -6,7 +6,7 @@
           <p>
             The graph of <m>f(x)=\log_a(x)</m> is given in the graph below. Find the value of <m>a</m>. Note, the points <m>\left( 1,0 \right)</m> and <m>\left( 9,2 \right)</m> are on the graph of <m>f</m>.
           </p>
-            <image width="75%">
+            <image width="60%">
               <description>This is a picture of a logarithmic function. The two points shown are (1, 0) and (9, 2).</description>
               <latex-image>
                 \begin{tikzpicture}
@@ -44,7 +44,7 @@
             <p>
               The graph of <m>f(x)=\log_a(x)</m> is given below. Find the value of <m>a</m>. Note, the points <m>\left( 1,0 \right)</m> and <m>\left( 25,4 \right)</m> are on the graph of <m>f</m>.
             </p>
-                <image width="75%">
+                <image width="60%">
                   <description>This is a picture of a logarithmic function. The two points shown are (1, 0) and (25, 4).</description>
                   <latex-image>
                     \begin{tikzpicture}

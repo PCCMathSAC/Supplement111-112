@@ -84,8 +84,8 @@
     <xi:include href="./mth112.ptx"/>
 
     <backmatter>
-      <solutions divisional="answer">
-        <title>Answers to Odd Exercises</title>
+      <solutions divisional="answer solution">
+        <title>Answers and Solutions to Exercises</title>
       </solutions>
     </backmatter>
   </book>

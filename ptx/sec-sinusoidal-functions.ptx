@@ -47,7 +47,7 @@
           <latex-image>
             \begin{tikzpicture}
               \begin{axis}[
-                  width=12cm,
+                  width=9cm,
                   height=6cm,
                   xmin=-2.5, xmax=8.5,
                   ymin=-1.6, ymax=1.6,
@@ -145,7 +145,7 @@
             <latex-image>
               \begin{tikzpicture}
                 \begin{axis}[
-                    width=12cm,
+                    width=9cm,
                     height=6cm,
                     xmin=-1, xmax=3.5,
                     ymin=-2.5, ymax=4.5,
@@ -212,7 +212,7 @@
               </li>
             </dl>
           </p>
-          <image width="75%">
+          <image>
             <description>The graph of f(x)=3sin(3x-pi/2).</description>
             <latex-image>
               \begin{tikzpicture}
@@ -273,7 +273,7 @@
               </li>
             </dl>
           </p>
-          <image width="75%">
+          <image>
             <description>The graph of g(t)=cos(4t+pi)+3.</description>
             <latex-image>
               \begin{tikzpicture}
@@ -334,7 +334,7 @@
               </li>
             </dl>
           </p>
-          <image width="75%">
+          <image>
             <description>The graph of m(theta)=2cos(2 pi theta - pi) + 4.</description>
             <latex-image>
               \begin{tikzpicture}
@@ -396,7 +396,7 @@
               </li>
             </dl>
           </p>
-          <image width="75%">
+          <image>
             <description>The graph of n(x)=-4sin(pi x + pi/4)-2.</description>
             <latex-image>
               \begin{tikzpicture}
@@ -428,7 +428,7 @@
           <p>
             <m>y=p(t)</m>
           </p>
-          <image width="75%">
+          <image>
             <description>Graph of y=p(t). The highest points are at 2 and the lowest are at -6. On the y-axis the intercept is (0, -6). The period is pi.</description>
             <latex-image>
               \begin{tikzpicture}
@@ -458,7 +458,7 @@
           <p>
             <m>y=q(x)</m>
           </p>
-          <image width="75%">
+          <image>
             <description>Graph of y=q(t). The highest points are at 2 and the lowest are at -4. On the y-axis the intercept is (0, 1) and it has points at (-0.5, -1), (1.5, -1), and (3.5, -1). The period is 4.</description>
             <latex-image>
               \begin{tikzpicture}

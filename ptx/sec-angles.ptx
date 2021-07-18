@@ -25,7 +25,7 @@
       </p>
       <figure xml:id="figure-coterminal">
         <caption>Coterminal angles</caption>
-        <image width="75%">
+        <image width="50%">
           <description>This is a graph showing coterminal angles of 45 degrees, 405 degrees, and -315 degrees which all have the same terminal side.</description>
           <latex-image>
             \begin{tikzpicture}
@@ -284,7 +284,7 @@
                   ]
                   \addplot[ray] coordinates {(0,0) (2.216,6)};
                   \addplot[angle, domain=0:7.5, samples=50] ({0.7*ln(x+10)*cos(x)}, {0.7*ln(x+10)*sin(x)}) node[pos=0.5, below left] {$7.5$};
-                  \addplot[angle, domain=0:7.5-2*pi]({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.9, right] {$\begin{aligned}\amp7.5-2\pi \\\amp \approx 1.2\end{aligned}$};
+                  \addplot[angle, domain=0:7.5-2*pi]({3.5*cos(x)}, {3.5*sin(x)}) node[pos=0.6, above right] {$\begin{aligned}\amp7.5-2\pi \\\amp \approx 1.2\end{aligned}$};
                 \end{axis}
               \end{tikzpicture}
             </latex-image>
