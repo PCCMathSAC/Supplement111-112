@@ -227,7 +227,7 @@
           Now, let's find <m>\theta</m>:
           <md>
             <mrow>\tan(\theta) \amp= \frac{4\sqrt{2}}{-4\sqrt{2}} </mrow>
-            <mrow> \implies \theta \amp= \tan^{-1}(-1)+\pi \amp\amp \text{(we add } \pi \text{ since} \left( -4\sqrt{2},4\sqrt{2} \right) \text{is in Quadrant 2, outside the range of arctangent)}</mrow>
+            <mrow> \implies \theta \amp= \tan^{-1}(-1)+\pi \amp\amp \text{(add } \pi \text{ since} \left( -4\sqrt{2},4\sqrt{2} \right) \text{is in Quadrant 2)}</mrow>
             <mrow> \implies \theta \amp= -\frac{\pi}{4}+\pi </mrow>
             <mrow> \implies \theta \amp= \frac{3\pi}{4} </mrow>
           </md>
