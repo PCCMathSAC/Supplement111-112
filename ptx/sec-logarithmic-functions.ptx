@@ -28,8 +28,8 @@
             Since the function has the form <m>f(x)=\log_a(x)</m> and <m>\left( 9,2 \right)</m> is on the graph, we know that <m>f(9)=2</m>. Thus,
             <md>
               <mrow>f(9)=2 \amp \implies \log_a(9)=2 \amp\amp \text{(since } f(9)=\log_a(9) \text{)}</mrow>
-              <mrow> \amp \implies a^2=9 \amp\amp \text{(translate the logarithmic statement into an exponential one)}</mrow>
-              <mrow> \amp \implies a=3 \amp\amp \text{(take the positive square root of } 9 \text{ because bases of logs are positive)}</mrow>
+              <mrow> \amp \implies a^2=9 \amp\amp \text{(translate to an exponential statement)}</mrow>
+              <mrow> \amp \implies a=3 \amp\amp \text{(positive square root because bases are positive)}</mrow>
             </md>
           </p>
           <p>
