@@ -328,7 +328,7 @@
           </statement>
           <answer>
             <p>
-              <m>k(x)=f(x)+6</m>. So, we can shift the graph of <m>y=f(x)</m> up 6 units to obtain <m>y=k(x)</m>.
+              <m>k(x)=f(x)+6</m>. So, we can shift the graph of <m>y=f(x)</m> up <m>6</m> units to obtain <m>y=k(x)</m>.
             </p>
           </answer>
         </exercise>
@@ -522,7 +522,7 @@
             </row>
             <row>
               <cell>
-                <m>f\left( \frac{1}{2}x \right)</m>
+                <m>f\mathopen{}\left( \frac{1}{2}x \right)\mathclose{}</m>
               </cell>
               <cell>
               </cell>
@@ -804,7 +804,7 @@
             </row>
             <row>
               <cell>
-                <m>f\left( \frac{1}{2}x \right)</m>
+                <m>f\mathopen{}\left( \frac{1}{2}x \right)\mathclose{}</m>
               </cell>
               <cell>
                 <m>0</m>
@@ -948,8 +948,8 @@
             <p>
               <md>
                 <mrow> g(x) \amp =-4\left( \frac{1}{2}x-5 \right)^2+3 </mrow>
-                <mrow>  \amp = -4f\left( \frac{1}{2}x-5 \right)+3 </mrow>
-                <mrow>  \amp = -4f\left( \frac{1}{2} \left(x-10 \right) \right)+3 </mrow>
+                <mrow>  \amp = -4f\mathopen{}\left( \frac{1}{2}x-5 \right)\mathclose{}+3 </mrow>
+                <mrow>  \amp = -4f\mathopen{}\left( \frac{1}{2} \left(x-10 \right) \right)\mathclose{}+3 </mrow>
               </md>
             </p>
             <p>
@@ -968,8 +968,8 @@
             <p>
               <md>
                 <mrow> g(x) \amp =\frac{1}{2}\sqrt[3]{10x+30}-6 </mrow>
-                <mrow>  \amp = =\frac{1}{2}f(10x+30)-6 </mrow>
-                <mrow>  \amp = =\frac{1}{2}f\left( 10\left( x+3 \right) \right) -6 </mrow>
+                <mrow>  \amp = \frac{1}{2}f(10x+30)-6 </mrow>
+                <mrow>  \amp = \frac{1}{2}f\mathopen{}\left( 10\mathopen{}\left( x+3 \right)\mathclose{} \right)\mathclose{} -6 </mrow>
               </md>
             </p>
             <p>
@@ -1094,7 +1094,7 @@
           <exercise>
               <statement>
                   <p>
-                    <m>k_4(x)=f\left(\frac{1}{2}x\right) +2</m>
+                    <m>k_4(x)=f\mathopen{}\left(\frac{1}{2}x\right)\mathclose{} +2</m>
                   </p>
               </statement>
               <answer>

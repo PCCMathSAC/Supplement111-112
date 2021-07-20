@@ -30,6 +30,7 @@
     \pgfplotsset{hollowdot/.style = {color=blue, mark=*,    only marks, fill=white}}
     \pgfplotsset{ray/.style       = {color=blue, thick, -{stealth}}}
     \pgfplotsset{angle/.style     = {->, black}}
+    \pgfplotsset{guideline/.style = {<->, gray, dashed}}
     ]]>
   </latex-image-preamble>
 </docinfo>

@@ -63,12 +63,12 @@
       We know that if the rectangular pair <m>\left( a,b\right) </m> represents the same point as the polar pair <m> \left( r,\theta \right) </m>, then <m>a=r\cos(\theta)</m> and <m>b=r\sin(\theta)</m>.  Thus,
       <md>
         <mrow>a+bi \amp=r\cos(\theta)+r\sin(\theta) \cdot i</mrow>
-        <mrow> \amp=r \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right) </mrow>
+        <mrow> \amp=r \mathopen{}\left( \cos \mathopen{}\left( \theta \right)\mathclose{}+i\cdot\sin \mathopen{}\left( \theta \right)\mathclose{} \right)\mathclose{} </mrow>
       </md>
       i.e., we can express a complex number using the "polar information" <m>r</m> and <m>\theta</m>.
     </p>
     <p>
-      The expression <q><m>r \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right)</m></q> is what a textbook might decribe as the <q>polar form of a complex number.</q>  But a more appropriate expression to label as <q>the polar form of a complex number</q> involves Euler's Formula. Euler's Formula is an identity that establishes a surprising connection between the exponential function <m>e^x</m> and complex numbers.
+      The expression <q><m>r \mathopen{}\left( \cos \mathopen{}\left( \theta \right)\mathclose{}+i\cdot\sin \mathopen{}\left( \theta \right)\mathclose{} \right)\mathclose{}</m></q> is what a textbook might decribe as the <q>polar form of a complex number.</q>  But a more appropriate expression to label as <q>the polar form of a complex number</q> involves Euler's Formula. Euler's Formula is an identity that establishes a surprising connection between the exponential function <m>e^x</m> and complex numbers.
     </p>
     <p>
       This is Euler's Formula. For reference purposes, we state this in a theorem.
@@ -87,7 +87,7 @@
       Notice that if we multiply both sides of Euler's formula by <m>r</m>, we obtain a formula that allows us to write any complex number in polar form:
       <md>
         <mrow>e^{i\theta} \amp=\cos(\theta)+i \cdot \sin(\theta)</mrow>
-        <mrow>\implies r \cdot e^{i\theta} \amp= r \cdot \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right)</mrow>
+        <mrow>\implies r \cdot e^{i\theta} \amp= r \cdot \mathopen{}\left( \cos \mathopen{}\left( \theta \right)\mathclose{}+i\cdot\sin \mathopen{}\left( \theta \right)\mathclose{} \right)\mathclose{}</mrow>
         <mrow>\implies r(e^{i\theta}) \amp=r\cos(\theta)+r\sin(\theta) \cdot i</mrow>
       </md>
     </p>
@@ -99,7 +99,7 @@
       </statement>
     </definition>
     <p>
-      Let's review what we've established: First, we observed that we can write a complex number of the form <q><m>a+bi</m></q> in the form <q><m>r \cdot \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right)</m></q>. Then we noticed that we can write an expression of the form <q><m>r \cdot \left( \cos \left( \theta \right)+i\cdot\sin \left( \theta \right) \right)</m></q> in the form <q><m>re^{i\theta}</m></q>. Finally, we realized that we can write a complex number <q><m>a+bi</m></q> in the form <q><m>re^{i\theta}</m></q> so we defined <q><m>re^{i\theta}</m></q> as being the polar form of the complex number <m>a+bi</m>.
+      Let's review what we've established: First, we observed that we can write a complex number of the form <q><m>a+bi</m></q> in the form <q><m>r \cdot \mathopen{}\left( \cos \mathopen{}\left( \theta \right)\mathclose{}+i\cdot\sin \mathopen{}\left( \theta \right)\mathclose{} \right)\mathclose{}</m></q>. Then we noticed that we can write an expression of the form <q><m>r \cdot \mathopen{}\left( \cos \mathopen{}\left( \theta \right)\mathclose{}+i\cdot\sin \mathopen{}\left( \theta \right)\mathclose{} \right)\mathclose{}</m></q> in the form <q><m>re^{i\theta}</m></q>. Finally, we realized that we can write a complex number <q><m>a+bi</m></q> in the form <q><m>re^{i\theta}</m></q> so we defined <q><m>re^{i\theta}</m></q> as being the polar form of the complex number <m>a+bi</m>.
     </p>
     <example>
       <statement>
@@ -111,8 +111,8 @@
         <p>
             <md>
               <mrow>z \amp=6e^{\frac{5\pi}{6}\cdot i} </mrow>
-              <mrow> \amp=6\cos\left( \frac{5\pi}{6} \right) +6\sin \left( \frac{5\pi}{6} \right) \cdot i </mrow>
-              <mrow> \amp=6 \left(-\frac{\sqrt{3}}{2} \right) +6 \left( \frac{1}{2} \right) \cdot i </mrow>
+              <mrow> \amp=6\cos\mathopen{}\left( \frac{5\pi}{6} \right)\mathclose{} +6\sin \mathopen{}\left( \frac{5\pi}{6} \right)\mathclose{} \cdot i </mrow>
+              <mrow> \amp=6 \mathopen{}\left(-\frac{\sqrt{3}}{2} \right)\mathclose{} +6 \mathopen{}\left( \frac{1}{2} \right)\mathclose{} \cdot i </mrow>
               <mrow> \amp=-3\sqrt{3}+3i </mrow>
             </md>
         </p>
@@ -185,8 +185,8 @@
             <mrow>\left( -1+\sqrt{3}i \right) ^{1/2} \amp= (2e^{\frac{2\pi}{3}})^{1/2} </mrow>
             <mrow> \amp=2^{\frac{1}{2}}e^{\frac{2\pi}{3} \cdot \frac{1}{2}i} </mrow>
             <mrow> \amp=\sqrt{2}e^{\frac{\pi}{3} \cdot i} </mrow>
-            <mrow> \amp=\sqrt{2} \left( \cos \left( \frac{\pi}{3} \right) +i\cdot \sin \left( \frac{\pi}{3} \right) \right)</mrow>
-            <mrow> \amp=\sqrt{2} \left( \frac{1}{2}+\frac{\sqrt{3}}{2}i \right) </mrow>
+            <mrow> \amp=\sqrt{2} \mathopen{}\left( \cos \mathopen{}\left( \frac{\pi}{3} \right)\mathclose{} +i\cdot \sin \mathopen{}\left( \frac{\pi}{3} \right)\mathclose{} \right)\mathclose{}</mrow>
+            <mrow> \amp=\sqrt{2} \mathopen{}\left( \frac{1}{2}+\frac{\sqrt{3}}{2}i \right)\mathclose{} </mrow>
             <mrow> \amp=\frac{\sqrt{2}}{2}+\frac{\sqrt{6}}{2}i </mrow>
           </md>
           and
@@ -194,8 +194,8 @@
             <mrow>\left( -1+\sqrt{3}i \right) ^{1/2} \amp= \left( 2e^{-\frac{4\pi}{3}} \right) ^{1/2} </mrow>
             <mrow> \amp=2^{\frac{1}{2}}e^{-\frac{4\pi}{3} \cdot \frac{1}{2}i} </mrow>
             <mrow> \amp=\sqrt{2}e^{-\frac{2\pi}{3} \cdot i} </mrow>
-            <mrow> \amp=\sqrt{2}\left( \cos \left( -\frac{2\pi}{3} \right) +i\cdot \sin \left( -\frac{2\pi}{3} \right) \right)</mrow>
-            <mrow> \amp=\sqrt{2} \left( -\frac{1}{2}-\frac{\sqrt{3}}{2}i \right) </mrow>
+            <mrow> \amp=\sqrt{2}\mathopen{}\left( \cos \mathopen{}\left( -\frac{2\pi}{3} \right)\mathclose{} +i\cdot \sin \mathopen{}\left( -\frac{2\pi}{3} \right)\mathclose{} \right)\mathclose{}</mrow>
+            <mrow> \amp=\sqrt{2} \mathopen{}\left( -\frac{1}{2}-\frac{\sqrt{3}}{2}i \right)\mathclose{} </mrow>
             <mrow> \amp=-\frac{\sqrt{2}}{2}-\frac{\sqrt{6}}{2}i. </mrow>
           </md>
         </p>
@@ -239,8 +239,8 @@
             <mrow>\sqrt[3]{-4\sqrt{2}+4\sqrt{2}i} \amp= \left( 8e^{\frac{3\pi}{4} \cdot i} \right) ^{1/3} </mrow>
             <mrow> \amp=8^{\frac{1}{3}}e^{\frac{3\pi}{4} \cdot \frac{1}{3}i} </mrow>
             <mrow> \amp=2e^{\frac{\pi}{4} \cdot i} </mrow>
-            <mrow> \amp=2 \left( \cos \left( \frac{\pi}{4} \right) +i \cdot \sin \left( \frac{\pi}{4} \right) \right)</mrow>
-            <mrow> \amp=2 \left( \frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}i \right) </mrow>
+            <mrow> \amp=2 \mathopen{}\left( \cos \mathopen{}\left( \frac{\pi}{4} \right)\mathclose{} +i \cdot \sin \mathopen{}\left( \frac{\pi}{4} \right)\mathclose{} \right)\mathclose{}</mrow>
+            <mrow> \amp=2 \mathopen{}\left( \frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}i \right)\mathclose{} </mrow>
             <mrow> \amp=\sqrt{2}+\sqrt{2}i </mrow>
           </md>
         </p>
