@@ -21,7 +21,7 @@
     </p>
     <example>
       <p>
-        The angles <m>45^{\circ}</m>, <m>405^{\circ}</m>, and <m>315^{\circ}</m> are coterminal as illustrated in <xref ref="figure-coterminal"/>.
+        The angles <m>45^{\circ}</m>, <m>405^{\circ}</m>, and <m>-315^{\circ}</m> are coterminal as illustrated in <xref ref="figure-coterminal"/>.
       </p>
       <figure xml:id="figure-coterminal">
         <caption>Coterminal angles</caption>
@@ -42,8 +42,8 @@
                 ]
                 \addplot[ray] coordinates {(0,0) (11,11)};
                 \addplot[angle, domain=0:pi/4] ({7*cos(x)}, {7*sin(x)}) node[pos=0.5, above right, inner sep=1pt] {$45^{\circ}$};
-                \addplot[angle, domain=0:-7*pi/4, samples=50] ({10*cos(x)}, {10*sin(x)}) node[pos=0.67, above left, inner sep=0pt] {$405^{\circ}$};
-                \addplot[angle, domain=0:9*pi/4, samples=50] ({4*log10(x+10)*cos(x)}, {4*log10(x+10)*sin(x)}) node[pos=0.5, below left, inner sep=0pt] {$-315^{\circ}$};
+                \addplot[angle, domain=0:-7*pi/4, samples=50] ({10*cos(x)}, {10*sin(x)}) node[pos=0.67, above left, inner sep=0pt] {$-315^{\circ}$};
+                \addplot[angle, domain=0:9*pi/4, samples=50] ({4*log10(x+10)*cos(x)}, {4*log10(x+10)*sin(x)}) node[pos=0.5, below left, inner sep=0pt] {$405^{\circ}$};
               \end{axis}
             \end{tikzpicture}
           </latex-image>
