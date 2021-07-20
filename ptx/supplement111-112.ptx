@@ -84,7 +84,7 @@
     <xi:include href="./mth112.ptx"/>
 
     <backmatter>
-      <solutions divisional="answer solution">
+      <solutions divisional="answer solution" worksheet="answer solution">
         <title>Answers and Solutions to Exercises</title>
       </solutions>
     </backmatter>
