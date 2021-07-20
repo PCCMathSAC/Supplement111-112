@@ -67,9 +67,6 @@
       <p>
         The angles <m>\frac{\pi}{3}</m> and <m>30^{\circ}</m> are their own reference angles since they are acute angles; seen in <xref ref="figure-example-ref-pi3"/> and <xref ref="figure-example-ref-30"/>.
       </p>
-			<figure>
-				<caption>Hello</caption>
-
 
       <sidebyside widths="37.5% 37.5%">
         <figure xml:id="figure-example-ref-pi3">
@@ -114,7 +111,6 @@
           </image>
         </figure>
       </sidebyside>
-		</figure>
     </example>
     <example>
       <p>
