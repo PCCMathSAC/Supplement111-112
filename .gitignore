@@ -1,2 +1,3 @@
-output
+ptx/generated
 Makefile.paths
+.DS_Store

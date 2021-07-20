@@ -45,12 +45,12 @@ include Makefile.paths
 # the project distribution
 ###################################
 SRC       = $(PRJ)/ptx
-IMGSRC    = $(PRJ)/external-images
-OUTPUT    = $(PRJ)/output
-PUB       = $(PRJ)/publication
+IMGSRC    = $(SRC)/external/images
+OUTPUT    = $(SRC)/generated
+PUB       = $(PRJ)/publisher
 
 # The project's root file
-MAINFILE  = $(SRC)/supplement.ptx
+MAINFILE  = $(SRC)/supplement111-112.ptx
 
 # The project's styling files
 PUBFILE   = $(PUB)/publication.xml
@@ -63,25 +63,24 @@ PTXXSL = $(PTX)/xsl
 # folder for different output formats
 PRINTOUT   = $(OUTPUT)/print
 HTMLOUT    = $(OUTPUT)/html
-IMGOUT     = $(OUTPUT)/images
-
-html:
-	install -d $(OUTPUT)
-	-rm -r $(HTMLOUT) || :
-	install -d $(HTMLOUT)
-	install -d $(HTMLOUT)/images
-	install -d $(IMGOUT)
-	install -d $(IMGSRC)
-	cp -a $(IMGOUT) $(HTMLOUT) || :
-	cp -a $(IMGSRC) $(HTMLOUT) || :
-	cd $(HTMLOUT); \
-	xsltproc --xinclude --stringparam watermark.text "DRAFT" --stringparam publisher $(PUBFILE)  $(PTXXSL)/pretext-html.xsl $(MAINFILE); \
+IMGOUT     = $(OUTPUT)/latex-image
+EPUBOUT    = $(OUTPUT)/epub
 
 images:
 	install -d $(OUTPUT)
 	-rm $(IMGOUT) || :
 	install -d $(IMGOUT)
 	$(PTX)/pretext/pretext -c latex-image -p $(PUBFILE) -f all -d $(IMGOUT) $(MAINFILE)
+
+html:
+	install -d $(OUTPUT)
+	-rm -r $(HTMLOUT) || :
+	install -d $(HTMLOUT)
+	install -d $(HTMLOUT)/generated/
+	install -d $(IMGOUT)
+	cp -a $(IMGOUT) $(HTMLOUT)/generated/ || :
+	cd $(HTMLOUT); \
+	xsltproc --xinclude --stringparam publisher $(PUBFILE) --stringparam exercise.divisional.answer no --stringparam exercise.divisional.solution no $(PTXXSL)/pretext-html.xsl $(MAINFILE); \
 
 pdf:
 	install -d $(OUTPUT)
@@ -95,6 +94,12 @@ pdf:
 	xsltproc -xinclude --stringparam publisher $(PUBFILE) --stringparam exercise.divisional.answer no --stringparam exercise.divisional.solution no $(PTXXSL)/pretext-latex.xsl $(MAINFILE) > supplement111-112.tex; \
 	xelatex supplement111-112.tex; \
 	xelatex supplement111-112.tex; \
+
+epub:
+	install -d $(OUTPUT)
+	-rm -r $(EPUBOUT) || :
+	install -d $(EPUBOUT)
+	$(PTX)/pretext/pretext -c all -f epub-svg -p $(PUBFILE) -x exercise.divisional.answer no exercise.divisional.solution no -d $(EPUBOUT) $(MAINFILE)
 
 
 ###########
