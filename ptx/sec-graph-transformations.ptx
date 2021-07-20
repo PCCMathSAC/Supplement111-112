@@ -158,966 +158,1030 @@
     </example>
     <!-- start of exercises for Graph Transformations -->
     <exercises xml:id="exercises-graph-transformations">
-      <!-- exercise 1 - Graph Transformations -->
-      <exercisegroup>
-        <introduction>
-          <p>
-            The table below defines the functions <m>f</m>, <m>g</m>, <m>h</m>, <m>k</m>, and <m>l</m>.
-          </p>
-          <tabular halign="right" top="major" bottom="minor">
-            <col halign="center"/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <row>
-              <cell>
-                <m>x</m>
-              </cell>
-              <cell>
-                <m>-2</m>
-              </cell>
-              <cell>
-                <m>-1</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>1</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>f(x)</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>1</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-              <cell>
-                <m>4</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>g(x)</m>
-              </cell>
-              <cell>
-                <m>4</m>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-                <m>1</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>h(x)</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>-1</m>
-              </cell>
-              <cell>
-                <m>-2</m>
-              </cell>
-              <cell>
-                <m>-3</m>
-              </cell>
-              <cell>
-                <m>-4</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>k(x)</m>
-              </cell>
-              <cell>
-                <m>6</m>
-              </cell>
-              <cell>
-                <m>7</m>
-              </cell>
-              <cell>
-                <m>8</m>
-              </cell>
-              <cell>
-                <m>9</m>
-              </cell>
-              <cell>
-                <m>10</m>
-              </cell>
-            </row>
-            <row bottom="major">
-              <cell>
-                <m>l(x)</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-              <cell>
-                <m>6</m>
-              </cell>
-              <cell>
-                <m>9</m>
-              </cell>
-              <cell>
-                <m>12</m>
-              </cell>
-            </row>
-          </tabular>
-        </introduction>
-        <!-- exercise 1, part a from Graph Transformations -->
-        <exercise>
-          <statement>
+        <!-- exercise 1 - Graph Transformations -->
+        <exercisegroup>
+          <introduction>
             <p>
-              Express <m>g(x)</m> in terms of <m>f</m> and describe how the graph of <m>y=f(x)</m> can be transformed into the graph of <m>y=g(x)</m>.
+              The table below defines the functions <m>f</m>, <m>g</m>, <m>h</m>, <m>k</m>, and <m>l</m>.
             </p>
-          </statement>
-          <answer>
-            <p>
-              <m>g(x)=f(-x)</m>. So, we can reflect the graph of <m>y=f(x)</m> across the <m>y</m>-axis to obtain <m>y=g(x)</m>.
-            </p>
-          </answer>
-        </exercise>
-        <!-- exercise 1, part b from Graph Transformations -->
-        <exercise>
-          <statement>
-            <p>
-              Express <m>h(x)</m> in terms of <m>f</m> and describe how the graph of <m>y=f(x)</m> can be transformed into the graph of <m>y=h(x)</m>.
-            </p>
-          </statement>
-          <answer>
-            <p>
-              <m>h(x)=-f(x)</m>. So, we can reflect the graph of <m>y=f(x)</m> across the <m>x</m>-axis to obtain <m>y=h(x)</m>.
-            </p>
-          </answer>
-        </exercise>
-        <!-- exercise 1, part c from Graph Transformations -->
-        <exercise>
-          <statement>
-            <p>
-              Express <m>k(x)</m> in terms of <m>f</m> and describe how the graph of <m>y=f(x)</m> can be transformed into the graph of <m>y=k(x)</m>.
-            </p>
-          </statement>
-          <answer>
-            <p>
-              <m>k(x)=f(x)+6</m>. So, we can shift the graph of <m>y=f(x)</m> up <m>6</m> units to obtain <m>y=k(x)</m>.
-            </p>
-          </answer>
-        </exercise>
-        <!-- exercise 1, part d from Graph Transformations -->
-        <exercise>
-          <statement>
-            <p>
-              Express <m>l(x)</m> in terms of <m>f</m> and describe how the graph of <m>y=f(x)</m> can be transformed into the graph of <m>y=l(x)</m>.
-            </p>
-          </statement>
-          <answer>
-            <p>
-              <m>l(x)=3f(x)</m>. So, we can stretch the graph of <m>y=f(x)</m> vertically by a factor of <m>3</m> to obtain <m>y=l(x)</m>.
-            </p>
-          </answer>
-        </exercise>
-      </exercisegroup>
-      <!-- exercise 2 from Graph Transformations -->
-      <exercise>
-        <statement>
-          <p>
-            The second row in the table below gives values for the function, <m>f</m>.
-            Complete the rest of the table. If you don't have sufficient information to fill in some of the cells, leave those cells blank.
-          </p>
-            <tabular halign="right" top="major" bottom="minor" left="major" right="minor">
-            <col halign="center" right="medium"/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <col right="major"/>
-            <row>
-              <cell>
-                <m>x</m>
-              </cell>
-              <cell>
-                <m>-4</m>
-              </cell>
-              <cell>
-                <m>-3</m>
-              </cell>
-              <cell>
-                <m>-2</m>
-              </cell>
-              <cell>
-                <m>-1</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>1</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-              <cell>
-                <m>4</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>f(x)</m>
-              </cell>
-              <cell>
-                <m>-2</m>
-              </cell>
-              <cell>
-                <m>-1</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>1</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-              <cell>
-                <m>4</m>
-              </cell>
-              <cell>
-                <m>5</m>
-              </cell>
-              <cell>
-                <m>6</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>\frac{1}{2}x</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>-2f(x)</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>f(x)+5</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>f(x+2)</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>f\mathopen{}\left( \frac{1}{2}x \right)\mathclose{}</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>f(2x)</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-            </row>
-            <row bottom="major">
-              <cell>
-                <m>f(x-3)</m>
-              </cell>
-              <cell>
-                <m>\phantom{-0}</m>
-              </cell>
-              <cell>
-                <m>\phantom{-0}</m>
-              </cell>
-              <cell>
-                <m>\phantom{-0}</m>
-              </cell>
-              <cell>
-                <m>\phantom{-0}</m>
-              </cell>
-              <cell>
-                <m>\phantom{-0}</m>
-              </cell>
-              <cell>
-                <m>\phantom{-0}</m>
-              </cell>
-              <cell>
-                <m>\phantom{-0}</m>
-              </cell>
-              <cell>
-                <m>\phantom{-0}</m>
-              </cell>
-              <cell>
-                <m>\phantom{-0}</m>
-              </cell>
-            </row>
-          </tabular>
-        </statement>
-        <answer>
-            <tabular halign="right" top="major" bottom="minor" left="major" right="minor">
-            <col halign="center" right="medium"/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <col/>
-            <col right="major"/>
-            <row>
-              <cell>
-                <m>x</m>
-              </cell>
-              <cell>
-                <m>-4</m>
-              </cell>
-              <cell>
-                <m>-3</m>
-              </cell>
-              <cell>
-                <m>-2</m>
-              </cell>
-              <cell>
-                <m>-1</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>1</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-              <cell>
-                <m>4</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>f(x)</m>
-              </cell>
-              <cell>
-                <m>-2</m>
-              </cell>
-              <cell>
-                <m>-1</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>1</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-              <cell>
-                <m>4</m>
-              </cell>
-              <cell>
-                <m>5</m>
-              </cell>
-              <cell>
-                <m>6</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>\frac{1}{2}x</m>
-              </cell>
-              <cell>
-                <m>-1</m>
-              </cell>
-              <cell>
-                <m>-\frac{1}{2}</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>\frac{1}{2}</m>
-              </cell>
-              <cell>
-                <m>1</m>
-              </cell>
-              <cell>
-                <m>\frac{3}{2}</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-                <m>\frac{5}{2}</m>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>-2f(x)</m>
-              </cell>
-              <cell>
-                <m>4</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>-2</m>
-              </cell>
-              <cell>
-                <m>-4</m>
-              </cell>
-              <cell>
-                <m>-6</m>
-              </cell>
-              <cell>
-                <m>-8</m>
-              </cell>
-              <cell>
-                <m>-10</m>
-              </cell>
-              <cell>
-                <m>-12</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>f(x)+5</m>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-              <cell>
-                <m>4</m>
-              </cell>
-              <cell>
-                <m>5</m>
-              </cell>
-              <cell>
-                <m>6</m>
-              </cell>
-              <cell>
-                <m>7</m>
-              </cell>
-              <cell>
-                <m>8</m>
-              </cell>
-              <cell>
-                <m>9</m>
-              </cell>
-              <cell>
-                <m>10</m>
-              </cell>
-              <cell>
-                <m>11</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>f(x+2)</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>1</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-              <cell>
-                <m>4</m>
-              </cell>
-              <cell>
-                <m>5</m>
-              </cell>
-              <cell>
-                <m>6</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>f\mathopen{}\left( \frac{1}{2}x \right)\mathclose{}</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-                <m>1</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-                <m>4</m>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <m>f(2x)</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-                <m>-2</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-                <m>4</m>
-              </cell>
-              <cell>
-                <m>6</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-            </row>
-            <row bottom="major">
-              <cell>
-                <m>f(x-3)</m>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-              </cell>
-              <cell>
-                <m>-2</m>
-              </cell>
-              <cell>
-                <m>-1</m>
-              </cell>
-              <cell>
-                <m>0</m>
-              </cell>
-              <cell>
-                <m>1</m>
-              </cell>
-              <cell>
-                <m>2</m>
-              </cell>
-              <cell>
-                <m>3</m>
-              </cell>
-            </row>
-          </tabular>
-        </answer>
-      </exercise>
-      <!--exercises 3 - 6 in OG graph transformations -->
-      <exercisegroup>
-        <introduction>
-          <p>
-            First write <m>g(x)</m> in terms of <m>f</m>. Then compose a sequence of transformations that will transform the graph of <m>y=f(x)</m> into the graph of <m>y=g(x)</m>.
-          </p>
-        </introduction>
-        <!--exercises 3 in OG graph transformations -->
-        <exercise>
-          <statement>
-            <p>
-              <m>\begin{aligned}[t]f(x)\amp=\sqrt{x}\amp g(x)\amp=\frac{\sqrt{x-7}}{4}\end{aligned}</m>
-            </p>
-          </statement>
-          <solution>
-            <p>
-              <md>
-                <mrow> g(x) \amp = \frac{\sqrt{x-7}}{4} </mrow>
-                <mrow>  \amp = \frac{1}{4}\sqrt{x-7} </mrow>
-                <mrow>  \amp = \frac{1}{4}f(x-7) </mrow>
-              </md>
-            </p>
-            <p>
-              So we can transform <m>y=f(x)</m> into <m>y=g(x)</m> by first shifting right <m>7</m> units and then compressing vertically by a factor of <m>\frac{1}{4}</m>. (There are other correct answers.)
-            </p>
-          </solution>
-        </exercise>
-        <!--exercises 4 in OG graph transformations -->
-        <exercise>
-          <statement>
-            <p>
-              <m>\begin{aligned}[t]f(x)\amp=\frac{1}{x}\amp g(x)\amp=\frac{2}{x}+3\end{aligned}</m>
-            </p>
-          </statement>
-          <solution>
-            <p>
-              <md>
-                <mrow> g(x) \amp = \frac{2}{x}+3 </mrow>
-                <mrow>  \amp = 2 \cdot \frac{1}{x}+3 </mrow>
-                <mrow>  \amp = 2f(x)+3 </mrow>
-              </md>
-            </p>
-            <p>
-              So we can transform <m>y=f(x)</m> into <m>y=g(x)</m> by first stretching vertically by a factor of <m>2</m> and then shifting up <m>3</m> units. (There are other correct answers.)
-            </p>
-          </solution>
-        </exercise>
-        <!--exercises 5 in OG graph transformations -->
-        <exercise>
-          <statement>
-            <p>
-              <m>\begin{aligned}[t]f(x)\amp=x^2\amp g(x)\amp=-4\left( \frac{1}{2}x-5 \right)^2+3\end{aligned}</m>
-            </p>
-          </statement>
-          <solution>
-            <p>
-              <md>
-                <mrow> g(x) \amp =-4\left( \frac{1}{2}x-5 \right)^2+3 </mrow>
-                <mrow>  \amp = -4f\mathopen{}\left( \frac{1}{2}x-5 \right)\mathclose{}+3 </mrow>
-                <mrow>  \amp = -4f\mathopen{}\left( \frac{1}{2} \left(x-10 \right) \right)\mathclose{}+3 </mrow>
-              </md>
-            </p>
-            <p>
-              So we can transform <m>y=f(x)</m> into <m>y=g(x)</m> by first stretching horizontally by a factor of <m>2</m> and then shifting right <m>10</m> units. Then, stretching vertically by a factor of <m>4</m> and reflecting across the <m>x</m>-axis, and finally shifting up <m>3</m> units. (There are other correct answers.)
-            </p>
-          </solution>
-        </exercise>
-        <!--exercises 6 in OG graph transformations -->
-        <exercise>
-          <statement>
-            <p>
-              <m>\begin{aligned}[t]f(x)\amp=\sqrt[3]{x}\amp g(x)\amp=\frac{1}{2}\sqrt[3]{10x+30}-6\end{aligned}</m>
-            </p>
-          </statement>
-          <solution>
-            <p>
-              <md>
-                <mrow> g(x) \amp =\frac{1}{2}\sqrt[3]{10x+30}-6 </mrow>
-                <mrow>  \amp = \frac{1}{2}f(10x+30)-6 </mrow>
-                <mrow>  \amp = \frac{1}{2}f\mathopen{}\left( 10\mathopen{}\left( x+3 \right)\mathclose{} \right)\mathclose{} -6 </mrow>
-              </md>
-            </p>
-            <p>
-              So we can transform <m>y=f(x)</m> into <m>y=g(x)</m> by first compressing horizontally by a factor of <m>\frac{1}{10}</m> and then shifting left <m>3</m> units. Then, compressing vertically by a factor of <m>\frac{1}{2}</m> and finally shifting down <m>6</m> units. (There are other correct answers.)
-            </p>
-          </solution>
-        </exercise>
-      </exercisegroup>
-      <!--exercises 7 - 10 in OG graph transformations -->
-      <exercisegroup cols="2">
-        <introduction>
-          <p>
-            Use the provided graph of <m>y=f(x)</m> to sketch a graph of each given function.
-          </p>
-          <image width="70%">
-            <description>The graph of f of x which is shown has the points (-4,4), (-2, 0), (0, 4), (2, 4), (4, -4) all connected.</description>
-            <latex-image>
-              \begin{tikzpicture}
-              \begin{axis}[
-                  xmin=-9, xmax=9,
-                  ymin=-11, ymax=11,
-                  xtick={-8,-6,...,8},
-                  minor xtick={-7,-5,...,7},
-                  ytick={-10,-8,...,10},
-                  minor ytick={-9,-7,...,9},
-                ]
-                \addplot[function] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
-                \addplot[soliddot] coordinates {(-4,4) (4,-4)};
-              \end{axis}
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </introduction>
-<!--exercises 7 in OG graph transformations -->
+            <tabular halign="right" top="major" bottom="minor">
+              <col halign="center"/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <row>
+                <cell>
+                  <m>x</m>
+                </cell>
+                <cell>
+                  <m>-2</m>
+                </cell>
+                <cell>
+                  <m>-1</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>f(x)</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                  <m>4</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>g(x)</m>
+                </cell>
+                <cell>
+                  <m>4</m>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>h(x)</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>-1</m>
+                </cell>
+                <cell>
+                  <m>-2</m>
+                </cell>
+                <cell>
+                  <m>-3</m>
+                </cell>
+                <cell>
+                  <m>-4</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>k(x)</m>
+                </cell>
+                <cell>
+                  <m>6</m>
+                </cell>
+                <cell>
+                  <m>7</m>
+                </cell>
+                <cell>
+                  <m>8</m>
+                </cell>
+                <cell>
+                  <m>9</m>
+                </cell>
+                <cell>
+                  <m>10</m>
+                </cell>
+              </row>
+              <row bottom="major">
+                <cell>
+                  <m>l(x)</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                  <m>6</m>
+                </cell>
+                <cell>
+                  <m>9</m>
+                </cell>
+                <cell>
+                  <m>12</m>
+                </cell>
+              </row>
+            </tabular>
+          </introduction>
+          <!-- exercise 1, part a from Graph Transformations -->
           <exercise>
-              <statement>
-                  <p>
-                    <m>k_1(x)=f(2x)</m>
-                  </p>
-              </statement>
-              <answer>
-                <image>
-                  <description>The graph has the points (-2,4), (-1, 0), (0, 4), (1, 4), (2, -4) all connected.</description>
-                  <latex-image>
-                    \begin{tikzpicture}
-                    \begin{axis}[
-                        xmin=-9, xmax=9,
-                        ymin=-11, ymax=11,
-                        xtick={-8,-6,...,8},
-                        minor xtick={-7,-5,...,7},
-                        ytick={-10,-8,...,10},
-                        minor ytick={-9,-7,...,9},
-                      ]
-                      \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
-                      \addplot[function] coordinates {(-2,4) (-1,0) (0,4) (1,4) (2,-4)};
-                      \addplot[soliddot] coordinates {(-2,4) (2,-4)};
-                    \end{axis}
-                    \end{tikzpicture}
-                  </latex-image>
-                </image>
-              </answer>
+            <statement>
+              <p>
+                Express <m>g(x)</m> in terms of <m>f</m> and describe how the graph of <m>y=f(x)</m> can be transformed into the graph of <m>y=g(x)</m>.
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>g(x)=f(-x)</m>. So, we can reflect the graph of <m>y=f(x)</m> across the <m>y</m>-axis to obtain <m>y=g(x)</m>.
+              </p>
+            </answer>
           </exercise>
-<!--exercises 8 in OG graph transformations -->
+          <!-- exercise 1, part b from Graph Transformations -->
           <exercise>
-              <statement>
-                  <p>
-                    <m>k_2(x)=2f(-2x)-1</m>
-                  </p>
-              </statement>
-              <answer>
-                <image>
-                  <description>The graph has the points (-2, -9), (-1, 7), (0, 7), (1, -1), and (2, 7) connected.</description>
-                  <latex-image>
-                    \begin{tikzpicture}
-                    \begin{axis}[
-                        xmin=-9, xmax=9,
-                        ymin=-11, ymax=11,
-                        xtick={-8,-6,...,8},
-                        minor xtick={-7,-5,...,7},
-                        ytick={-10,-8,...,10},
-                        minor ytick={-9,-7,...,9},
-                      ]
-                      \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
-                      \addplot[function] coordinates {(2,7) (1,-1) (0,7) (-1,7) (-2,-9)};
-                      \addplot[soliddot] coordinates {(2,7) (-2,-9)};
-                    \end{axis}
-                    \end{tikzpicture}
-                  </latex-image>
-                </image>
-              </answer>
+            <statement>
+              <p>
+                Express <m>h(x)</m> in terms of <m>f</m> and describe how the graph of <m>y=f(x)</m> can be transformed into the graph of <m>y=h(x)</m>.
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>h(x)=-f(x)</m>. So, we can reflect the graph of <m>y=f(x)</m> across the <m>x</m>-axis to obtain <m>y=h(x)</m>.
+              </p>
+            </answer>
           </exercise>
-<!--exercises 9 in OG graph transformations -->
+          <!-- exercise 1, part c from Graph Transformations -->
           <exercise>
-              <statement>
-                  <p>
-                    <m>k_3(x)=-2f(2x+4)</m>
-                  </p>
-              </statement>
-              <answer>
-                <image>
-                  <description>This graph has the points (-4, -8), (-3, 0), (-2, -8), (-1, -8), and (0, 8) all connected.</description>
-                  <latex-image>
-                    \begin{tikzpicture}
-                    \begin{axis}[
-                        xmin=-9, xmax=9,
-                        ymin=-11, ymax=11,
-                        xtick={-8,-6,...,8},
-                        minor xtick={-7,-5,...,7},
-                        ytick={-10,-8,...,10},
-                        minor ytick={-9,-7,...,9},
-                      ]
-                      \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
-                      \addplot[function] coordinates {(-4,-8) (-3,0) (-2,-8) (-1,-8) (0,8)};
-                      \addplot[soliddot] coordinates {(-4,-8) (0,8)};
-                    \end{axis}
-                    \end{tikzpicture}
-                  </latex-image>
-                </image>
-              </answer>
+            <statement>
+              <p>
+                Express <m>k(x)</m> in terms of <m>f</m> and describe how the graph of <m>y=f(x)</m> can be transformed into the graph of <m>y=k(x)</m>.
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>k(x)=f(x)+6</m>. So, we can shift the graph of <m>y=f(x)</m> up <m>6</m> units to obtain <m>y=k(x)</m>.
+              </p>
+            </answer>
           </exercise>
-<!--exercises 10 in OG graph transformations -->
+          <!-- exercise 1, part d from Graph Transformations -->
           <exercise>
-              <statement>
-                  <p>
-                    <m>k_4(x)=f\mathopen{}\left(\frac{1}{2}x\right)\mathclose{} +2</m>
-                  </p>
-              </statement>
-              <answer>
-                  <image>
-                    <description>This graph has the points (-8, 6), (-4, 2), (0, 6), (4, 6), and (8, -2) are all connected.</description>
-                    <latex-image>
-                      \begin{tikzpicture}
-                      \begin{axis}[
-                          xmin=-9, xmax=9,
-                          ymin=-11, ymax=11,
-                          xtick={-8,-6,...,8},
-                          minor xtick={-7,-5,...,7},
-                          ytick={-10,-8,...,10},
-                          minor ytick={-9,-7,...,9},
-                        ]
-                        \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
-                        \addplot[function] coordinates {(-8,6) (-4,2) (0,6) (4,6) (8,-2)};
-                        \addplot[soliddot] coordinates {(-8,6) (8,-2)};
-                      \end{axis}
-                      \end{tikzpicture}
-                    </latex-image>
-                  </image>
-              </answer>
+            <statement>
+              <p>
+                Express <m>l(x)</m> in terms of <m>f</m> and describe how the graph of <m>y=f(x)</m> can be transformed into the graph of <m>y=l(x)</m>.
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>l(x)=3f(x)</m>. So, we can stretch the graph of <m>y=f(x)</m> vertically by a factor of <m>3</m> to obtain <m>y=l(x)</m>.
+              </p>
+            </answer>
+          </exercise>
+        </exercisegroup>
+        <!-- exercise 2 from Graph Transformations -->
+        <exercise>
+          <statement>
+            <p>
+              The second row in the table below gives values for the function <m>f</m>.
+              Complete the rest of the table. If you don't have sufficient information to fill in some of the cells, leave those cells blank.
+            </p>
+              <tabular halign="right" top="major" bottom="minor" left="major" right="minor">
+              <col halign="center" right="medium"/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <col right="major"/>
+              <row>
+                <cell>
+                  <m>x</m>
+                </cell>
+                <cell>
+                  <m>-4</m>
+                </cell>
+                <cell>
+                  <m>-3</m>
+                </cell>
+                <cell>
+                  <m>-2</m>
+                </cell>
+                <cell>
+                  <m>-1</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                  <m>4</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>f(x)</m>
+                </cell>
+                <cell>
+                  <m>-2</m>
+                </cell>
+                <cell>
+                  <m>-1</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                  <m>4</m>
+                </cell>
+                <cell>
+                  <m>5</m>
+                </cell>
+                <cell>
+                  <m>6</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>\frac{1}{2}x</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>-2f(x)</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>f(x)+5</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>f(x+2)</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>f\mathopen{}\left( \frac{1}{2}x \right)\mathclose{}</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>f(2x)</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+              </row>
+              <row bottom="major">
+                <cell>
+                  <m>f(x-3)</m>
+                </cell>
+                <cell>
+                  <m>\phantom{-0}</m>
+                </cell>
+                <cell>
+                  <m>\phantom{-0}</m>
+                </cell>
+                <cell>
+                  <m>\phantom{-0}</m>
+                </cell>
+                <cell>
+                  <m>\phantom{-0}</m>
+                </cell>
+                <cell>
+                  <m>\phantom{-0}</m>
+                </cell>
+                <cell>
+                  <m>\phantom{-0}</m>
+                </cell>
+                <cell>
+                  <m>\phantom{-0}</m>
+                </cell>
+                <cell>
+                  <m>\phantom{-0}</m>
+                </cell>
+                <cell>
+                  <m>\phantom{-0}</m>
+                </cell>
+              </row>
+            </tabular>
+          </statement>
+          <answer>
+              <tabular halign="right" top="major" bottom="minor" left="major" right="minor">
+              <col halign="center" right="medium"/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <col/>
+              <col right="major"/>
+              <row>
+                <cell>
+                  <m>x</m>
+                </cell>
+                <cell>
+                  <m>-4</m>
+                </cell>
+                <cell>
+                  <m>-3</m>
+                </cell>
+                <cell>
+                  <m>-2</m>
+                </cell>
+                <cell>
+                  <m>-1</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                  <m>4</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>f(x)</m>
+                </cell>
+                <cell>
+                  <m>-2</m>
+                </cell>
+                <cell>
+                  <m>-1</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                  <m>4</m>
+                </cell>
+                <cell>
+                  <m>5</m>
+                </cell>
+                <cell>
+                  <m>6</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>\frac{1}{2}x</m>
+                </cell>
+                <cell>
+                  <m>-1</m>
+                </cell>
+                <cell>
+                  <m>-\frac{1}{2}</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>\frac{1}{2}</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>\frac{3}{2}</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>\frac{5}{2}</m>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>-2f(x)</m>
+                </cell>
+                <cell>
+                  <m>4</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>-2</m>
+                </cell>
+                <cell>
+                  <m>-4</m>
+                </cell>
+                <cell>
+                  <m>-6</m>
+                </cell>
+                <cell>
+                  <m>-8</m>
+                </cell>
+                <cell>
+                  <m>-10</m>
+                </cell>
+                <cell>
+                  <m>-12</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>f(x)+5</m>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                  <m>4</m>
+                </cell>
+                <cell>
+                  <m>5</m>
+                </cell>
+                <cell>
+                  <m>6</m>
+                </cell>
+                <cell>
+                  <m>7</m>
+                </cell>
+                <cell>
+                  <m>8</m>
+                </cell>
+                <cell>
+                  <m>9</m>
+                </cell>
+                <cell>
+                  <m>10</m>
+                </cell>
+                <cell>
+                  <m>11</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>f(x+2)</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                  <m>4</m>
+                </cell>
+                <cell>
+                  <m>5</m>
+                </cell>
+                <cell>
+                  <m>6</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>f\mathopen{}\left( \frac{1}{2}x \right)\mathclose{}</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                  <m>4</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <m>f(2x)</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                  <m>-2</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>4</m>
+                </cell>
+                <cell>
+                  <m>6</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+              </row>
+              <row bottom="major">
+                <cell>
+                  <m>f(x-3)</m>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                  <m>-2</m>
+                </cell>
+                <cell>
+                  <m>-1</m>
+                </cell>
+                <cell>
+                  <m>0</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+                <cell>
+                  <m>3</m>
+                </cell>
+              </row>
+            </tabular>
+          </answer>
+        </exercise>
+        <!--exercises 3 - 6 in OG graph transformations -->
+        <exercisegroup>
+          <introduction>
+            <p>
+              First write <m>g(x)</m> in terms of <m>f</m>. Then compose a sequence of transformations that will transform the graph of <m>y=f(x)</m> into the graph of <m>y=g(x)</m>.
+            </p>
+          </introduction>
+          <!--exercises 3 in OG graph transformations -->
+          <exercise>
+            <statement>
+              <p>
+                <m>f(x)=\sqrt{x}\qquad g(x)=\frac{\sqrt{x-7}}{4}</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <md>
+                  <mrow> g(x) \amp = \frac{\sqrt{x-7}}{4} </mrow>
+                  <mrow>  \amp = \frac{1}{4}\sqrt{x-7} </mrow>
+                  <mrow>  \amp = \frac{1}{4}f(x-7) </mrow>
+                </md>
+              </p>
+              <p>
+                So we can transform <m>y=f(x)</m> into <m>y=g(x)</m> by first shifting right <m>7</m> units and then compressing vertically by a factor of <m>\frac{1}{4}</m>. (There are other correct answers.)
+              </p>
+            </solution>
+          </exercise>
+          <!--exercises 4 in OG graph transformations -->
+          <exercise>
+            <statement>
+              <p>
+                <m>f(x)=\frac{1}{x}\qquad g(x)=\frac{2}{x}+3</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <md>
+                  <mrow> g(x) \amp = \frac{2}{x}+3 </mrow>
+                  <mrow>  \amp = 2 \cdot \frac{1}{x}+3 </mrow>
+                  <mrow>  \amp = 2f(x)+3 </mrow>
+                </md>
+              </p>
+              <p>
+                So we can transform <m>y=f(x)</m> into <m>y=g(x)</m> by first stretching vertically by a factor of <m>2</m> and then shifting up <m>3</m> units. (There are other correct answers.)
+              </p>
+            </solution>
+          </exercise>
+          <!--exercises 5 in OG graph transformations -->
+          <exercise>
+            <statement>
+              <p>
+                <m>f(x)=x^2\qquad g(x)=-4\left( \frac{1}{2}x-5 \right)^2+3</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <md>
+                  <mrow> g(x) \amp =-4\left( \frac{1}{2}x-5 \right)^2+3 </mrow>
+                  <mrow>  \amp = -4f\mathopen{}\left( \frac{1}{2}x-5 \right)\mathclose{}+3 </mrow>
+                  <mrow>  \amp = -4f\mathopen{}\left( \frac{1}{2} (x-10) \right)\mathclose{}+3 </mrow>
+                </md>
+              </p>
+              <p>
+                So we can transform <m>y=f(x)</m> into <m>y=g(x)</m> by first stretching horizontally by a factor of <m>2</m> and then shifting right <m>10</m> units. Then, stretching vertically by a factor of <m>4</m> and reflecting across the <m>x</m>-axis, and finally shifting up <m>3</m> units. (There are other correct answers.)
+              </p>
+            </solution>
+          </exercise>
+          <!--exercises 6 in OG graph transformations -->
+          <exercise>
+            <statement>
+              <p>
+                <m>f(x)=\sqrt[3]{x}\qquad g(x)=\frac{1}{2}\sqrt[3]{10x+30}-6</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <md>
+                  <mrow> g(x) \amp =\frac{1}{2}\sqrt[3]{10x+30}-6 </mrow>
+                  <mrow>  \amp =\frac{1}{2}f(10x+30)-6 </mrow>
+                  <mrow>  \amp =\frac{1}{2}f\mathopen{}\left( 10( x+3 ) \right)\mathclose{} -6 </mrow>
+                </md>
+              </p>
+              <p>
+                So we can transform <m>y=f(x)</m> into <m>y=g(x)</m> by first compressing horizontally by a factor of <m>\frac{1}{10}</m> and then shifting left <m>3</m> units. Then, compressing vertically by a factor of <m>\frac{1}{2}</m> and finally shifting down <m>6</m> units. (There are other correct answers.)
+              </p>
+            </solution>
+          </exercise>
+        </exercisegroup>
+        <!--exercises 7 - 10 in OG graph transformations -->
+        <exercisegroup cols="2">
+          <introduction>
+            <p>
+              Use the provided graph of <m>y=f(x)</m> to sketch a graph of each given function.
+            </p>
+            <image width="45%">
+              <description>The graph of f of x which is shown has the points (-4,4), (-2, 0), (0, 4), (2, 4), (4, -4) all connected.</description>
+              <latex-image>
+                \begin{tikzpicture}
+                \begin{axis}[
+                    xmin=-9, xmax=9,
+                    ymin=-11, ymax=11,
+                    xtick={-8,-6,...,8},
+                    minor xtick={-7,-5,...,7},
+                    ytick={-10,-8,...,10},
+                    minor ytick={-9,-7,...,9},
+                  ]
+                  \addplot[function] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
+                  \addplot[soliddot] coordinates {(-4,4) (4,-4)};
+                \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </introduction>
+          <!--exercises 7 in OG graph transformations -->
+          <exercise>
+            <statement>
+              <p>
+                <m>k_1(x)=f(2x)</m>
+              </p>
+              <image>
+                <description>A blank graph.</description>
+                <latex-image>
+                  \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-9, xmax=9,
+                      ymin=-11, ymax=11,
+                      xtick={-8,-6,...,8},
+                      minor xtick={-7,-5,...,7},
+                      ytick={-10,-8,...,10},
+                      minor ytick={-9,-7,...,9},
+                    ]
+                  \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </statement>
+            <answer>
+              <image>
+                <description>The graph has the points (-2,4), (-1, 0), (0, 4), (1, 4), (2, -4) all connected.</description>
+                <latex-image>
+                  \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-9, xmax=9,
+                      ymin=-11, ymax=11,
+                      xtick={-8,-6,...,8},
+                      minor xtick={-7,-5,...,7},
+                      ytick={-10,-8,...,10},
+                      minor ytick={-9,-7,...,9},
+                    ]
+                    \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
+                    \addplot[function] coordinates {(-2,4) (-1,0) (0,4) (1,4) (2,-4)};
+                    \addplot[soliddot] coordinates {(-2,4) (2,-4)};
+                  \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </answer>
+          </exercise>
+          <!--exercises 8 in OG graph transformations -->
+          <exercise>
+            <statement>
+              <p>
+                <m>k_2(x)=2f(-2x)-1</m>
+              </p>
+              <image>
+                <description>A blank graph.</description>
+                <latex-image>
+                  \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-9, xmax=9,
+                      ymin=-11, ymax=11,
+                      xtick={-8,-6,...,8},
+                      minor xtick={-7,-5,...,7},
+                      ytick={-10,-8,...,10},
+                      minor ytick={-9,-7,...,9},
+                    ]
+                  \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </statement>
+            <answer>
+              <image>
+                <description>The graph has the points (-2, -9), (-1, 7), (0, 7), (1, -1), and (2, 7) connected.</description>
+                <latex-image>
+                  \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-9, xmax=9,
+                      ymin=-11, ymax=11,
+                      xtick={-8,-6,...,8},
+                      minor xtick={-7,-5,...,7},
+                      ytick={-10,-8,...,10},
+                      minor ytick={-9,-7,...,9},
+                    ]
+                    \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
+                    \addplot[function] coordinates {(2,7) (1,-1) (0,7) (-1,7) (-2,-9)};
+                    \addplot[soliddot] coordinates {(2,7) (-2,-9)};
+                  \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </answer>
+          </exercise>
+          <!--exercises 9 in OG graph transformations -->
+          <exercise>
+            <statement>
+              <p>
+                <m>k_3(x)=-2f(2x+4)</m>
+              </p>
+              <image>
+                <description>A blank graph.</description>
+                <latex-image>
+                  \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-9, xmax=9,
+                      ymin=-11, ymax=11,
+                      xtick={-8,-6,...,8},
+                      minor xtick={-7,-5,...,7},
+                      ytick={-10,-8,...,10},
+                      minor ytick={-9,-7,...,9},
+                    ]
+                  \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </statement>
+            <answer>
+              <image>
+                <description>This graph has the points (-4, -8), (-3, 0), (-2, -8), (-1, -8), and (0, 8) all connected.</description>
+                <latex-image>
+                  \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-9, xmax=9,
+                      ymin=-11, ymax=11,
+                      xtick={-8,-6,...,8},
+                      minor xtick={-7,-5,...,7},
+                      ytick={-10,-8,...,10},
+                      minor ytick={-9,-7,...,9},
+                    ]
+                    \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
+                    \addplot[function] coordinates {(-4,-8) (-3,0) (-2,-8) (-1,-8) (0,8)};
+                    \addplot[soliddot] coordinates {(-4,-8) (0,8)};
+                  \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </answer>
+          </exercise>
+          <!--exercises 10 in OG graph transformations -->
+          <exercise>
+            <statement>
+              <p>
+                <m>k_4(x)=f\mathopen{}\left(\frac{1}{2}x\right)\mathclose{} +2</m>
+              </p>
+              <image>
+                <description>A blank graph.</description>
+                <latex-image>
+                  \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-9, xmax=9,
+                      ymin=-11, ymax=11,
+                      xtick={-8,-6,...,8},
+                      minor xtick={-7,-5,...,7},
+                      ytick={-10,-8,...,10},
+                      minor ytick={-9,-7,...,9},
+                    ]
+                  \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </statement>
+            <answer>
+              <image>
+                <description>This graph has the points (-8, 6), (-4, 2), (0, 6), (4, 6), and (8, -2) are all connected.</description>
+                <latex-image>
+                  \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-9, xmax=9,
+                      ymin=-11, ymax=11,
+                      xtick={-8,-6,...,8},
+                      minor xtick={-7,-5,...,7},
+                      ytick={-10,-8,...,10},
+                      minor ytick={-9,-7,...,9},
+                    ]
+                    \addplot[ghost] coordinates {(-4,4) (-2,0) (0,4) (2,4) (4,-4)};
+                    \addplot[function] coordinates {(-8,6) (-4,2) (0,6) (4,6) (8,-2)};
+                    \addplot[soliddot] coordinates {(-8,6) (8,-2)};
+                  \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </answer>
           </exercise>
         </exercisegroup>
     </exercises>
