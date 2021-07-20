@@ -982,7 +982,7 @@
       <exercisegroup cols="2">
         <introduction>
           <p>
-            Use the graph of <m>y=f(x)</m> that is provided to sketch a graph of each given function.
+            Use the provided graph of <m>y=f(x)</m> to sketch a graph of each given function.
           </p>
           <image width="70%">
             <description>The graph of f of x which is shown has the points (-4,4), (-2, 0), (0, 4), (2, 4), (4, -4) all connected.</description>
