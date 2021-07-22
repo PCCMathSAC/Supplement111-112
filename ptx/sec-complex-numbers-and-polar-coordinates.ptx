@@ -2,7 +2,7 @@
 <section xml:id="sec-complex-numbers-and-polar-coordinates">
   <title>Complex Numbers and Polar Coordinates</title>
     <subsection>
-      <title>Complex Number Forms</title>
+      <title>Forms of Complex Numbers</title>
       <p>
         Recall that a complex number has the form <m>a+bi</m> where <m>a,b \in \mathbb{R}</m> and <m>i=\sqrt{-1}</m>. Complex numbers have two parts: a real part and an imaginary part. For the number <m>a+bi</m>, the real part is <m>a</m> and the imaginary part is <m>b</m>. Because they have two parts, we can use the two dimensional rectangular coordinate plane to represent complex numbers. We use the horizontal axis to represent the real part and the vertical axis to represent the complex part. Thus, the complex number <m>a+bi</m> can be represented by the point <m> \left( a,b \right) </m> on the rectangular coordinate plane; see <xref ref="figure-complex-number-rect-form"/>.
       </p>
@@ -52,7 +52,7 @@
                   axis equal image,
                 ]
                 \addplot[soliddot] coordinates {(3,2)} node[above right] {$a+bi$};
-                \addplot[ray, black] coordinates {(0,0) (3,2)} node[pos=0.5, above left] {$r$};
+                \addplot[function, black] coordinates {(0,0) (3,2)} node[pos=0.5, above left] {$r$};
                 \addplot[angle, domain=0:180*0.588/pi] ({cos(x)}, {sin(x)}) node[pos=0.67, right] {$\theta$};
               \end{axis}
             \end{tikzpicture}
@@ -151,7 +151,7 @@
     </example>
   </subsection>
   <subsection>
-    <title>Polar Form to find Complex Roots</title>
+    <title>Using the Polar Form to Find Complex Roots</title>
     <example>
       <statement>
         <p>

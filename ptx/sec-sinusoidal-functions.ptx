@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-sinusoidal-functions">
-  <title>Sinusoidal Functions</title>
-  <subsection>
-    <title>Graphing Sinusoidal Functions: Phase Shift vs. Horizontal Shift</title>
+  <title>Graphing Sinusoidal Functions: Phase Shift vs. Horizontal Shift</title>
     <p>
       Let's consider the function <m>g(x)=\sin \mathopen{}\left( 2x-\frac{2\pi}{3} \right)\mathclose{} </m>.  Using what we study in MTH 111 about graph transformations, it should be apparent that the graph of <m>g(x)=\sin \mathopen{}\left( 2x-\frac{2\pi}{3} \right)\mathclose{} </m> can be obtained by transforming the graph of <m>g(x)=\sin(x)</m>. (To confirm this, notice that <m>g(x)</m> can be expressed in terms of <m>f(x)=\sin(x),</m> as <m>g(x)=f \mathopen{}\left( 2x-\frac{2\pi}{3} \right)\mathclose{} </m>.)  Since the constants <q><m>2</m></q> and <q><m>\frac{2\pi}{3}</m></q> are multiplied by and subtracted from the input variable, <m>x</m>, what we study in MTH 111 tells us that these constants represent a horizontal stretch/compression and a horizontal shift, respectively.
     </p>
@@ -163,7 +161,6 @@
         </figure>
       </solution>
     </example>
-  </subsection>
   <exercises xml:id="exercises-sinusoidal-functions">
     <exercisegroup cols="2">
       <introduction>
