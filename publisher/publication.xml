@@ -12,6 +12,6 @@
     <!-- PDF-Specific Options -->
     <latex print="no" sides="one">
     </latex>
-    <epub cover="images/PTX-EPUB-cover.png">
+    <epub cover="external/images/PTX-EPUB-cover.png">
     </epub>
 </publication>
