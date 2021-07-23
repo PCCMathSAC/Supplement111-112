@@ -52,7 +52,7 @@
                   axis equal image,
                 ]
                 \addplot[soliddot] coordinates {(3,2)} node[above right] {$a+bi$};
-                \addplot[function, black] coordinates {(0,0) (3,2)} node[pos=0.5, above left] {$r$};
+                \addplot[ray, -, black] coordinates {(0,0) (3,2)} node[pos=0.5, above left] {$r$};
                 \addplot[angle, domain=0:180*0.588/pi] ({cos(x)}, {sin(x)}) node[pos=0.67, right] {$\theta$};
               \end{axis}
             \end{tikzpicture}

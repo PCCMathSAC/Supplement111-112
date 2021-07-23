@@ -8,15 +8,16 @@
     <frontmatter>
       <titlepage>
         <author>
-          <personname>Faculty</personname>
-          <department>Mathematics</department>
+          <personname>Mathematics Faculty</personname>
           <institution>Portland Community College</institution>
         </author>
 
         <editor>
           <personname>Greta Swanson</personname>
-          <department>Mathematics</department>
-          <institution>Portland Community College</institution>
+        </editor>
+
+        <editor>
+          <personname>Alex Jordan</personname>
         </editor>
 
         <date><today/></date>
