@@ -25,7 +25,9 @@
           grid = both
     }}
     \pgfplotsset{function/.style  = {color=blue, mark=none, line width=1pt, -, solid}}
-    \pgfplotsset{ghost/.style     = {color=gray, mark=none, line width=1pt, -, dotted}}
+    \pgfplotsset{trigfunction/.style  = {function, {Kite[length=3mm]}-{Kite[length=3mm]}, shorten >=-1.5mm, shorten <=-1.5mm}}
+    \pgfplotsset{logfunction/.style  = {function, {Kite[length=3mm]}-{Kite[length=3mm]}, shorten >=-1.5mm, shorten <=-1.5mm}}
+    \pgfplotsset{ghost/.style     = {function, color=gray, dotted}}
     \pgfplotsset{soliddot/.style  = {color=blue, mark=*,    only marks}}
     \pgfplotsset{hollowdot/.style = {color=blue, mark=*,    only marks, fill=white}}
     \pgfplotsset{ray/.style       = {color=blue, thick, -{stealth}}}
