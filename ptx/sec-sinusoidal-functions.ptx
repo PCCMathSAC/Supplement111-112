@@ -47,7 +47,7 @@
               \begin{axis}[
                   width=9cm,
                   height=6cm,
-                  xmin=-2.5, xmax=8.5,
+                  xmin=,xmax=,
                   ymin=-1.6, ymax=2.2,
                   xtick={-2*pi/3,-pi/3,...,8*pi/3},
                   xticklabels={$-\frac{2\pi}{3}$, $-\frac{\pi}{3}$, $0$, $\frac{\pi}{3}$, $\frac{2\pi}{3}$, $\pi$, $\frac{4\pi}{3}$, $\frac{5\pi}{3}$, $2\pi$, $\frac{7\pi}{3}$},
@@ -147,7 +147,7 @@
                 \begin{axis}[
                     width=9cm,
                     height=6cm,
-                    xmin=-1, xmax=3.5,
+                    xmin=,xmax=,
                     ymin=-2.5, ymax=4.5,
                     xtick={-pi/4,0,...,pi},
                     xticklabels={$-\frac{\pi}{4}$, $0$, $\frac{\pi}{4}$, $\frac{\pi}{2}$, $\frac{3\pi}{4}$, $\pi$},
@@ -218,7 +218,7 @@
               \begin{tikzpicture}
                 \begin{axis}[
                     width=6cm,
-                    xmin=-1.5, xmax=3.5,
+                    xmin=,xmax=,
                     ymin=-4, ymax=4,
                     xtick={-pi/3,-pi/6,...,pi},
                     xticklabels={$-\frac{\pi}{3}$, $-\frac{\pi}{6}$, $0$, $\frac{\pi}{6}$, $\frac{\pi}{3}$, $\frac{\pi}{2}$, $\frac{2\pi}{3}$, $\frac{5\pi}{6}$, $\pi$},
@@ -281,7 +281,7 @@
               \begin{tikzpicture}
                 \begin{axis}[
                     width=6cm,
-                    xmin=-1.8, xmax=4,
+                    xmin=,xmax=,
                     xlabel={$t$},
                     ymin=-1.2, ymax=4.5,
                     xtick={-pi/2,-pi/4,...,5*pi/4},
@@ -345,7 +345,7 @@
               \begin{tikzpicture}
                 \begin{axis}[
                     width=6cm,
-                    xmin=-1.2, xmax=2.2,
+                    xmin=,xmax=,
                     ymin=-3, ymax=7,
                     xlabel={$\theta$},
                     xtick={-1,1,2},
@@ -410,7 +410,7 @@
               \begin{tikzpicture}
                 \begin{axis}[
                     width=6cm,
-                    xmin=-1.25, xmax=3.75,
+                    xmin=,xmax=,
                     ymin=-8, ymax=4,
                     xtick={-1,1,2,3},
                     minor xtick = {-1,-0.75,...,3.5},
@@ -445,7 +445,7 @@
               \begin{tikzpicture}
                 \begin{axis}[
                     width=6cm,
-                    xmin=-2.3, xmax=4.6,
+                    xmin=,xmax=,
                     xlabel={$t$},
                     ymin=-6.75, ymax=2.75,
                     xtick={-pi/2,-pi/4,...,5*pi/4},
@@ -476,7 +476,7 @@
               \begin{tikzpicture}
                 \begin{axis}[
                     width=6cm,
-                    xmin=-2.5, xmax=5.5,
+                    xmin=,xmax=,
                     ymin=-5, ymax=3,
                     xtick={-2,-1,...,5},
                     ytick={-4,-2,...,2},
