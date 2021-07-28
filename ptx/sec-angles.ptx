@@ -70,6 +70,7 @@
 
       <sidebyside widths="37.5% 37.5%">
         <figure xml:id="figure-example-ref-pi3">
+          <caption/>
           <image>
             <description>Graph showing the angle pi/3 radians.</description>
             <latex-image>
@@ -90,6 +91,7 @@
         </figure>
 
         <figure xml:id="figure-example-ref-30">
+          <caption/>
           <image>
             <description>Graph showing the angle 30 degrees.</description>
             <latex-image>
