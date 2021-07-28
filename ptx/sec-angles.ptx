@@ -265,7 +265,7 @@
 
     <example>
       <p>
-        The reference angle for <m>7.5</m> radians is <m>7.5-2\pi\approx 1.2</m> radians (see <xref ref="figure-example-ref-7point5"/>), and the reference angle for <m>-137^{\circ}</m> is <m>180^{\circ}+( \, 137^{\circ} ) \,=43^{\circ}</m> (see <xref ref="figure-example-ref-negative137"/>).
+        The reference angle for <m>7.5</m> radians is <m>7.5-2\pi\approx 1.2</m> radians (see <xref ref="figure-example-ref-7point5"/>), and the reference angle for <m>-137^{\circ}</m> is <m>180^{\circ}+( \, -137^{\circ} ) \,=43^{\circ}</m> (see <xref ref="figure-example-ref-negative137"/>).
       </p>
       <sidebyside widths="37.5% 37.5%">
         <figure xml:id="figure-example-ref-7point5">
