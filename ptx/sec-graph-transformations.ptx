@@ -941,7 +941,7 @@
           <exercise>
             <statement>
               <p>
-                <m>f(x)=x^2\qquad g(x)=-4\left( \frac{1}{2}x-5 \right)^2+3</m>
+                <m>f(x)=x^2\qquad g(x)=-4\mathopen{}\left( \frac{1}{2}x-5 \right)^2\mathclose{}+3</m>
               </p>
             </statement>
             <solution>
