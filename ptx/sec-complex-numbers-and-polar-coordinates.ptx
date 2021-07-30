@@ -182,7 +182,7 @@
         <p>
           Therefore,
           <md>
-            <mrow>\left( -1+\sqrt{3}i \right) ^{1/2} \amp= (2e^{\frac{2\pi}{3}})^{1/2} </mrow>
+            <mrow>\left( -1+\sqrt{3}i \right) ^{1/2} \amp= (2e^{\frac{2\pi}{3}\cdot i})^{1/2} </mrow>
             <mrow> \amp=2^{\frac{1}{2}}e^{\frac{2\pi}{3} \cdot \frac{1}{2}i} </mrow>
             <mrow> \amp=\sqrt{2}e^{\frac{\pi}{3} \cdot i} </mrow>
             <mrow> \amp=\sqrt{2} \mathopen{}\left( \cos \mathopen{}\left( \frac{\pi}{3} \right)\mathclose{} +i\cdot \sin \mathopen{}\left( \frac{\pi}{3} \right)\mathclose{} \right)\mathclose{}</mrow>
@@ -191,7 +191,7 @@
           </md>
           and
           <md>
-            <mrow>\left( -1+\sqrt{3}i \right) ^{1/2} \amp= \left( 2e^{-\frac{4\pi}{3}} \right) ^{1/2} </mrow>
+            <mrow>\left( -1+\sqrt{3}i \right) ^{1/2} \amp= \left( 2e^{-\frac{4\pi}{3} \cdot i} \right) ^{1/2} </mrow>
             <mrow> \amp=2^{\frac{1}{2}}e^{-\frac{4\pi}{3} \cdot \frac{1}{2}i} </mrow>
             <mrow> \amp=\sqrt{2}e^{-\frac{2\pi}{3} \cdot i} </mrow>
             <mrow> \amp=\sqrt{2}\mathopen{}\left( \cos \mathopen{}\left( -\frac{2\pi}{3} \right)\mathclose{} +i\cdot \sin \mathopen{}\left( -\frac{2\pi}{3} \right)\mathclose{} \right)\mathclose{}</mrow>
