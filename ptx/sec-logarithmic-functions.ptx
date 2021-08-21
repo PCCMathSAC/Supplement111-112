@@ -70,10 +70,11 @@
             </p>
           </answer>
         </exercise>
-        <exercisegroup>
+        <exercisegroup xml:id="exercisegroup-find-the-base">
+          <title>Find the Base</title>
           <introduction>
             <p>
-              Each table represents a table-of-values for a function <m>f(x)=\log_a(x)</m>. Find the value of <m>a</m>.
+              In <xref ref="exercisegroup-find-the-base" text="local">Exercises</xref>, each table represents a table-of-values for a function <m>f(x)=\log_a(x)</m>. Find the value of <m>a</m>.
             </p>
           </introduction>
             <exercise>
