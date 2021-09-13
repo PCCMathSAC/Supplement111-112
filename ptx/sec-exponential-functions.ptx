@@ -6,10 +6,11 @@
   </p>
   <exercises>
 <!-- exercise 1 in OG Exp Functions -->
-    <exercisegroup cols="2">
+    <exercisegroup cols="2" xml:id="exercisegroup-find-formula">
+      <title>Find the Formula</title>
       <introduction>
         <p>
-          Find an algebraic rule for an exponential function <m>f</m> that passes through the given two points.
+          In <xref ref="exercisegroup-find-formula" text="local">Exercises</xref>, find an algebraic rule for an exponential function <m>f</m> that passes through the given two points.
         </p>
       </introduction>
         <exercise>

@@ -318,9 +318,10 @@
   </subsection>
     <exercises xml:id="exercises-angles">
 
-    <exercisegroup cols="3">
+    <exercisegroup cols="3" xml:id="exercisegroup-coterminal">
+      <title>Coterminal Angles</title>
         <introduction>
-            <p>Find both a positive and negative angle that is coterminal angle with the following angles.</p>
+            <p>In <xref ref="exercisegroup-coterminal" text="local">Exercises</xref>, find both a positive and negative angle that is coterminal angle with the following angles.</p>
         </introduction>
         <exercise>
             <statement>
@@ -347,9 +348,10 @@
                 </answer>
         </exercise>
     </exercisegroup>
-    <exercisegroup cols="3">
+    <exercisegroup cols="3" xml:id="exercisegroup-reference">
+      <title>Reference Angles</title>
         <introduction>
-            <p>Find the reference angle for the following angles.</p>
+            <p>In <xref ref="exercisegroup-reference" text="local">Exercises</xref>, find the reference angle for the following angles.</p>
         </introduction>
         <exercise>
             <statement>

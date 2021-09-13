@@ -159,10 +159,11 @@
     <!-- start of exercises for Graph Transformations -->
     <exercises xml:id="exercises-graph-transformations">
         <!-- exercise 1 - Graph Transformations -->
-        <exercisegroup>
+        <exercisegroup xml:id="exercisegroup-one-function-in-terms-in-another">
+          <title>One Function in Terms of Another</title>
           <introduction>
             <p>
-              The table below defines the functions <m>f</m>, <m>g</m>, <m>h</m>, <m>k</m>, and <m>l</m>.
+              In <xref ref="exercisegroup-one-function-in-terms-in-another" text="local">Exercises</xref>, the table below defines the functions <m>f</m>, <m>g</m>, <m>h</m>, <m>k</m>, and <m>l</m>.
             </p>
             <tabular halign="right" top="major" bottom="minor">
               <col halign="center"/>
@@ -891,10 +892,11 @@
           </answer>
         </exercise>
         <!--exercises 3 - 6 in OG graph transformations -->
-        <exercisegroup>
+        <exercisegroup xml:id="exercisegroup-find-the-transformations">
+          <title>Find the Transformations</title>
           <introduction>
             <p>
-              First write <m>g(x)</m> in terms of <m>f</m>. Then compose a sequence of transformations that will transform the graph of <m>y=f(x)</m> into the graph of <m>y=g(x)</m>.
+              In <xref ref="exercisegroup-find-the-transformations" text="local">Exercises</xref>, first write <m>g(x)</m> in terms of <m>f</m>. Then compose a sequence of transformations that will transform the graph of <m>y=f(x)</m> into the graph of <m>y=g(x)</m>.
             </p>
           </introduction>
           <!--exercises 3 in OG graph transformations -->
@@ -979,10 +981,11 @@
           </exercise>
         </exercisegroup>
         <!--exercises 7 - 10 in OG graph transformations -->
-        <exercisegroup cols="2">
+        <exercisegroup cols="2" xml:id="exercisegroup-sketch-transformations">
+          <title>Sketch Transformations</title>
           <introduction>
             <p>
-              Use the provided graph of <m>y=f(x)</m> to sketch a graph of each given function.
+              In <xref ref="exercisegroup-sketch-transformations" text="local">Exercises</xref>, use the provided graph of <m>y=f(x)</m> to sketch a graph of each given function.
             </p>
             <image width="45%">
               <description>The graph of f of x which is shown has the points (-4,4), (-2, 0), (0, 4), (2, 4), (4, -4) all connected.</description>
