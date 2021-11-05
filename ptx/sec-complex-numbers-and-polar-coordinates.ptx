@@ -249,9 +249,10 @@
   </subsection>
   <exercises xml:id="exercises-complex-numbers-and-polar-coordinates">
   <!-- #1 from Word Version - Part 3 -->
-      <exercisegroup>
+      <exercisegroup xml:id="exercisegroup-polar-form">
+        <title>Polar Form</title>
           <introduction>
-              <p>Find the polar form <m>z=re^{i\theta}</m> of the following complex numbers given in rectangular form.
+              <p>In <xref ref="exercisegroup-polar-form" text="local">Exercises</xref>, find the polar form <m>z=re^{i\theta}</m> of the following complex numbers given in rectangular form.
               </p>
           </introduction>
           <exercise>
@@ -292,9 +293,10 @@
           </exercise>
       </exercisegroup>
   <!-- #2 from Word Version - Part 3 -->
-      <exercisegroup>
+      <exercisegroup xml:id="exercisegroup-rectangular-form">
+        <title>Rectangular Form</title>
           <introduction>
-              <p>Find the rectangular form <m>z=a+bi</m> of the following complex numbers given in polar form.
+              <p>In <xref ref="exercisegroup-rectangular-form" text="local">Exercises</xref>, find the rectangular form <m>z=a+bi</m> of the following complex numbers given in polar form.
               </p>
           </introduction>
           <exercise>
@@ -335,10 +337,11 @@
           </exercise>
       </exercisegroup>
   <!-- #3 from Word Version - Part 3 -->
-      <exercisegroup>
+      <exercisegroup xml:id="exercisegroup-principal-roots">
+        <title>Principal Roots</title>
           <introduction>
               <p>
-                Find the following principal roots by first converting to the polar form of each complex number.
+                In <xref ref="exercisegroup-principal-roots" text="local">Exercises</xref>, find the following principal roots by first converting to the polar form of each complex number.
               </p>
           </introduction>
           <exercise>

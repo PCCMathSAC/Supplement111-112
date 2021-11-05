@@ -165,10 +165,11 @@
       </solution>
     </example>
   <exercises xml:id="exercises-sinusoidal-functions">
-    <exercisegroup cols="2">
+    <exercisegroup cols="2" xml:id="exercisegroup-sketch-waves">
+      <title>Sketch Sinusoidal Graphs</title>
       <introduction>
         <p>
-          Draw a graph of each of the following functions. List the amplitude, midline, period, phase shift, and horizontal shift.
+          In <xref ref="exercisegroup-sketch-waves" text="local">Exercises</xref>, draw a graph of each of the following functions. List the amplitude, midline, period, phase shift, and horizontal shift.
         </p>
       </introduction>
       <exercise>
@@ -428,10 +429,11 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup cols="2">
+    <exercisegroup cols="2" xml:id="exercisegroup-find-sine-formulas">
+      <title>Find the Formula</title>
       <introduction>
         <p>
-          Find two algebraic rules (one involving sine and one involving cosine) for each of the functions graphed below.
+          In <xref ref="exercisegroup-find-sine-formulas" text="local">Exercises</xref>, find two algebraic rules (one involving sine and one involving cosine) for each of the functions graphed below.
         </p>
       </introduction>
       <exercise>
