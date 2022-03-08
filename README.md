@@ -16,4 +16,4 @@ For Windows, more may be required.
 6. Run `pretext view html` and then in a web browser go to `http://localhost:8000`
 7. To make and view the PDF, similarly run `pretext build pdf` and then `pretext view pdf`
 
-
+The PreTeXt CLI does not (at this time) build EPUB output. Building EPUB can be done with direct use of [PreTeXt](https://github.com/PreTeXtBook/pretext). These instructions will be updated once the CLI can build EPUB output.
