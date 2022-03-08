@@ -2,7 +2,7 @@
 
 <publication>
     <source>
-      <directories generated="generated" external="external"/>
+      <directories generated="../generated" external="../external"/>
     </source>
     <!-- HTML-Specific Options -->
     <html>
@@ -12,5 +12,5 @@
     <!-- PDF-Specific Options -->
     <latex print="no" sides="one">
     </latex>
-    <epub cover="external/images/Cover_b.png"/>
+    <epub cover="../external/images/Cover_b.png"/>
 </publication>

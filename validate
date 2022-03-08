@@ -1,0 +1,7 @@
+# This script validates the source PTX
+# It requires jing-trang to be installed as a prerequisite
+# The path to jing-trang is used below
+# as well as the path to pretext
+
+java -classpath ~/jing-trang/build -Dorg.apache.xerces.xni.parser.XMLParserConfiguration=org.apache.xerces.parsers.XIncludeParserConfiguration -jar ~/jing-trang/build/jing.jar ~/pretext/schema/pretext.rng source/supplement111-112.ptx > jingreport.txt
+less jingreport.txt
