@@ -2,3 +2,4 @@ generated
 output
 .DS_Store
 jingreport.txt
+.error_schema.log
