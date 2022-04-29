@@ -463,7 +463,7 @@
         </statement>
         <answer>
           <p>
-            <m> p(x)=4 \sin \mathopen{}\left( 2 \mathopen{}\left( x-\frac{\pi}{4} \right)\mathclose{} \right)\mathclose{}-2 </m>; <m> p(x)=4 \cos \mathopen{}\left( 2 \mathopen{}\left( x-\frac{\pi}{2} \right)\mathclose{} \right)\mathclose{}-2 </m>
+            <m> \begin{aligned} p(x)=4 \sin \mathopen{}\left( 2 \mathopen{}\left( x-\frac{\pi}{4} \right)\mathclose{} \right)\mathclose{}-2 \\ p(x)=4 \cos \mathopen{}\left( 2 \mathopen{}\left( x-\frac{\pi}{2} \right)\mathclose{} \right)\mathclose{}-2 \end{aligned} </m>
           </p>
         </answer>
       </exercise>
@@ -473,18 +473,21 @@
             <m>y=q(x)</m>
           </p>
           <image>
-            <description>Graph of y=q(t). The highest points are at 2 and the lowest are at -4. On the y-axis the intercept is (0, 1) and it has points at (-0.5, -1), (1.5, -1), and (3.5, -1). The period is 4.</description>
+            <description>Graph of y=q(t). The highest points are at 2 and the lowest are at -4. It has points at (0.25, 2), (0.75, -1), and (1.25, -4). The period is 2.</description>
             <latex-image>
               \begin{tikzpicture}
                 \begin{axis}[
                     width=6cm,
                     xmin=,xmax=,
                     ymin=-5, ymax=3,
-                    xtick={-2,-1,...,5},
+                    xtick={-2,-1,...,3},
+                    minor xtick = {-2.25,-2,...,3.25},
                     ytick={-4,-2,...,2},
+                    minor ytick = {-3,-1,1},
                     clip=false,
+                    major grid style={thick},
                   ]
-                  \addplot[trigfunction, domain=-2.5:5.5, samples=100] {3*sin(deg(pi*x)+45)-1};
+                  \addplot[trigfunction, domain=-2.5:3.5, samples=100] {3*sin(deg(pi*x)+45)-1};
                 \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -492,7 +495,9 @@
         </statement>
         <answer>
           <p>
-            <m>q(x)=3 \sin \mathopen{}\left( \frac{\pi}{2} \mathopen{}\left( x+\frac{1}{2} \right)\mathclose{} \right)\mathclose{}-1 </m>; <m> q(x)=3 \cos \mathopen{}\left( \frac{\pi}{2} \mathopen{}\left( x-\frac{1}{2} \right)\mathclose{} \right)\mathclose{}-1</m>
+            <m>
+              \begin{aligned}q(x)=3 \sin \mathopen{}\left( \pi \mathopen{}\left( x+\frac{1}{4} \right)\mathclose{} \right)\mathclose{}-1\\ q(x)=3 \cos \mathopen{}\left( \pi \mathopen{}\left( x-\frac{1}{4} \right)\mathclose{} \right)\mathclose{}-1\end{aligned}
+            </m>
           </p>
         </answer>
       </exercise>
