@@ -1,3 +1,4 @@
-ptx/generated
-Makefile.paths
+generated
+output
 .DS_Store
+jingreport.txt
