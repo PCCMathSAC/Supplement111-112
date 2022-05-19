@@ -316,6 +316,63 @@
     </example>
 
   </subsection>
+
+  <subsection>
+    <title>Degrees, Minutes, and Seconds</title>
+    <p>
+      When measuring angles in degrees, fractions of a degree can be represented in minutes and seconds.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          One <term>minute</term> is <m>\frac{1}{60}</m> of a degree, so <m>60</m> minutes is equal to one degree (written <m>
+          60'=1^{\circ}</m>).
+        </p>
+        <p>
+          One <term>second</term> is <m>\frac{1}{60}</m> of a minute, i.e., <m>\frac{1}{3600}</m> of a degree, so <m>60</m> seconds is equal to one minute (written <m>60''=1'</m>) and <m>3600</m> seconds is equal to one degree (written <m>3600''=1^{\circ}</m>).
+        </p>
+      </statement>
+    </definition>
+    <p>
+      When we write an angle's measure in the form <m>D^{\circ}M'S''</m> where <m>D</m>, <m>M</m>, and <m>S</m> are real numbers), then the angle's measure is <m>D</m> degrees plus <m>M</m> minutes plus <m>S</m> seconds.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Convert <m>34^{\circ}15'27''</m> into decimal form.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>34^{\circ}15'27'' \amp= 34^{\circ}+15'\left( \frac{1^{\circ}}{60'} \right)+27'' \left(\frac{1^{\circ}}{3600''}\right) </mrow>
+            <mrow> \amp= 34^{\circ}+0.25^{\circ}+0.0075^{\circ} </mrow>
+            <mrow> \amp= 34.2575^{\circ} </mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Convert <m>61.72^{\circ}</m> into <m>D^{\circ}M'S''</m> form.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow> 61.72^{\circ} \amp= 61^{\circ}+0.72^{\circ} </mrow>
+            <mrow> \amp= 61^{\circ}+0.72^{\circ} \cdot \left( \frac{60'}{1^{\circ}} \right) </mrow>
+            <mrow> \amp= 61^{\circ}+43.2' </mrow>
+            <mrow> \amp= 61^{\circ}43'+0.2' </mrow>
+            <mrow> \amp= 61^{\circ}43'+0.2' \cdot \left( \frac{60''}{1'} \right) </mrow>
+            <mrow> \amp= 61^{\circ}43'12''</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
     <exercises xml:id="exercises-angles">
 
     <exercisegroup cols="3" xml:id="exercisegroup-coterminal">
@@ -423,6 +480,82 @@
             </statement>
             <answer>
                 <p><m>80^{\circ}</m></p>
+            </answer>
+        </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2" xml:id="exercisegroup-decimal">
+      <title>Convert to Decimal Form</title>
+        <introduction>
+            <p>In <xref ref="exercisegroup-decimal" text="local">Exercises</xref>, convert the angle measure to decimal form (round your answers to the nearest thousandth when necessary).</p>
+        </introduction>
+        <exercise>
+            <statement>
+                <p><m>243^{\circ}10'</m></p>
+            </statement>
+            <answer>
+               <p><m>243^{\circ}10' \approx 243.167^{\circ}</m></p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+                <p><m>3^{\circ}25'</m></p>
+            </statement>
+            <answer>
+               <p><m>3^{\circ}25' \approx 3.417^{\circ}</m></p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+                <p><m>-23^{\circ}3'</m></p>
+            </statement>
+            <answer>
+               <p><m>-23^{\circ}3' = -23.05^{\circ}</m></p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+                <p><m>75^{\circ}32'17''</m></p>
+            </statement>
+            <answer>
+               <p><m>75^{\circ}32'17'' \approx 75.538^{\circ}</m></p>
+            </answer>
+        </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2" xml:id="exercisegroup-dms">
+      <title>Convert to <m>D^{\circ}M'S''</m> Form</title>
+        <introduction>
+            <p>In <xref ref="exercisegroup-dms" text="local">Exercises</xref>, convert the angle measure to <m>D^{\circ}M'S''</m> form.</p>
+        </introduction>
+        <exercise>
+            <statement>
+                <p><m>12.4^{\circ}</m></p>
+            </statement>
+            <answer>
+               <p><m>12.4^{\circ} = 12^{\circ}24'</m></p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+                <p><m>1.53^{\circ}</m></p>
+            </statement>
+            <answer>
+               <p><m>1.53^{\circ} = 1^{\circ}31'48''</m></p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+                <p><m>-144.9^{\circ}</m></p>
+            </statement>
+            <answer>
+               <p><m>-144.9^{\circ} = -144^{\circ}54'</m></p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+                <p><m>0.416^{\circ}</m></p>
+            </statement>
+            <answer>
+               <p><m>0.416^{\circ} = 0^{\circ}24'57.6''</m></p>
             </answer>
         </exercise>
     </exercisegroup>
