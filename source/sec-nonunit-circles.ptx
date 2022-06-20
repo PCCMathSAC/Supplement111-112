@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-nonunit-circles">
+  <title>Generalized Definitions of Trigonometric Functions</title>
+      <p>
+        We can generalize the definitions of the trigonometric functions so that they are applicable to circles of any size.
+      </p>
+        <definition xml:id="definition-sincos">
+        <statement>
+          <p>
+            If the point <m> P = \left(x,y \right) </m> is specified by the angle <m>\theta</m> on the circumeference of a circle of radius <m>r</m>, then <m> \cos (\theta ) = \frac{x}{r} </m> and <m> \sin (\theta ) = \frac{y}{r} </m>.
+          </p>
+        </statement>
+        <figure xml:id="figure-nonunitcirclexy">
+          <caption></caption>
+          <image width="50%">
+            <description>This is circle with radius r intersecting the terminal side of an angle labeled theta. The intersecting point is labeled P.</description>
+            <latex-image>
+              \begin{tikzpicture}
+                \begin{axis}[
+                    width=8cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                    xmin=-11,
+                    xmax=11,
+                    ymin=-11,
+                    ymax=11,
+                  ]
+                  \addplot[angle, domain=0:pi/3, samples=50] ({1.5*cos(x)}, {1.5*sin(x)}) node[pos=0.5, above right, inner sep=1pt] {$\theta$};
+                  \addplot[ray, -, black] coordinates {(0,0) (4,6.93)} node[pos=0.5, above left, inner sep=1pt] {$r$};
+                  \addplot[soliddot] coordinates{(4,6.93)} node[above right] {$P=(x,y)$};
+                  \addplot[domain=0:2*pi, samples=100] ({8*cos(x)},{8*sin(x)});
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+      </definition>
+      <p>
+        Notice that if we are on a unit circle, where <m>r=1</m>, then these definitions for <m>\cos(\theta)</m> and <m>\sin(\theta)</m> simplifly accordingly:
+      </p>
+      <p>
+        <me>  \cos(\theta)=\frac{x}{r}=\frac{x}{1}=x  </me>
+        <me>  \sin(\theta)=\frac{y}{r}=\frac{y}{1}=y  </me>
+      </p>
+
+      <p>
+        We can use <xref ref="definition-sincos"/> to express the other four trigonometric functions in terms of <m>x</m>, <m>y</m>, and <m>r</m>.
+      </p>
+      <sbsgroup>
+        <sidebyside valign="top">
+           <p>
+             <md>
+               <mrow> \tan(\theta) \amp= \frac{\sin(\theta)}{\cos(\theta)}  </mrow>
+               <mrow> \amp= \frac{y/r}{x/r} </mrow>
+               <mrow> \amp= \frac{y}{x} </mrow>
+             </md>
+           </p>
+           <p>
+             <md>
+               <mrow> \csc(\theta) \amp= \frac{1}{\sin(\theta)} </mrow>
+               <mrow> \amp= \frac{1}{y/r} </mrow>
+               <mrow> \amp= \frac{r}{y} </mrow>
+             </md>
+           </p>
+        </sidebyside>
+        <sidebyside valign="top">
+          <p>
+            <md>
+              <mrow> \sec(\theta) \amp= \frac{1}{\cos(\theta)} </mrow>
+              <mrow> \amp= \frac{1}{x/r} </mrow>
+              <mrow> \amp= \frac{r}{x} </mrow>
+            </md>
+          </p>
+          <p>
+            <md>
+              <mrow> \cot(\theta) \amp= \frac{1}{\tan(\theta)} </mrow>
+              <mrow> \amp= \frac{1}{y/x} </mrow>
+              <mrow> \amp= \frac{x}{y} </mrow>
+            </md>
+          </p>
+        </sidebyside>
+      </sbsgroup>
+      <p>
+        We summarize this in the following definition.
+      </p>
+      <definition  xml:id="definition-sixtrig">
+        <statement>
+          <p>
+            If the point <m> P = \left(x,y \right) </m> is specified by the angle <m>\theta</m> on the circumeference of a circle of radius <m>r</m>, then we can define the six trigonemtric functions as follows.
+         </p>
+         <sbsgroup>
+           <sidebyside>
+             <p>
+               <me> \cos (\theta ) = \frac{x}{r} </me>
+             </p>
+             <p>
+               <me> \sin (\theta ) = \frac{y}{r} </me>
+             </p>
+             <p>
+               <me> \tan (\theta ) = \frac{y}{x} </me>
+             </p>
+           </sidebyside>
+           <sidebyside>
+             <p>
+               <me> \sec (\theta ) = \frac{r}{x} </me>
+             </p>
+             <p>
+               <me> \csc (\theta ) = \frac{r}{y} </me>
+             </p>
+             <p>
+               <me> \cot (\theta ) = \frac{x}{y} </me>
+             </p>
+           </sidebyside>
+        </sbsgroup>
+        </statement>
+        <figure xml:id="figure-nonunitcirclexyallsix">
+          <caption></caption>
+          <image width="50%">
+            <description> This is circle with radius r intersecting the terminal side of an angle in standard position labeled theta. The intersecting point is labeled P.</description>
+            <latex-image>
+              \begin{tikzpicture}
+                \begin{axis}[
+                    width=8cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                    xmin=-11,
+                    xmax=11,
+                    ymin=-11,
+                    ymax=11,
+                  ]
+                  \addplot[angle, domain=0:pi/3, samples=50] ({1.5*cos(x)}, {1.5*sin(x)}) node[pos=0.5, above right, inner sep=1pt] {$\theta$};
+                  \addplot[ray, -, black] coordinates {(0,0) (4,6.93)} node[pos=0.5, above left, inner sep=1pt] {$r$};
+                  \addplot[soliddot] coordinates{(4,6.93)} node[above right] {$P=(x,y)$};
+                  \addplot[domain=0:2*pi, samples=100] ({8*cos(x)},{8*sin(x)});
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+      </definition>
+      <example>
+        <statement>
+          <p>
+            Find the exact value of each of the six trigonometric functions of an angle <m>\theta</m> if <m>(-1,2)</m> is a point on its terminal side.
+          </p>
+          <figure xml:id="figure-nonunitcirclenegonetwo">
+          <caption></caption>
+            <image width="50%">
+              <description>This is circle intersecting the terminal side of an angle labeled theta. The intersecting point has coordinates -1,2.</description>
+              <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}[
+                        width=8cm,
+                        grid=none,
+                        ticks=none,
+                        trig format plots=rad,
+                        axis equal,
+                        xmin=-4,
+                        xmax=4,
+                        ymin=-4,
+                        ymax=4,
+                      ]
+                      \addplot[angle, domain=0:2.034, samples=50] ({0.5*cos(x)}, {0.5*sin(x)}) node[pos=0.5, above right, inner sep=1pt] {$\theta$};
+                      \addplot[ray, -, black] coordinates {(0,0) (-1,2)} node[pos=0.5, below left, inner sep=1pt] {$r$};
+                      \addplot[soliddot] coordinates{(-1,2)} node[above left] {$(-1,2)$};
+                      \addplot[domain=0:2*pi, samples=100] ({2.236*cos(x)},{2.236*sin(x)});
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </figure>
+        </statement>
+        <solution>
+          <p>
+            We need the values of <m>x</m>, <m>y</m>, and <m>r</m> to determine the exact value of each of the trigonemtric function. We are given <m>x</m> and <m>y</m>, but will need to find the value of <m>r</m>.
+          </p>
+          <sidebyside valign="middle" widths="78% 12%" margins="0% 5%">
+            <p>
+              We can think of <m>r</m> as the hypotenuse of a right triangle whose horiztonal leg has a length of <m>|-1|=1</m> unit and vertical leg has a length of <m>2</m> units. We can use the Pythagorean Theorem to solve for <m>r</m>:
+                <md>
+                  <mrow> r^2 \amp= 1^2+2^2 </mrow>
+                  <mrow> r^2 \amp= 5 </mrow>
+                  <mrow> r \amp= \sqrt{5} </mrow>
+                </md>
+            </p>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}
+                  \draw (0,0) -- node[pos=0.5, below]{$1$} (-1,0) -- node[pos=0.5, left]{$2$} (-1,2) -- node[pos=0.5, above right]{$r$} cycle;
+                  \draw (-0.8,0) |- (-1,0.2);
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </sidebyside>
+          <p>
+            Now that we have values for <m>x</m>, <m>y</m>, and <m>r</m>, we can use <xref ref="definition-sixtrig"/> to state the exact values of each trigonmetric function.
+          </p>
+          <sbsgroup>
+            <sidebyside valign="top">
+              <p>
+                <md>
+                  <mrow> \cos(\theta) \amp= \frac{x}{r} </mrow>
+                  <mrow> \amp= \frac{-1}{\sqrt{5}} </mrow>
+                  <mrow> \amp= \frac{-1}{\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}} </mrow>
+                  <mrow> \amp= -\frac{\sqrt{5}}{5} </mrow>
+                </md>
+              </p>
+              <p>
+                <md>
+                  <mrow> \sin(\theta) \amp= \frac{y}{r} </mrow>
+                  <mrow> \amp= \frac{2}{\sqrt{5}} </mrow>
+                  <mrow> \amp= \frac{2}{\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}} </mrow>
+                  <mrow> \amp= \frac{2\sqrt{5}}{5} </mrow>
+                </md>
+              </p>
+            </sidebyside>
+            <sidebyside valign="top">
+              <p>
+                <md>
+                  <mrow> \tan(\theta) \amp= \frac{y}{x} </mrow>
+                  <mrow> \amp= \frac{2}{-1} </mrow>
+                  <mrow> \amp= -2 </mrow>
+                </md>
+              </p>
+              <p>
+                <md>
+                  <mrow> \sec(\theta) \amp= \frac{r}{x} </mrow>
+                  <mrow> \amp= \frac{\sqrt{5}}{-1} </mrow>
+                  <mrow> \amp= -\sqrt{5} </mrow>
+                </md>
+              </p>
+            </sidebyside>
+            <sidebyside valign="top">
+              <p>
+                <md>
+                  <mrow> \csc(\theta) \amp= \frac{r}{y} </mrow>
+                  <mrow> \amp= \frac{\sqrt{5}}{2} </mrow>
+                </md>
+              </p>
+              <p>
+                <md>
+                  <mrow> \cot(\theta) \amp= \frac{x}{y} </mrow>
+                  <mrow> \amp= \frac{-1}{2} </mrow>
+                  <mrow> \amp= -\frac{1}{2} </mrow>
+                </md>
+              </p>
+            </sidebyside>
+          </sbsgroup>
+        </solution>
+      </example>
+
+      <p>
+        We can use <xref ref="definition-sincos"/> to express the coordinates of point <m>P</m> in <xref ref="figure-nonunitcirclexy"/>. We do this by solving the equations <m> \cos (\theta ) = \frac{x}{r} </m> and <m> \sin (\theta ) = \frac{y}{r} </m> for <m>x</m> and <m>y</m>, respectively:
+      </p>
+      <p>
+          <me> \cos(\theta)=\frac{x}{r} \implies x=r\cos(\theta) </me>
+          <me> \sin(\theta)=\frac{y}{r} \implies y=r\sin(\theta) </me>
+
+      </p>
+      <p>
+        We summarize this below.
+      </p>
+      <definition  xml:id="definition-coordinates">
+        <statement>
+          <p>
+            If the point <m> P = \left(x,y \right) </m> is specified by the angle <m>\theta</m> on the circumeference of a circle of radius <m>r</m>, then
+            <m>x=r \cos (\theta )</m> and <m>y=r \sin (\theta )</m>.
+          </p>
+        </statement>
+        <figure xml:id="figure-nonunitcircletrig">
+          <caption></caption>
+          <image width="50%">
+            <description>This is circle with radius r intersecting the terminal side of an angle theta. The intersecting point labeled P.</description>
+            <latex-image>
+              \begin{tikzpicture}
+                \begin{axis}[
+                    width=8cm,
+                    grid=none,
+                    ticks=none,
+                    trig format plots=rad,
+                    axis equal,
+                    xmin=-11,
+                    xmax=11,
+                    ymin=-11,
+                    ymax=11,
+                    clip=false,
+                  ]
+                  \addplot[angle, domain=0:pi/3, samples=50] ({1.5*cos(x)}, {1.5*sin(x)}) node[pos=0.5, above right, inner sep=1pt] {$\theta$};
+                  \addplot[ray, -, black] coordinates {(0,0) (4,6.93)} node[pos=0.5, above left, inner sep=1pt] {$r$};
+                  \addplot[soliddot] coordinates{(4,6.93)} node[above right] {$P=(r\cos(\theta),r \sin (\theta ))$};
+                  \addplot[domain=0:2*pi, samples=100] ({8*cos(x)},{8*sin(x)});
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+      </definition>
+
+      <example>
+        <statement>
+          <p>
+            Find the coordinates of the point on a circle with a radius of <m>8</m> units corresponding to an angle of <m>\frac{7\pi}{4}</m>.
+          </p>
+          <figure xml:id="figure-nonunitcirclegivenangleandrad">
+          <caption></caption>
+            <image width="50%">
+              <description>This is circle a circle of radius 8 intersecting the terminal side of the angle 7 time pi over 4 in standard position.</description>
+              <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}[
+                        width=8cm,
+                        grid=none,
+                        ticks=none,
+                        trig format plots=rad,
+                        axis equal,
+                        xmin=-11,
+                        xmax=11,
+                        ymin=-11,
+                        ymax=11,
+                      ]
+                      \addplot[angle, domain=0:7*pi/4, samples=50] ({1.5*cos(x)}, {1.5*sin(x)}) node[pos=0.5, above left, inner sep=0pt] {$\frac{7\pi}{4}$};
+                      \addplot[ray, -, black] coordinates {(0,0) (5.657,-5.657)} node[pos=0.5, below left, inner sep=1pt] {$8$};
+                      \addplot[soliddot] coordinates{(5.657,-5.657)};
+                      \addplot[domain=0:2*pi, samples=100] ({8*cos(x)},{8*sin(x)});
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </figure>
+        </statement>
+        <solution>
+          <p>
+            We are given the values of <m>r</m> and <m>\theta</m>, so we can use <xref ref="definition-coordinates"/> to determine the coordinate values.
+          </p>
+          <p>
+            Find <m>x</m>:
+              <md>
+                <mrow> x \amp= r\cos\mathopen{}\left( \theta \right)\mathclose{} </mrow>
+                <mrow> \amp= 8\cos\mathopen{}\left( \frac{7\pi}{4}\right)\mathclose{} </mrow>
+                <mrow> \amp= 8 \cdot \frac{\sqrt{2}}{2} </mrow>
+                <mrow> \amp= 4\sqrt{2} </mrow>
+              </md>
+          </p>
+          <p>
+            Find <m>y</m>:
+            <md>
+              <mrow> y \amp= r\sin\mathopen{}\left( \theta \right)\mathclose{} </mrow>
+              <mrow> \amp= 8\sin\mathopen{}\left( \frac{7\pi}{4}\right)\mathclose{} </mrow>
+              <mrow> \amp= 8 \mathopen{}\left( -\frac{\sqrt{2}}{2} \right)\mathclose{} </mrow>
+              <mrow> \amp= -4\sqrt{2} </mrow>
+            </md>
+          </p>
+          <p>
+            So the coordinates of the point on a circle with a radius of <m>8</m> units corresponding to an angle of <m>\frac{7\pi}{4}</m> are <m>\mathopen{}\left( 4\sqrt{2}, -4\sqrt{2} \right)\mathclose{}</m>.
+          </p>
+        </solution>
+      </example>
+      <exercises xml:id="exercises-nonunit-circles">
+      <!-- #1 from Word Version - Part 3 -->
+          <exercisegroup  cols="2"  xml:id="exercisegroup-six-trig-values">
+            <title>Six Trigonemtric Function Values</title>
+              <introduction>
+                  <p>In <xref ref="exercisegroup-six-trig-values" text="local">Exercises</xref>, find the exact value of each of the six trigonometric functions of an angle <m>\theta</m> if the given point is on its terminal side.
+                  </p>
+              </introduction>
+              <exercise>
+                  <statement>
+                      <p>
+                        <m>(3,4)</m>
+                      </p>
+                  </statement>
+                  <answer>
+                    <p>
+                      <md>
+                        <mrow> \cos(\theta) \amp= \frac{3}{5} </mrow>
+                        <mrow> \sin(\theta) \amp= \frac{4}{5} </mrow>
+                        <mrow> \tan(\theta) \amp= \frac{4}{3} </mrow>
+                        <mrow> \sec(\theta) \amp= \frac{5}{3} </mrow>
+                        <mrow> \csc(\theta) \amp= \frac{5}{4} </mrow>
+                        <mrow> \cot(\theta) \amp= \frac{3}{4} </mrow>
+                      </md>
+                    </p>
+                  </answer>
+              </exercise>
+              <exercise>
+                  <statement>
+                      <p>
+                        <m>(-2,-6)</m>
+                      </p>
+                  </statement>
+                  <answer>
+                    <p>
+                      <md>
+                        <mrow> \sin(\theta) \amp= -\frac{\sqrt{10}}{10} </mrow>
+                        <mrow> \cos(\theta) \amp= -\frac{3\sqrt{10}}{10} </mrow>
+                        <mrow> \tan(\theta) \amp= 3 </mrow>
+                        <mrow> \sec(\theta) \amp= -\sqrt{10} </mrow>
+                        <mrow> \csc(\theta) \amp= -\frac{\sqrt{10}}{3} </mrow>
+                        <mrow> \cot(\theta) \amp= \frac{1}{3} </mrow>
+                      </md>
+                    </p>
+                  </answer>
+              </exercise>
+          </exercisegroup>
+          <exercisegroup  cols="2"  xml:id="exercisegroup-coordinates">
+            <title>Find the coordinates</title>
+              <introduction>
+                  <p>In <xref ref="exercisegroup-coordinates" text="local">Exercises</xref>, find the coordinates of the point on a circle with the given radius corresponding to the given angle.
+                  </p>
+              </introduction>
+              <exercise>
+                  <statement>
+                      <p>
+                        <m>r=3, \theta=\frac{7\pi}{6}</m>
+                      </p>
+                  </statement>
+                  <answer>
+                    <p>
+                      <m>\mathopen{}\left( -\frac{3\sqrt{3}}{2}, -\frac{3}{2} \right)\mathclose{}</m>
+                    </p>
+                  </answer>
+              </exercise>
+              <exercise>
+                  <statement>
+                      <p>
+                        <m>r=10, \theta=\frac{\pi}{3}</m>
+                      </p>
+                  </statement>
+                  <answer>
+                    <p>
+                      <m>\mathopen{}\left( 5, 5\sqrt{3} \right)\mathclose{}</m>
+                    </p>
+                  </answer>
+              </exercise>
+          </exercisegroup>
+      </exercises>
+</section>

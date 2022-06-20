@@ -334,7 +334,7 @@
       </statement>
     </definition>
     <p>
-      When we write an angle's measure in the form <m>D^{\circ}M'S''</m> where <m>D</m>, <m>M</m>, and <m>S</m> are real numbers), then the angle's measure is <m>D</m> degrees plus <m>M</m> minutes plus <m>S</m> seconds.
+      When we write an angle's measure in the form <m>D^{\circ}M'S''</m> where (<m>D</m>, <m>M</m>, and <m>S</m> are real numbers), then the angle's measure is <m>D</m> degrees plus <m>M</m> minutes plus <m>S</m> seconds.
     </p>
     <example>
       <statement>

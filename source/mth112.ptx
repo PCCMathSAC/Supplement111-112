@@ -3,6 +3,7 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="mth112">
   <title>MTH 112 Supplement</title>
   <xi:include href="sec-angles.ptx"/>
+  <xi:include href="sec-nonunit-circles.ptx"/>
   <xi:include href="sec-sinusoidal-functions.ptx"/>
   <xi:include href="sec-complex-numbers-and-polar-coordinates.ptx"/>
 </chapter>
