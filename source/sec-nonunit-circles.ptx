@@ -9,33 +9,33 @@
           <p>
             If the point <m> P = \left(x,y \right) </m> is specified by the angle <m>\theta</m> on the circumeference of a circle of radius <m>r</m>, then <m> \cos (\theta ) = \frac{x}{r} </m> and <m> \sin (\theta ) = \frac{y}{r} </m>.
           </p>
+          <figure xml:id="figure-nonunitcirclexy">
+            <caption></caption>
+            <image width="50%">
+              <description>This is circle with radius r intersecting the terminal side of an angle labeled theta. The intersecting point is labeled P.</description>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      width=8cm,
+                      grid=none,
+                      ticks=none,
+                      trig format plots=rad,
+                      axis equal,
+                      xmin=-11,
+                      xmax=11,
+                      ymin=-11,
+                      ymax=11,
+                    ]
+                    \addplot[angle, domain=0:pi/3, samples=50] ({1.5*cos(x)}, {1.5*sin(x)}) node[pos=0.5, above right, inner sep=1pt] {$\theta$};
+                    \addplot[ray, -, black] coordinates {(0,0) (4,6.93)} node[pos=0.5, above left, inner sep=1pt] {$r$};
+                    \addplot[soliddot] coordinates{(4,6.93)} node[above right] {$P=(x,y)$};
+                    \addplot[domain=0:2*pi, samples=100] ({8*cos(x)},{8*sin(x)});
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
         </statement>
-        <figure xml:id="figure-nonunitcirclexy">
-          <caption></caption>
-          <image width="50%">
-            <description>This is circle with radius r intersecting the terminal side of an angle labeled theta. The intersecting point is labeled P.</description>
-            <latex-image>
-              \begin{tikzpicture}
-                \begin{axis}[
-                    width=8cm,
-                    grid=none,
-                    ticks=none,
-                    trig format plots=rad,
-                    axis equal,
-                    xmin=-11,
-                    xmax=11,
-                    ymin=-11,
-                    ymax=11,
-                  ]
-                  \addplot[angle, domain=0:pi/3, samples=50] ({1.5*cos(x)}, {1.5*sin(x)}) node[pos=0.5, above right, inner sep=1pt] {$\theta$};
-                  \addplot[ray, -, black] coordinates {(0,0) (4,6.93)} node[pos=0.5, above left, inner sep=1pt] {$r$};
-                  \addplot[soliddot] coordinates{(4,6.93)} node[above right] {$P=(x,y)$};
-                  \addplot[domain=0:2*pi, samples=100] ({8*cos(x)},{8*sin(x)});
-                \end{axis}
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </figure>
       </definition>
       <p>
         Notice that if we are on a unit circle, where <m>r=1</m>, then these definitions for <m>\cos(\theta)</m> and <m>\sin(\theta)</m> simplifly accordingly:
@@ -89,58 +89,58 @@
         <statement>
           <p>
             If the point <m> P = \left(x,y \right) </m> is specified by the angle <m>\theta</m> on the circumeference of a circle of radius <m>r</m>, then we can define the six trigonemtric functions as follows.
-         </p>
-         <sbsgroup>
-           <sidebyside>
-             <p>
-               <me> \cos (\theta ) = \frac{x}{r} </me>
-             </p>
-             <p>
-               <me> \sin (\theta ) = \frac{y}{r} </me>
-             </p>
-             <p>
-               <me> \tan (\theta ) = \frac{y}{x} </me>
-             </p>
-           </sidebyside>
-           <sidebyside>
-             <p>
-               <me> \sec (\theta ) = \frac{r}{x} </me>
-             </p>
-             <p>
-               <me> \csc (\theta ) = \frac{r}{y} </me>
-             </p>
-             <p>
-               <me> \cot (\theta ) = \frac{x}{y} </me>
-             </p>
-           </sidebyside>
-        </sbsgroup>
+          </p>
+          <sbsgroup>
+            <sidebyside>
+              <p>
+                <me> \cos (\theta ) = \frac{x}{r} </me>
+              </p>
+              <p>
+                <me> \sin (\theta ) = \frac{y}{r} </me>
+              </p>
+              <p>
+                <me> \tan (\theta ) = \frac{y}{x} </me>
+              </p>
+            </sidebyside>
+            <sidebyside>
+              <p>
+                <me> \sec (\theta ) = \frac{r}{x} </me>
+              </p>
+              <p>
+                <me> \csc (\theta ) = \frac{r}{y} </me>
+              </p>
+              <p>
+                <me> \cot (\theta ) = \frac{x}{y} </me>
+              </p>
+            </sidebyside>
+          </sbsgroup>
+          <figure xml:id="figure-nonunitcirclexyallsix">
+            <caption></caption>
+            <image width="50%">
+              <description> This is circle with radius r intersecting the terminal side of an angle in standard position labeled theta. The intersecting point is labeled P.</description>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      width=8cm,
+                      grid=none,
+                      ticks=none,
+                      trig format plots=rad,
+                      axis equal,
+                      xmin=-11,
+                      xmax=11,
+                      ymin=-11,
+                      ymax=11,
+                    ]
+                    \addplot[angle, domain=0:pi/3, samples=50] ({1.5*cos(x)}, {1.5*sin(x)}) node[pos=0.5, above right, inner sep=1pt] {$\theta$};
+                    \addplot[ray, -, black] coordinates {(0,0) (4,6.93)} node[pos=0.5, above left, inner sep=1pt] {$r$};
+                    \addplot[soliddot] coordinates{(4,6.93)} node[above right] {$P=(x,y)$};
+                    \addplot[domain=0:2*pi, samples=100] ({8*cos(x)},{8*sin(x)});
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
         </statement>
-        <figure xml:id="figure-nonunitcirclexyallsix">
-          <caption></caption>
-          <image width="50%">
-            <description> This is circle with radius r intersecting the terminal side of an angle in standard position labeled theta. The intersecting point is labeled P.</description>
-            <latex-image>
-              \begin{tikzpicture}
-                \begin{axis}[
-                    width=8cm,
-                    grid=none,
-                    ticks=none,
-                    trig format plots=rad,
-                    axis equal,
-                    xmin=-11,
-                    xmax=11,
-                    ymin=-11,
-                    ymax=11,
-                  ]
-                  \addplot[angle, domain=0:pi/3, samples=50] ({1.5*cos(x)}, {1.5*sin(x)}) node[pos=0.5, above right, inner sep=1pt] {$\theta$};
-                  \addplot[ray, -, black] coordinates {(0,0) (4,6.93)} node[pos=0.5, above left, inner sep=1pt] {$r$};
-                  \addplot[soliddot] coordinates{(4,6.93)} node[above right] {$P=(x,y)$};
-                  \addplot[domain=0:2*pi, samples=100] ({8*cos(x)},{8*sin(x)});
-                \end{axis}
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </figure>
       </definition>
       <example>
         <statement>
@@ -270,34 +270,34 @@
             If the point <m> P = \left(x,y \right) </m> is specified by the angle <m>\theta</m> on the circumeference of a circle of radius <m>r</m>, then
             <m>x=r \cos (\theta )</m> and <m>y=r \sin (\theta )</m>.
           </p>
+          <figure xml:id="figure-nonunitcircletrig">
+            <caption></caption>
+            <image width="50%">
+              <description>This is circle with radius r intersecting the terminal side of an angle theta. The intersecting point labeled P.</description>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      width=8cm,
+                      grid=none,
+                      ticks=none,
+                      trig format plots=rad,
+                      axis equal,
+                      xmin=-11,
+                      xmax=11,
+                      ymin=-11,
+                      ymax=11,
+                      clip=false,
+                    ]
+                    \addplot[angle, domain=0:pi/3, samples=50] ({1.5*cos(x)}, {1.5*sin(x)}) node[pos=0.5, above right, inner sep=1pt] {$\theta$};
+                    \addplot[ray, -, black] coordinates {(0,0) (4,6.93)} node[pos=0.5, above left, inner sep=1pt] {$r$};
+                    \addplot[soliddot] coordinates{(4,6.93)} node[above right] {$P=(r\cos(\theta),r \sin (\theta ))$};
+                    \addplot[domain=0:2*pi, samples=100] ({8*cos(x)},{8*sin(x)});
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
         </statement>
-        <figure xml:id="figure-nonunitcircletrig">
-          <caption></caption>
-          <image width="50%">
-            <description>This is circle with radius r intersecting the terminal side of an angle theta. The intersecting point labeled P.</description>
-            <latex-image>
-              \begin{tikzpicture}
-                \begin{axis}[
-                    width=8cm,
-                    grid=none,
-                    ticks=none,
-                    trig format plots=rad,
-                    axis equal,
-                    xmin=-11,
-                    xmax=11,
-                    ymin=-11,
-                    ymax=11,
-                    clip=false,
-                  ]
-                  \addplot[angle, domain=0:pi/3, samples=50] ({1.5*cos(x)}, {1.5*sin(x)}) node[pos=0.5, above right, inner sep=1pt] {$\theta$};
-                  \addplot[ray, -, black] coordinates {(0,0) (4,6.93)} node[pos=0.5, above left, inner sep=1pt] {$r$};
-                  \addplot[soliddot] coordinates{(4,6.93)} node[above right] {$P=(r\cos(\theta),r \sin (\theta ))$};
-                  \addplot[domain=0:2*pi, samples=100] ({8*cos(x)},{8*sin(x)});
-                \end{axis}
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </figure>
       </definition>
 
       <example>
